@@ -1,0 +1,63 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+*.swp
+*.userprefs
+
+# Unity auto-generated folders
+/Assets/StreamingAssets/*
+
+# Ignore crash reports, logs, and metadata
+sysinfo.txt
+.crash/
+*.stacktrace
+.vscode/
+.vs/
+
+# Packages
+/[Pp]ackages/com.unity.package-manager/
+[Pp]ackage[Cc]ache/
+[Pp]ackage[Ss]tate.cache
+
+# Auto-generated VS/MD/JetBrains Rider project files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userosscache
+*.userprefs
+*.pidb.meta
+*.pidb
+*.pdb
+*.opendb
+*.VC.db
+.vscode/
+
+# ScriptableObject files (Generated on scene load, don’t commit)
+*.asset
+*.meta
+
+# Ignore any crash reports or debugging files
+crashlytics/
+
+# Unity Cloud Build
+/[Cc]loud/
+#[Cc]onfigs/
+
+# Additional build artifacts (optional, if using external build scripts)
+.idea/
+.gradle/
+out/
