@@ -7744,7 +7744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7ae185dc5f8c84189fce63376dab94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  follow_offset: {x: 0, y: 1.2, z: 0.3}
+  follow_offset: {x: 0, y: 1.2, z: 0}
   rotate_speed: 120
   zoom_speed: 0.5
   zoom_in_max: 0.5
