@@ -255,6 +255,10 @@ namespace NetcodePlus.Demo
 
         public void Rotate(float val)
         {
+            Vector3 vector3 = transf.forward;
+            print("x" +vector3.x);
+            print( "y" + vector3.y);
+            print("z" + vector3.z);
             Vector3 trot = new Vector3(5, val * Time.fixedDeltaTime, 0f);
             rigid.angularVelocity = Vector3.MoveTowards(trot, trot, acceleration * speed_mult * Time.fixedDeltaTime);
         }
