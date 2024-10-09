@@ -79,14 +79,8 @@ namespace NetcodePlus.Demo
             if (Input.GetKey(KeyCode.DownArrow))
                 arrows += Vector2.down;
 
-            if (Input.GetKey(cam_rotate_left))
-                rotate_cam += -1f;
-            if (Input.GetKey(cam_rotate_right))
-                rotate_cam += 1f;
-            if (Input.GetKey(cam_rotate_up))
-                rotate_cam2 += -1f;
-            if (Input.GetKey(cam_rotate_down))
-                rotate_cam2 += 1f;
+            rotate_cam = Input.GetAxis("Mouse X");
+            rotate_cam2 -= Input.GetAxis("Mouse Y");
 
             if (Input.GetKeyDown(action_key))
                 press_action = true;

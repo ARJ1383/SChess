@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f98e7766c0cf1b49998758bf1b9ae67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_speed: 50
+  move_speed: 35
   camera: {fileID: 0}
   explode_prefab: {fileID: 5062682275915073398, guid: f47f957087bfe3e499492707de093fb9, type: 3}
   direction: {x: 0, y: 0, z: 0}

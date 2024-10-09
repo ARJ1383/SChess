@@ -700,6 +700,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1825987474188783423, guid: 04c751dd2f1c2124f86e1a5a52189a5c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -640063867121917104, guid: 67f0e799ab2070a4c922dca19d78faa9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -707,6 +711,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 168825195215875818, guid: 04c751dd2f1c2124f86e1a5a52189a5c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5332539605474854458}
+    - targetCorrespondingSourceObject: {fileID: 168825195215875818, guid: 04c751dd2f1c2124f86e1a5a52189a5c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6290399446777304168}
   m_SourcePrefab: {fileID: 100100000, guid: 04c751dd2f1c2124f86e1a5a52189a5c, type: 3}
 --- !u!4 &7397324302352851660 stripped
 Transform:
@@ -731,3 +738,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
+--- !u!65 &6290399446777304168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7918247260279502966}
+  m_Material: {fileID: 13400000, guid: 66bb088a149fb014f9dda6ff2b95dc2e, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.61258495, y: 0.38468653, z: 0.054168463}
+  m_Center: {x: -0.2538349, y: -0.0152724385, z: 1.0019346}

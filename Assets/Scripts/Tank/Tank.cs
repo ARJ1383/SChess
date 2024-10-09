@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 
@@ -23,7 +24,7 @@ namespace NetcodePlus.Demo
 
         [Header("Life")]
         public int hp = 5;
-        public float revive_duration = 5f;
+        public float revive_duration = 0f;
         public float invulnerable_duration = 3f;
 
         [Header("Ref")]
@@ -39,6 +40,7 @@ namespace NetcodePlus.Demo
         private Rigidbody rigid;
         private Animator animator;
         private Vector2 cmove;
+        private float rotate;
 
         private SNetworkActions actions;
         private PlayerTankState sync_state = new PlayerTankState();
@@ -125,6 +127,7 @@ namespace NetcodePlus.Demo
 
             PlayerControls controls = PlayerControls.Get();
             cmove = controls.GetMove();
+            rotate = controls.GetRotateCam();
 
             if (controls.IsPressAction() && !ghost)
                 Shoot();
@@ -136,8 +139,9 @@ namespace NetcodePlus.Demo
                 return;
 
             float move = cmove.y * move_speed;
-            float rotate = cmove.x * rotate_speed;
-            Move(move);
+            float move2 = cmove.x * move_speed;
+            rotate = rotate * rotate_speed;
+            Move(move,move2);
             Rotate(rotate);
 
             if (speed_timer < 0f)
@@ -176,8 +180,9 @@ namespace NetcodePlus.Demo
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(sync_state.facing, Vector3.up), sync_interpolate * Time.deltaTime);
 
             float move = sync_state.control.y * move_speed;
-            float rotate = sync_state.control.x * rotate_speed;
-            Move(move);
+            float move2 = sync_state.control.x * move_speed;
+            rotate *= rotate_speed;
+            Move(move,move2);
             Rotate(rotate);
         }
 
@@ -246,19 +251,17 @@ namespace NetcodePlus.Demo
             SetGhost(state.ghost);
         }
 
-        public void Move(float val)
+        public void Move(float val,float val2)
         {
             Vector3 forward = transf.forward;
-            forward.y = 0f;
-            rigid.velocity = Vector3.MoveTowards(rigid.velocity, forward * val, acceleration * speed_mult * Time.fixedDeltaTime);
+            float x = val * forward.x + val2 * forward.z;
+            forward.z = val * forward.z - val2 * forward.x;
+            forward.x = x;
+            rigid.velocity = Vector3.MoveTowards(rigid.velocity, forward, acceleration * speed_mult * Time.fixedDeltaTime);
         }
 
         public void Rotate(float val)
         {
-            Vector3 vector3 = transf.forward;
-            print("x" +vector3.x);
-            print( "y" + vector3.y);
-            print("z" + vector3.z);
             Vector3 trot = new Vector3(5, val * Time.fixedDeltaTime, 0f);
             rigid.angularVelocity = Vector3.MoveTowards(trot, trot, acceleration * speed_mult * Time.fixedDeltaTime);
         }
@@ -297,7 +300,7 @@ namespace NetcodePlus.Demo
 
             hp -= damage;
             revive_timer = 0f;
-            SetGhost(true);
+            //SetGhost(true);
             sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
 
             if (hp <= 0)
@@ -349,11 +352,11 @@ namespace NetcodePlus.Demo
         {
             if (CanRevive())
             {
-                transf.position = pos;
-                Vector3 face = Vector3.zero - transf.position;
-                transf.rotation = Quaternion.LookRotation(face.normalized, Vector3.up);
-                sync_state.position = pos;
-                sync_state.facing = face.normalized;
+                // transf.position = pos;
+                // Vector3 face = Vector3.zero - transf.position;
+                // transf.rotation = Quaternion.LookRotation(face.normalized, Vector3.up);
+                // sync_state.position = pos;
+                // sync_state.facing = face.normalized;
                 sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
                 SetGhost(false);
                 revive_timer = 0f;

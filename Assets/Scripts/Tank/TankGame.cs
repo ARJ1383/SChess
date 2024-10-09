@@ -36,7 +36,7 @@ namespace NetcodePlus.Demo
                 for (int i = 0; i < spawns.Count; i++)
                     spawns[i].player_id = i;
             }
-
+            Cursor.lockState = CursorLockMode.Locked;
             BlackPanel.Get().Show(true);
         }
 
