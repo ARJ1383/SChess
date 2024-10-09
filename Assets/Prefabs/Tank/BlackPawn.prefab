@@ -33,6 +33,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7511497362044121463}
   - {fileID: 2403760767942212638}
   - {fileID: 843010289358659844}
   - {fileID: 1608134690016462812}
@@ -92,6 +93,7 @@ MonoBehaviour:
   mesh: {fileID: 3030939051835745956}
   speed_bonus: {fileID: 8587668637545132957}
   shield_bonus: {fileID: 7992988207810504831}
+  gun: {fileID: 7166884662682069965}
   sync_refresh_rate: 0.05
   sync_threshold: 0.1
   sync_interpolate: 5
@@ -149,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 6427266641786101792}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2, z: 0.5}
+  m_LocalPosition: {x: 0, y: 1.2, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -359,9 +361,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 305fa7a2d7f547c42a0c3f022b0fe53a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1958963644468668403}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 305fa7a2d7f547c42a0c3f022b0fe53a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7511497362044121463}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 305fa7a2d7f547c42a0c3f022b0fe53a, type: 3}
       insertIndex: -1
@@ -666,7 +665,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2403760767942212638}
+    m_TransformParent: {fileID: 2797129902795045935}
     m_Modifications:
     - target: {fileID: 1825987474188783423, guid: 04c751dd2f1c2124f86e1a5a52189a5c, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -716,6 +715,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ee167043f96682947b746e455dbb2f85, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8e82fb1ed28b49e40bfde2127ca62d6a, type: 3}
+      propertyPath: m_Name
+      value: gun
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -92,6 +92,7 @@ MonoBehaviour:
   mesh: {fileID: 3030939051835745956}
   speed_bonus: {fileID: 8587668637545132957}
   shield_bonus: {fileID: 7992988207810504831}
+  gun: {fileID: 7166884662682069965}
   sync_refresh_rate: 0.05
   sync_threshold: 0.1
   sync_interpolate: 5
@@ -149,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 6427266641786101792}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2, z: 0.5}
+  m_LocalPosition: {x: 0, y: 1.2, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

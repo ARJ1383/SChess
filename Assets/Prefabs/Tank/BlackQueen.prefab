@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2403760767942212638}
-  - {fileID: 843010289358659844}
+  - {fileID: 4856814366086582416}
   - {fileID: 1608134690016462812}
   - {fileID: 8987361428929363588}
   m_Father: {fileID: 0}
@@ -85,13 +85,14 @@ MonoBehaviour:
   ground_dist: 0.25
   attack_cooldown: 0.5
   attack_bullet: {fileID: 4815300177652869576, guid: 4bea4e61271602d41bf8e93d7ec6ee8a, type: 3}
-  shoot_root: {fileID: 843010289358659844}
+  shoot_root: {fileID: 4856814366086582416}
   hp: 5
   revive_duration: 0
   invulnerable_duration: 3
   mesh: {fileID: 3030939051835745956}
   speed_bonus: {fileID: 8587668637545132957}
   shield_bonus: {fileID: 7992988207810504831}
+  gun: {fileID: 7166884662682069965}
   sync_refresh_rate: 0.05
   sync_threshold: 0.1
   sync_interpolate: 5
@@ -124,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324c5cab76f6f6b43b18e0dafe4a6c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &6427266641786101792
+--- !u!1 &7414952801947492312
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,7 +133,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 843010289358659844}
+  - component: {fileID: 4856814366086582416}
   m_Layer: 0
   m_Name: shoot
   m_TagString: Untagged
@@ -140,16 +141,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &843010289358659844
+--- !u!4 &4856814366086582416
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6427266641786101792}
+  m_GameObject: {fileID: 7414952801947492312}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2, z: 0.5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.2, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -712,6 +713,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -3372565741241596943, guid: 39523ea7b2001084d8f4b2e229bd1fcc, type: 3}
+    - target: {fileID: 919132149155446097, guid: 39523ea7b2001084d8f4b2e229bd1fcc, type: 3}
+      propertyPath: m_Name
+      value: Gun
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

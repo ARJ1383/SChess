@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mode: 20
   id: yellow
-  prefab: {fileID: 2797129902795045934, guid: cbf154bd4ef729b4287ddfe3fb418872, type: 3}
+  prefab: {fileID: 2797129902795045934, guid: e8dd5cd08336dd2488d227d54f1a7da2, type: 3}
   color: {r: 0.9150943, g: 0.7146925, b: 0.074818976, a: 1}

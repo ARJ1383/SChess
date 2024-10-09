@@ -25,12 +25,13 @@ namespace NetcodePlus.Demo
         [Header("Life")]
         public int hp = 5;
         public float revive_duration = 0f;
-        public float invulnerable_duration = 3f;
+        public float invulnerable_duration = 0f;
 
         [Header("Ref")]
         public GameObject mesh;
         public GameObject speed_bonus;
         public GameObject shield_bonus;
+        public GameObject gun;
 
         [Header("Sync")]
         public float sync_refresh_rate = 0.05f;
@@ -82,6 +83,7 @@ namespace NetcodePlus.Demo
 
         protected override void OnSpawn()
         {
+
             base.OnSpawn();
             actions = new SNetworkActions(this);
             actions.RegisterVector("shoot", DoShoot);
@@ -158,6 +160,7 @@ namespace NetcodePlus.Demo
             sync_state.control = cmove;
             sync_state.speed_mult = speed_mult;
             sync_state.ghost = ghost;
+            gun.transform.rotation = Camera.main.transform.rotation;
 
             actions?.Trigger("sync", sync_state); // ReceiveSync(sync_state)
         }
@@ -181,6 +184,7 @@ namespace NetcodePlus.Demo
 
             float move = sync_state.control.y * move_speed;
             float move2 = sync_state.control.x * move_speed;
+            //gun.transform.rotation = sync_state.gunFace;
             rotate *= rotate_speed;
             Move(move,move2);
             Rotate(rotate);
@@ -270,7 +274,7 @@ namespace NetcodePlus.Demo
         {
             if (IsOwner && attack_timer > attack_cooldown)
             {
-                actions?.Trigger("shoot", transf.forward); //DoShoot()
+                actions?.Trigger("shoot", Camera.main.transform.forward); //DoShoot()
             }
         }
 
@@ -279,10 +283,9 @@ namespace NetcodePlus.Demo
             if (attack_timer > attack_cooldown)
             {
                 attack_timer = 0f;
-                animator.SetTrigger("shoot");
                 GameObject bobj = Instantiate(attack_bullet, shoot_root.position, Quaternion.identity);
                 TankBullet bullet = bobj.GetComponent<TankBullet>();
-                bullet.direction = Camera.main.transform.forward;;
+                bullet.direction = dir;
                 bullet.player_id = player_id;
             }
         }
@@ -301,7 +304,7 @@ namespace NetcodePlus.Demo
             hp -= damage;
             revive_timer = 0f;
             //SetGhost(true);
-            sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
+            //sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
 
             if (hp <= 0)
                 Kill();
@@ -332,7 +335,7 @@ namespace NetcodePlus.Demo
             SetGhost(true);
             destroyed = true;
             revive_timer = 0f;
-            sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
+            //sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
 
             Tower tower = Tower.Get(player_id);
             tower?.Kill(); //Also kill tower
@@ -357,7 +360,7 @@ namespace NetcodePlus.Demo
                 // transf.rotation = Quaternion.LookRotation(face.normalized, Vector3.up);
                 // sync_state.position = pos;
                 // sync_state.facing = face.normalized;
-                sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
+                //sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
                 SetGhost(false);
                 revive_timer = 0f;
                 invul_timer = invulnerable_duration;
@@ -458,6 +461,7 @@ namespace NetcodePlus.Demo
         public Vector2 control;
         public float speed_mult;
         public bool ghost;
+        public Quaternion gunFace;
 
         public void NetworkSerialize<T>(BufferSerializer<T> serializer) where T : IReaderWriter
         {
@@ -468,6 +472,7 @@ namespace NetcodePlus.Demo
             serializer.SerializeValue(ref control);
             serializer.SerializeValue(ref speed_mult);
             serializer.SerializeValue(ref ghost);
+            serializer.SerializeValue(ref gunFace);
         }
     }
 

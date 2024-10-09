@@ -18,8 +18,7 @@ namespace NetcodePlus.Demo
 
         void Start()
         {
-            camera = Camera.main;
-            direction = Camera.main.transform.forward;
+            
         }
 
         void Update()
@@ -41,6 +40,7 @@ namespace NetcodePlus.Demo
                 tower.Damage();
 
             Tank tank = other.GetComponentInParent<Tank>();
+            if(tank.PlayerID == player_id) return;
             if (tank != null)
                 tank.Damage(1);
 
