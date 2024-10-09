@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Chess\\SChess\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83ECB64F-772F-E5E7-CE67-657FA8366019}|Assembly-CSharp.csproj|e:\\chess\\schess\\assets\\scripts\\menu\\movelogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83ECB64F-772F-E5E7-CE67-657FA8366019}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu\\movelogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83ECB64F-772F-E5E7-CE67-657FA8366019}|Assembly-CSharp.csproj|E:\\Chess\\SChess\\assets\\scripts\\ui\\gameoverpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83ECB64F-772F-E5E7-CE67-657FA8366019}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\gameoverpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83ECB64F-772F-E5E7-CE67-657FA8366019}|Assembly-CSharp.csproj|E:\\Chess\\SChess\\assets\\scripts\\ui\\chatui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83ECB64F-772F-E5E7-CE67-657FA8366019}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\chatui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83ECB64F-772F-E5E7-CE67-657FA8366019}|Assembly-CSharp.csproj|E:\\Chess\\SChess\\assets\\scripts\\ui\\blackpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83ECB64F-772F-E5E7-CE67-657FA8366019}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\blackpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MoveLogo.cs",
+              "DocumentMoniker": "E:\\Chess\\SChess\\Assets\\Scripts\\Menu\\MoveLogo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Menu\\MoveLogo.cs",
+              "ToolTip": "E:\\Chess\\SChess\\Assets\\Scripts\\Menu\\MoveLogo.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Menu\\MoveLogo.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAiwEUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T10:42:22.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameOverPanel.cs",
+              "DocumentMoniker": "E:\\Chess\\SChess\\Assets\\Scripts\\UI\\GameOverPanel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\GameOverPanel.cs",
+              "ToolTip": "E:\\Chess\\SChess\\Assets\\Scripts\\UI\\GameOverPanel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\GameOverPanel.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T09:35:13.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatUI.cs",
+              "DocumentMoniker": "E:\\Chess\\SChess\\Assets\\Scripts\\UI\\ChatUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ChatUI.cs",
+              "ToolTip": "E:\\Chess\\SChess\\Assets\\Scripts\\UI\\ChatUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ChatUI.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAA2wFQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T09:34:24.413Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BlackPanel.cs",
+              "DocumentMoniker": "E:\\Chess\\SChess\\Assets\\Scripts\\UI\\BlackPanel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\BlackPanel.cs",
+              "ToolTip": "E:\\Chess\\SChess\\Assets\\Scripts\\UI\\BlackPanel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\BlackPanel.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvysAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T09:31:07.506Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
