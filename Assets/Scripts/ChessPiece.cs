@@ -6,6 +6,8 @@ public class ChessPiece : MonoBehaviour
 
     private GameManager gameManager;
 
+    private int i, j;
+
     void Start()
     {
         // گرفتن Renderer مهره
@@ -18,8 +20,8 @@ public class ChessPiece : MonoBehaviour
 
     void OnMouseDown()
     {
-        // وقتی روی مهره کلیک می‌شود، آن را به عنوان مهره انتخابی به Game Manager بده
-        gameManager.SelectPiece(this);
+        UpdateIJ(); 
+        gameManager.SelectPiece(this, i, j);
     }
 
     public void HighlightPiece()
@@ -34,5 +36,13 @@ public class ChessPiece : MonoBehaviour
         // حذف حاشیه با تغییر رنگ و عرض به مقدار اولیه
         pieceRenderer.material.SetColor("_OutlineColor", Color.clear);
         pieceRenderer.material.SetFloat("_OutlineWidth", 0.0f);
+    }
+
+    private void UpdateIJ()
+    {
+        float x = transform.position.x;
+        float z = transform.position.z;
+        i = GameManager.ReturnCoordinate(x, z).i;
+        j = GameManager.ReturnCoordinate(x, z).j;
     }
 }
