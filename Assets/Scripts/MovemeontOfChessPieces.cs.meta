@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: bfd10da76632e56428ea44a9415e07dc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - chessBoard: {fileID: 3162082765675257300, guid: 87e29f7f64ee37e43a2973a0622e00e1, type: 3}
+  - whiteRookPrefab: {fileID: 343682099782220849, guid: 8c6cfb36b0d16f24fbac0a3cc3374303, type: 3}
+  - whiteKnightPrefab: {fileID: 8301733245848943513, guid: 5a2c7566f2125d841a5828cd22dbd463, type: 3}
+  - whiteBishopPrefab: {fileID: 6157935857934929550, guid: a990b66081ebc1f49a12417f02209b50, type: 3}
+  - whiteQueenPrefab: {fileID: 135932119572297781, guid: 746edbe1e44a53d4ab4b633ea99bec41, type: 3}
+  - whiteKingPrefab: {fileID: 3319173084322187111, guid: a296a30de97789241ae4883a630d8a18, type: 3}
+  - whitePawnPrefab: {fileID: 1166744362946434813, guid: 0f934222f3e4ab846b2db7fab165bc7b, type: 3}
+  - blackRookPrefab: {fileID: 1418577212984322221, guid: fe45f5fe2b9dbdf42b6044a23332ce9e, type: 3}
+  - blackKnightPrefab: {fileID: 5773535338657831067, guid: 207417434d4e486469e63164bcf82c72, type: 3}
+  - blackBishopPrefab: {fileID: 5072021485914250399, guid: 94160cd8302c2094ca567d98c1692551, type: 3}
+  - blackQueenPrefab: {fileID: 3780438328246563921, guid: e33b1949558e47544a03594e855ca9f0, type: 3}
+  - blackKingPrefab: {fileID: 5556106810774329644, guid: dd3ce076770a2024ab25e5e3d07871ff, type: 3}
+  - blackPawnPrefab: {fileID: 6468567674786511396, guid: b37733d36ca9bef41916cd9cec3a3928, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

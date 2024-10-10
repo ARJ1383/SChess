@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6035841810706618475}
+  - component: {fileID: -2387060111985694802}
+  - component: {fileID: 6939731371967979188}
   m_Layer: 0
   m_Name: black_king
   m_TagString: Untagged
@@ -32,6 +34,41 @@ Transform:
   - {fileID: 639819489808373939}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2387060111985694802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5556106810774329644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3931c863a811daf4a9f8c9fc1b9c70ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &6939731371967979188
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5556106810774329644}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.28719738
+  m_Height: 1.944159
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.9661727, z: 0.0024457872}
 --- !u!1 &9023379323006558219
 GameObject:
   m_ObjectHideFlags: 0

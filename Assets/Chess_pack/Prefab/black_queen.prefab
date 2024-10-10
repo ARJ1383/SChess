@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4256221432094061863}
+  - component: {fileID: -7301515329670695775}
+  - component: {fileID: 3121576777640995019}
   m_Layer: 0
   m_Name: black_queen
   m_TagString: Untagged
@@ -32,6 +34,41 @@ Transform:
   - {fileID: 6840705774320617010}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7301515329670695775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3780438328246563921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3931c863a811daf4a9f8c9fc1b9c70ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &3121576777640995019
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3780438328246563921}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.28774485
+  m_Height: 1.7062308
+  m_Direction: 1
+  m_Center: {x: -0.0038591921, y: 0.84323186, z: 0}
 --- !u!1 &8174772646306760596
 GameObject:
   m_ObjectHideFlags: 0
