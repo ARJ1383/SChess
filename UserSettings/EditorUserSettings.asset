@@ -21,10 +21,10 @@ EditorUserSettings:
       value: 55070d5f07545c58585f087b11720744154f4c792d7c7467282d1b30b1e16069
       flags: 0
     RecentlyUsedSceneGuid-5:
-      value: 5b070c5e0403580d5a585d7644275e444016197e2a2d223178714535b4b8636b
+      value: 06000c5e5253080c550a0f2014215e4442164c7f2f7074367c7a4c61bbb3356e
       flags: 0
     RecentlyUsedSceneGuid-6:
-      value: 06000c5e5253080c550a0f2014215e4442164c7f2f7074367c7a4c61bbb3356e
+      value: 5b070c5e0403580d5a585d7644275e444016197e2a2d223178714535b4b8636b
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
@@ -43,5 +43,4 @@ EditorUserSettings:
   m_VCHierarchyOverlayIcons: 1
   m_VCOtherOverlayIcons: 1
   m_VCAllowAsyncUpdate: 1
-  m_VCScanLocalPackagesOnConnect: 1
   m_ArtifactGarbageCollection: 1

@@ -1,4 +1,4 @@
 # Unity generated files
 [Ll]ibrary/
-[Us]erSettings/
-[Lo]gs/
+UserSettings/*
+Logs/*
