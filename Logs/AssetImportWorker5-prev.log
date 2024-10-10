@@ -1,23 +1,23 @@
 Using pre-set license
-Built from '2022.3/staging' branch; Version is '2022.3.34f1 (4886f5360533) revision 4753141'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 15554 MB
+Built from '2022.3/staging' branch; Version is '2022.3.49f1 (4dae1bb8668d) revision 5090843'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 32619 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Unity\Unity 2022.3.34f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2022.3.49f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker5
 -projectPath
-C:/Users/user/New/SChess
+C:/Users/erfan/OneDrive/Desktop/SChess
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-65514
-Successfully changed project path to: C:/Users/user/New/SChess
-C:/Users/user/New/SChess
+49939
+Successfully changed project path to: C:/Users/erfan/OneDrive/Desktop/SChess
+C:/Users/erfan/OneDrive/Desktop/SChess
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,1326 +49,384 @@ C:/Users/user/New/SChess
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [31944] Host "[IP] 172.21.32.1 [Port] 0 [Flags] 2 [Guid] 377416798 [EditorId] 377416798 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H2HU7LL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [23856]  Target information:
 
-Player connection [31944] Host "[IP] 172.21.32.1 [Port] 0 [Flags] 2 [Guid] 377416798 [EditorId] 377416798 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H2HU7LL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23856]  * "[IP] 192.168.1.128 [Port] 0 [Flags] 2 [Guid] 2514561911 [EditorId] 2514561911 [Version] 1048832 [Id] WindowsEditor(7,Erfan) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
+Player connection [23856]  * "[IP] 192.168.137.1 [Port] 0 [Flags] 2 [Guid] 2514561911 [EditorId] 2514561911 [Version] 1048832 [Id] WindowsEditor(7,Erfan) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [23856] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [23856] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 36.91 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 61.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2022.3.34f1 (4886f5360533)
-[Subsystems] Discovering subsystems at path D:/Unity/Unity 2022.3.34f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/user/New/SChess/Assets
+Initialize engine version: 2022.3.49f1 (4dae1bb8668d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/erfan/OneDrive/Desktop/SChess/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon(TM) 780M (ID=0x15bf)
-    Vendor:   ATI
-    VRAM:     7777 MB
-    Driver:   31.0.14003.43006
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Vendor:   NVIDIA
+    VRAM:     6010 MB
+    Driver:   31.0.15.4630
 Initialize mono
-Mono path[0] = 'D:/Unity/Unity 2022.3.34f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/Unity 2022.3.34f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Unity/Unity 2022.3.34f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56612
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/Unity 2022.3.34f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003498 seconds.
-- Loaded All Assemblies, in  0.418 seconds
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.140417 seconds.
+- Loaded All Assemblies, in  6.314 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.379 seconds
-Domain Reload Profiling: 797ms
-	BeginReloadAssembly (130ms)
+- Finished resetting the current domain, in  0.222 seconds
+Domain Reload Profiling: 6535ms
+	BeginReloadAssembly (4817ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (173ms)
-		LoadAssemblies (128ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (381ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (181ms)
+	LoadAllAssembliesAndSetupDomain (926ms)
+		LoadAssemblies (4815ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (171ms)
-			TypeCache.Refresh (168ms)
-				TypeCache.ScanAssembly (152ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (380ms)
+		AnalyzeDomain (924ms)
+			TypeCache.Refresh (922ms)
+				TypeCache.ScanAssembly (679ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (222ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (304ms)
+		SetupLoadedEditorAssemblies (183ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (11ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (213ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
+			ProcessInitializeOnLoadAttributes (131ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
+Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.121 seconds
-Refreshing native plugins compatible for Editor in 11.94 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.547 seconds
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.827 seconds
-Domain Reload Profiling: 1946ms
-	BeginReloadAssembly (177ms)
+- Finished resetting the current domain, in  0.518 seconds
+Domain Reload Profiling: 3060ms
+	BeginReloadAssembly (111ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (25ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (798ms)
-		LoadAssemblies (480ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (2341ms)
+		LoadAssemblies (1800ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (426ms)
-			TypeCache.Refresh (378ms)
-				TypeCache.ScanAssembly (349ms)
-			ScanForSourceGeneratedMonoScriptInfo (37ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (828ms)
+		AnalyzeDomain (604ms)
+			TypeCache.Refresh (578ms)
+				TypeCache.ScanAssembly (522ms)
+			ScanForSourceGeneratedMonoScriptInfo (20ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (519ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (624ms)
+		SetupLoadedEditorAssemblies (404ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (97ms)
-			ProcessInitializeOnLoadAttributes (467ms)
-			ProcessInitializeOnLoadMethodAttributes (45ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (297ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 7.47 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 6.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5035 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 71 unused Assets / (69.4 KB). Loaded Objects now: 5476.
-Memory consumption went from 160.8 MB to 160.8 MB.
-Total: 4.350500 ms (FindLiveObjects: 0.404200 ms CreateObjectMapping: 0.243100 ms MarkObjects: 3.537000 ms  DeleteObjects: 0.164600 ms)
+Unloading 4937 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (60.7 KB). Loaded Objects now: 5393.
+Memory consumption went from 157.0 MB to 157.0 MB.
+Total: 3.784000 ms (FindLiveObjects: 0.513000 ms CreateObjectMapping: 0.204600 ms MarkObjects: 2.934300 ms  DeleteObjects: 0.115700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/NetworkActionString.cs: 3fdfcfe5088a09eda361624776113157 -> daefed6c55aed7ce3f8bf0efda765dee
-  custom:scripting/monoscript/fileName/SNetworkTransform.cs: e3c5a4a0dd8219bc481622261b5ad5a3 -> 0b48b4a863b8622379061bddc7a8c19b
-  custom:scripting/monoscript/fileName/TheNetworkDemo.cs: 7817c447b4c45c77196e38ade40bbfbb -> c8e86a19ec6b039aa2975e5e1da0005c
-  custom:scripting/monoscript/fileName/ConnectingPanel.cs: ac938adb83d2337649dcc22ae61e9a49 -> ad11a5f09ad5d701465cf3605e9bdb20
-  custom:scripting/monoscript/fileName/OptionSelectorInt.cs: 973c1f0566d823bf5f823877de81d81b -> 03075c71455d90b1ba642e33d6643a5a
-  custom:scripting/monoscript/fileName/SNetworkGroup.cs: f54d4a365ec1c9f64adca28111984da0 -> 476829700a851940dd0d5d0ce7e298a6
-  custom:scripting/monoscript/fileName/BlackPanel.cs: 2b53116edaa373408d786a40fc846c3f -> 0c2bdee07d83ec2d23242e539d0d2641
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/PlayerLine.cs: 8fe84138caacf384491e70fe2a704e9f -> 3e7048325d2cb916c35cbdd21bc35b36
-  custom:scripting/monoscript/fileName/IconBar.cs: 7d650315c39fed7ae9a8b8d628c1da8f -> 5e8b405b6af7edffd87eb4d8fe2ae269
-  custom:scripting/monoscript/fileName/ClientLobby.cs: 299a012e3121112d8c26573d953c44c9 -> a652c6a0db4056878bee5a786674c08c
-  custom:scripting/monoscript/fileName/Menu.cs: 56f8b2798f74afff56b09ef642c2b0ce -> 39704cade04e7d48b6e61a4cf4b7ee3a
-  custom:scripting/monoscript/fileName/LobbyCreatePanel.cs: 3f6d39478eb6cae6ad55ad17d756261f -> 46812356cf3339129b0bf6204d7f074f
-  custom:scripting/monoscript/fileName/PlayerCube.cs: 3607d776a2bacc33930b82e976f721b4 -> b2379535833bd6cf5ba9abd17032476d
-  custom:scripting/monoscript/fileName/UIPanel.cs: 64673c24f49f10a22428d63040af3ece -> 16baa8c5175325c4d180a178be42f668
-  custom:scripting/monoscript/fileName/NetworkActionSimple.cs: b05ef362b435dbc137f5de7b47b39a05 -> 4935cc96cb2cd12ba86e752009df4eff
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:scripting/monoscript/fileName/NetworkChat.cs: 19564776a21b5e7b0c4d444745b7220f -> 20e43982f76a1f9529cdcdcd1414fb47
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/ServerLobbyConfig.cs: 028910a3e96875421a9219880c14a119 -> 51fb94b905ef04cc91047251265490f4
-  custom:scripting/monoscript/fileName/NetworkGame.cs: 64fcb2ffd5cb80722751a354f8d92ca2 -> d088f39f2b83a50d7e812248b33611c8
-  custom:scripting/monoscript/fileName/LobbyLine.cs: 17713ef515a35343285cbc96231dba91 -> 852b6dd897a3495c7416c60aed693824
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/Tower.cs: db57c81e9f931a6ae5a520813e0c447d -> a20db5024a4a72431aae4180e6dfa7db
-  custom:scripting/monoscript/fileName/SaveTool.cs: 61b8d9c6497290e0058778d308f7a988 -> 36316754670227fd0b1041e9b101dfdf
-  custom:scripting/monoscript/fileName/ServerGame.cs: 68279d2c22cf7fcbb2306dd2a6deea69 -> 866c600c6c947d0f95661fd2fce7c07d
-  custom:scripting/monoscript/fileName/WebTool.cs: 1bc399cb3f1a9844c05f8de7c51d1e95 -> 3f78a2afbe71663091c8902d6f05b86a
-  custom:scripting/monoscript/fileName/Gun.cs: baca4c64a5e3a9a998c8b9e678efde97 -> 7d05faef1ad0b187da47b70860e6ba9a
-  custom:scripting/monoscript/fileName/PlayerControls.cs: 8eaac34d2b2e9055ff20956cf36a987c -> c56f2041818f7da41e34f0b627b79d0f
-  custom:scripting/monoscript/fileName/SNetworkActions.cs: b77ccfe34413cd860235648070e1b3bb -> f7676dc8adcd5370544a88bf8e2d504b
-  custom:scripting/monoscript/fileName/NetworkAction.cs: 8f018f64aebf5ad87a46cbe22cdbca5b -> 170bb16002818746cf710ba5da630f1f
-  custom:scripting/monoscript/fileName/OptionSelector.cs: 7d99b824c041d48bb3f4149d152defee -> 7017aa490b91409d6ca9ad8fc473c823
-  custom:scripting/monoscript/fileName/SimpleGame.cs: 735601ee048d6d4708edc5c79829894d -> a37eab1d73f2e84209afe022e4616720
-  custom:scripting/monoscript/fileName/Powerup.cs: ca33a3a8a5a4bb90044027b3f1831e03 -> e2c651a8ea3b5dbed9d56de7ff48e22b
-  custom:scripting/monoscript/fileName/WebGLTool.cs: 16f93648227c4e7d5e4de5b08ccc6b79 -> 59604412a27c9c58d5a8295740ea8fed
-  custom:scripting/monoscript/fileName/NetworkActionBytes.cs: f3db94f6b5f7ecf993ae6ca37e913c06 -> 1b1ac9e182027a5b58f2195faee37ae1
-  custom:scripting/monoscript/fileName/LobbyRoomPanel.cs: f3d3beabe242dc21895ebd3df05f2cfd -> 6986654e2087b62db05e0ac1a94d3788
-  custom:scripting/monoscript/fileName/PlayerData.cs: cf19a605da2d2c6e8c88dedfb939e650 -> 83b6e4829f1ab06eaba603891d665bc9
-  custom:scripting/monoscript/fileName/Vector3Data.cs: 1bb9625a3d86d8a36a252537abe10251 -> afe57c7d3c0fe50eed080c6cc55cc6c6
-  custom:scripting/monoscript/fileName/ProgressBar.cs: 9cb1e949b0699b6781211b710c88f3ee -> 7dcb9dd7709b5017cde6b10e71050f3c
-  custom:scripting/monoscript/fileName/ClientLobbyService.cs: 362c6eb9ceef8cdf31ce0f6fe4a4fcf5 -> d99b546100c168aca0a5e94d1a836a59
   custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:scripting/monoscript/fileName/CameraTank.cs: 890cdfd73889cd6e77dd667f53b56da0 -> eb3db14bf84850dc5e7dbc28e3ca13dc
-  custom:scripting/monoscript/fileName/CameraPlayer.cs: e587e6ccdc91088544be7a830e3a8691 -> 2edb6e467efdefec34368a624fe0cdbe
-  custom:scripting/monoscript/fileName/LobbyPanel.cs: 9ab7b2c744930e0d7b82d86d7a61b852 -> 9b747fb3697dbd407932db27160a2e48
-  custom:scripting/monoscript/fileName/NetworkActionObject.cs: 544f78708e05bfd0bb6ce5bb7c101745 -> 2cbd407356092d0029ceb9c3bcc47c78
-  custom:scripting/monoscript/fileName/PhysicsTool.cs: 384685759032e9c2f2b26816aae79585 -> 307f939e0bad2fc102922950a596a50d
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/Lever.cs: 35a737e4bb4294292d5f9b699e07c191 -> 3c24e28f0eb548686ac636767388a16c
-  custom:scripting/monoscript/fileName/FXTool.cs: 4006902a73eaafdf9bd6fe709c65c7d9 -> b25c184df3e40ac2d4bf7e00958372b9
-  custom:scripting/monoscript/fileName/TankPlayerUI.cs: 3c962f712b446ddc2987b5d15fb16918 -> f165675ec0b059be7f7605c8bdbe5dde
-  custom:scripting/monoscript/fileName/Door.cs: 526ec49ed1a2adfd51e10b933ab65aa0 -> f41abdcb929b2f623225a9114447efa6
-  custom:scripting/monoscript/fileName/NetworkData.cs: 1aa2bab5b3685173c868f2faa8190a7c -> 0093a4511471922be45551b9d6addee4
-  custom:scripting/monoscript/fileName/TimeTool.cs: 81c7bf76c4cde0ec160c1492a68e2fa6 -> d2462c4162e857379e71aacd05ab1b6b
-  custom:scripting/monoscript/fileName/Tank.cs: 35a8d38673de7a0d563db2a42ab62910 -> 76382e52df219c6deac7ad2d3a6c223b
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/LobbyMatchmakingPanel.cs: 4c7e49b4c2cd364fb3c63233f83c0f2c -> b77533cd32b68cde98cc14336479f827
-  custom:scripting/monoscript/fileName/TheNetwork.cs: e63c393eb900ed50d159855f5cae7bad -> a981984f7f0476f30773c2c5435af779
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/LobbyConnectPanel.cs: f69b4fe35341a854a429fd746848e0f8 -> 74c3b733295384c618869aa6dd295077
-  custom:scripting/monoscript/fileName/ServerLobby.cs: f1b8b3bccd33f0e31d8a54303d2b706a -> 669e66f80f71e52ee053b079693b807e
-  custom:scripting/monoscript/fileName/DemoData.cs: 316ac96590f9af5e06d673267d674c62 -> e5c331e5623aca649fe21ef633ba6f05
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/WebServer.cs: 2231f096d44a13ff3582799ee1400b46 -> 3a10bd93006a0281d3bcf7434c11fb8b
-  custom:scripting/monoscript/fileName/AuthenticatorGoogle.cs: 289a263aa357b07ffa37013ef07b72d1 -> 96d1a5cbd35248247a905d48e1993f9e
-  custom:scripting/monoscript/fileName/ListTool.cs: 847822a67c137a76adaa25a978401a9b -> 21d2821e1c962ec808006622a0ee6590
-  custom:scripting/monoscript/fileName/SNetworkVariable.cs: 1df76bcd92dcbd6ba6f4df6ec3010df4 -> 45c186ae69265f4e9c8131fc3370a1fb
-  custom:scripting/monoscript/fileName/NetworkActionInt.cs: b01861228e2e487558239ed5317e1f56 -> 29b57103aad5a1a141892c493a13da15
-  custom:scripting/monoscript/fileName/ItemAttach.cs: 645533f0faaa50974100678b8dfa961b -> a6a12f374503ca25f4ab1bc3099f25c7
-  custom:scripting/monoscript/fileName/PlayerSpawn.cs: 6e411ef90f9d6e732a7d8634d523e77f -> bd897612e05dbddbe7372b0e0f2510bd
-  custom:scripting/monoscript/fileName/Treasure.cs: 1de5476992cd10578d3d443071f01541 -> b78085f5a2ad54278ca0f25118a33230
-  custom:scripting/monoscript/fileName/Box.cs: ab0b3533a49232604629c2c4b4151642 -> 97a809cac09d068e17fc35194e0577c8
-  custom:scripting/monoscript/fileName/NetworkTool.cs: 647fadb32befaff28b5a3a8d677398b8 -> e1b5ff7badff1eae053af5cb6d4f86ac
-  custom:scripting/monoscript/fileName/Authenticator.cs: cb5ae288e230662bc68bf4013652c6d8 -> 4dd6dcd45dff0f6e72bcb0047bd0492f
-  custom:scripting/monoscript/fileName/SNetworkPlayer.cs: 4261fee37f803d5db48e4272ba557dac -> 664f972ba15331b8de3f65ad4202a40c
-  custom:scripting/monoscript/fileName/ReadOnlyAttribute.cs: 308f757bf2702375ae5286b3141c9277 -> af71b440f02684e4e0bda6ed283e6cba
-  custom:scripting/monoscript/fileName/AuthenticatorSteam.cs: 2ac9c20c2c5bb6ac7040e6644e956a0e -> ec4f7b02b91cfb35ce6642f36d8bac4f
-  custom:scripting/monoscript/fileName/ClientLobbyDedicated.cs: 60b47e860939ffd8f6ee43d59709732b -> 7d49c3e07c8b1d13ca9ff2622794ccdf
-  custom:scripting/monoscript/fileName/WebClient.cs: 06543f6b34e44eafac27a7cbf3c49ccd -> dafbcf9ade90c09cb9ecaf83f39d486a
-  custom:scripting/monoscript/fileName/SMonoBehaviour.cs: dc750b6b0c46413d0a7c7bbb35d1a50e -> 73009864cbc1b99bb4d59e72876e3692
-  custom:scripting/monoscript/fileName/PuzzleGame.cs: ac89a296067d7ec518e6fe1aa15b6a45 -> 0c65994813dad3909ede40d9a056fb47
-  custom:scripting/monoscript/fileName/NetworkRelay.cs: b56777c546db83344846f46b638685ff -> d11647a703704cf7546e2a561b30fc9d
-  custom:scripting/monoscript/fileName/Hazard.cs: 47bc9974ee91c00ce86b71a06be028dd -> bbad82045fa75b7d78ba9ce109a83896
-  custom:scripting/monoscript/fileName/Explorer.cs: aed8275f1e0851243dcd88e0aa01cffa -> 172c33633926f55565e3ffcb0ec2db96
-  custom:scripting/monoscript/fileName/UIFaceCam.cs: 2e5fad6cb9608548bf7668a28244ec2e -> dc2afc2f28bd5df32646de056988b9ce
-  custom:scripting/monoscript/fileName/NetworkActionFloat.cs: c73dc5adc276dc5cdebd96941c17520d -> ee27ef6fa4366fa5550bb593965c1524
-  custom:scripting/monoscript/fileName/NetworkActionBehaviour.cs: cba7e38dab38a4d9dea71e822a864a0b -> 7cf555c251a5510a4afda8dcd42afb34
-  custom:scripting/monoscript/fileName/SNetworkBehaviour.cs: 54bfa672ae04dffbefbb935d3454e012 -> 9136434d6d2fac2b2c545cc32f8703dd
-  custom:scripting/monoscript/fileName/MenuLobby.cs: dcd49940b3f9d3239136a4eacb1fcc49 -> 23ae54375074a98245f891c364a99e77
-  custom:scripting/monoscript/fileName/ServerLauncher.cs: 6e84aa47017e4e6e33836a047064beb3 -> b96372c3f7ee8ca2956e522a017089f8
-  custom:scripting/monoscript/fileName/SceneNav.cs: e66fdceebf49439439d830472411bd42 -> 161a8d12a070c95e104d8ccf39c9bace
-  custom:scripting/monoscript/fileName/GameUI.cs: 19d528b6f31d4084ff347c0b1685eeda -> 10475e5cc1bd97e73e38425622e98ace
-  custom:scripting/monoscript/fileName/GameData.cs: d0e36055dccbc4fcbbf301b4f3d14f58 -> 310724a88c2bafe5b08481fb27c7625c
-  custom:scripting/monoscript/fileName/NetworkMessaging.cs: bdbb6e47d0d17cb96595c594883d360c -> 284e2661dbda293d0b0b64e6bfcafb59
-  custom:scripting/monoscript/fileName/NetworkSpawner.cs: a170ca80d5d02e17d24ec0bda7962a27 -> ceea2cd2bd7b972d9f6a6fc24df4419e
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/NetworkActionVector.cs: fa025b7457503b504efbac15e22cfe19 -> bff05d8e41c01848b83e2f72292a808e
-  custom:scripting/monoscript/fileName/ArrowSpawn.cs: 3515f63f34342f6cca349d9da3d974d2 -> 39c3bff2e6c82fcf41b4ebfae375b9d7
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/LobbyMatchSelectPanel.cs: 82d7382bae4cdb4d4d630c24e22c79e8 -> 7691085597563c23ddccc92f9b3e3c27
-  custom:scripting/monoscript/fileName/FloorSwitch.cs: 0da2b6ee2477c0f8b936feafad496d15 -> 49d8ff1e0e0b70576ecf255e33196b08
-  custom:scripting/monoscript/fileName/AuthenticatorTest.cs: fe0e564d8629219e494203c63562d1e2 -> b6402c7e4e0220e9e96902d815bf513e
-  custom:scripting/monoscript/fileName/TankGame.cs: e2774b20d231cd51df2480dcfbcce618 -> e88fadbc4460fb3252f39b7f177caca0
-  custom:scripting/monoscript/fileName/PlayerChoiceData.cs: 54be1689f93859699b958b827fcb71b2 -> f0a9e1ad281efc8497b3c90d9e741e1f
-  custom:scripting/monoscript/fileName/TimeToolMono.cs: c74fee5c19316ec3b77d9092c4925098 -> 2a767ef4b816618788f8ef7d30db2d33
-  custom:scripting/monoscript/fileName/Arrow.cs: 6886afd572a25dafe9ce8dde872bd317 -> 8b9c7af10d4beae6023990cb4c6cd327
-  custom:scripting/monoscript/fileName/NetworkActionSerializable.cs: 7638458893b455bfa94f75e0b21d0b28 -> f434542aadb1b2f234ae9769a9d90e39
-  custom:scripting/monoscript/fileName/SNetworkOptimizer.cs: baf3444d311a128623e686d8ed1f9bb9 -> 2f3092fac73e9d6b5470eff83afe82a4
-  custom:scripting/monoscript/fileName/Key.cs: 9e05fbee7c806f15b9fd0b14752386bb -> ec3fabf68d03ad239fc893ef7f565063
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/Wall.cs: 6d00edb3e122c4b38116e983dc96d906 -> 0a072906504c699913e6a9ee44323f2a
-  custom:scripting/monoscript/fileName/FloorTrap.cs: 1b8356ed356016c81d2c22609df9f57d -> 6a0198dab35def22e0ceb5daca0d54c8
-  custom:scripting/monoscript/fileName/ChatUI.cs: 332cfeff9e06ddd16c9499a38b5f1d30 -> 68a817afcad4311fd1f61cf01da744cf
-  custom:scripting/monoscript/fileName/TankBullet.cs: 3ba2da03675dcf42dd3ef8211dba7d15 -> 37e81d02f8d5bd98c9b03e77c399bf6e
-  custom:scripting/monoscript/fileName/GameModeData.cs: 5556a2ed53a1106725b7a2f4ef88406c -> 7ab1c11f5c9942f95bd8b216d8e33b30
-  custom:scripting/monoscript/fileName/AutoChangeOwner.cs: 545df94917b68fce2e110a19b37018cf -> e5f1b94a1c4ee6878a2f579e03d1df71
-  custom:scripting/monoscript/fileName/Pool.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
-  custom:scripting/monoscript/fileName/SNetworkObject.cs: 13c11f8ceed01fe5fa93cd11de5dbbf3 -> e024ab86d05fc43aaf810eabbed6b109
-  custom:scripting/monoscript/fileName/AuthenticatorUnity.cs: 33d5658b94efb777eebf48b09a5106ef -> 0a1fdcdef73dff436dc83fb79cd0327f
-  custom:scripting/monoscript/fileName/GameOverPanel.cs: aece3fb40ae4172d2b2bec6a6868ca5e -> 840c4a3a15790009570ec76bd75e4632
-  custom:scripting/monoscript/fileName/ServerMatchmaker.cs: 4bd7843c66821645ae4924573e521a86 -> c16e612a74f4a5edb4e91123e6bdea25
-  custom:scripting/monoscript/fileName/NetworkPrefabHandler.cs: d5c195cead23a1afeb2d3df3eaf46cfa -> 8b5a68a10ddf5fa2a95db87b74530d29
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.846 seconds
-Refreshing native plugins compatible for Editor in 12.87 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.498 seconds
-Domain Reload Profiling: 2342ms
-	BeginReloadAssembly (252ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (80ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (87ms)
-	LoadAllAssembliesAndSetupDomain (445ms)
-		LoadAssemblies (546ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (21ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1499ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (726ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (122ms)
-			ProcessInitializeOnLoadAttributes (523ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 12.40 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5028 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (43.5 KB). Loaded Objects now: 5479.
-Memory consumption went from 159.3 MB to 159.3 MB.
-Total: 8.105500 ms (FindLiveObjects: 0.693900 ms CreateObjectMapping: 0.329800 ms MarkObjects: 6.893800 ms  DeleteObjects: 0.186200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/NetworkActionString.cs: 3fdfcfe5088a09eda361624776113157 -> daefed6c55aed7ce3f8bf0efda765dee
-  custom:scripting/monoscript/fileName/SNetworkTransform.cs: e3c5a4a0dd8219bc481622261b5ad5a3 -> 0b48b4a863b8622379061bddc7a8c19b
-  custom:scripting/monoscript/fileName/TheNetworkDemo.cs: 7817c447b4c45c77196e38ade40bbfbb -> c8e86a19ec6b039aa2975e5e1da0005c
-  custom:scripting/monoscript/fileName/ConnectingPanel.cs: ac938adb83d2337649dcc22ae61e9a49 -> ad11a5f09ad5d701465cf3605e9bdb20
-  custom:scripting/monoscript/fileName/OptionSelectorInt.cs: 973c1f0566d823bf5f823877de81d81b -> 03075c71455d90b1ba642e33d6643a5a
-  custom:scripting/monoscript/fileName/SNetworkGroup.cs: f54d4a365ec1c9f64adca28111984da0 -> 476829700a851940dd0d5d0ce7e298a6
-  custom:scripting/monoscript/fileName/BlackPanel.cs: 2b53116edaa373408d786a40fc846c3f -> 0c2bdee07d83ec2d23242e539d0d2641
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/PlayerLine.cs: 8fe84138caacf384491e70fe2a704e9f -> 3e7048325d2cb916c35cbdd21bc35b36
-  custom:scripting/monoscript/fileName/IconBar.cs: 7d650315c39fed7ae9a8b8d628c1da8f -> 5e8b405b6af7edffd87eb4d8fe2ae269
-  custom:scripting/monoscript/fileName/ClientLobby.cs: 299a012e3121112d8c26573d953c44c9 -> a652c6a0db4056878bee5a786674c08c
-  custom:scripting/monoscript/fileName/Menu.cs: 56f8b2798f74afff56b09ef642c2b0ce -> 39704cade04e7d48b6e61a4cf4b7ee3a
-  custom:scripting/monoscript/fileName/LobbyCreatePanel.cs: 3f6d39478eb6cae6ad55ad17d756261f -> 46812356cf3339129b0bf6204d7f074f
-  custom:scripting/monoscript/fileName/PlayerCube.cs: 3607d776a2bacc33930b82e976f721b4 -> b2379535833bd6cf5ba9abd17032476d
-  custom:scripting/monoscript/fileName/UIPanel.cs: 64673c24f49f10a22428d63040af3ece -> 16baa8c5175325c4d180a178be42f668
-  custom:scripting/monoscript/fileName/NetworkActionSimple.cs: b05ef362b435dbc137f5de7b47b39a05 -> 4935cc96cb2cd12ba86e752009df4eff
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:scripting/monoscript/fileName/NetworkChat.cs: 19564776a21b5e7b0c4d444745b7220f -> 20e43982f76a1f9529cdcdcd1414fb47
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/ServerLobbyConfig.cs: 028910a3e96875421a9219880c14a119 -> 51fb94b905ef04cc91047251265490f4
-  custom:scripting/monoscript/fileName/NetworkGame.cs: 64fcb2ffd5cb80722751a354f8d92ca2 -> d088f39f2b83a50d7e812248b33611c8
-  custom:scripting/monoscript/fileName/LobbyLine.cs: 17713ef515a35343285cbc96231dba91 -> 852b6dd897a3495c7416c60aed693824
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/Tower.cs: db57c81e9f931a6ae5a520813e0c447d -> a20db5024a4a72431aae4180e6dfa7db
-  custom:scripting/monoscript/fileName/SaveTool.cs: 61b8d9c6497290e0058778d308f7a988 -> 36316754670227fd0b1041e9b101dfdf
-  custom:scripting/monoscript/fileName/ServerGame.cs: 68279d2c22cf7fcbb2306dd2a6deea69 -> 866c600c6c947d0f95661fd2fce7c07d
-  custom:scripting/monoscript/fileName/WebTool.cs: 1bc399cb3f1a9844c05f8de7c51d1e95 -> 3f78a2afbe71663091c8902d6f05b86a
-  custom:scripting/monoscript/fileName/Gun.cs: baca4c64a5e3a9a998c8b9e678efde97 -> 7d05faef1ad0b187da47b70860e6ba9a
-  custom:scripting/monoscript/fileName/PlayerControls.cs: 8eaac34d2b2e9055ff20956cf36a987c -> c56f2041818f7da41e34f0b627b79d0f
-  custom:scripting/monoscript/fileName/SNetworkActions.cs: b77ccfe34413cd860235648070e1b3bb -> f7676dc8adcd5370544a88bf8e2d504b
-  custom:scripting/monoscript/fileName/NetworkAction.cs: 8f018f64aebf5ad87a46cbe22cdbca5b -> 170bb16002818746cf710ba5da630f1f
-  custom:scripting/monoscript/fileName/OptionSelector.cs: 7d99b824c041d48bb3f4149d152defee -> 7017aa490b91409d6ca9ad8fc473c823
-  custom:scripting/monoscript/fileName/SimpleGame.cs: 735601ee048d6d4708edc5c79829894d -> a37eab1d73f2e84209afe022e4616720
-  custom:scripting/monoscript/fileName/Powerup.cs: ca33a3a8a5a4bb90044027b3f1831e03 -> e2c651a8ea3b5dbed9d56de7ff48e22b
-  custom:scripting/monoscript/fileName/WebGLTool.cs: 16f93648227c4e7d5e4de5b08ccc6b79 -> 59604412a27c9c58d5a8295740ea8fed
-  custom:scripting/monoscript/fileName/NetworkActionBytes.cs: f3db94f6b5f7ecf993ae6ca37e913c06 -> 1b1ac9e182027a5b58f2195faee37ae1
-  custom:scripting/monoscript/fileName/LobbyRoomPanel.cs: f3d3beabe242dc21895ebd3df05f2cfd -> 6986654e2087b62db05e0ac1a94d3788
-  custom:scripting/monoscript/fileName/PlayerData.cs: cf19a605da2d2c6e8c88dedfb939e650 -> 83b6e4829f1ab06eaba603891d665bc9
-  custom:scripting/monoscript/fileName/Vector3Data.cs: 1bb9625a3d86d8a36a252537abe10251 -> afe57c7d3c0fe50eed080c6cc55cc6c6
-  custom:scripting/monoscript/fileName/ProgressBar.cs: 9cb1e949b0699b6781211b710c88f3ee -> 7dcb9dd7709b5017cde6b10e71050f3c
-  custom:scripting/monoscript/fileName/ClientLobbyService.cs: 362c6eb9ceef8cdf31ce0f6fe4a4fcf5 -> d99b546100c168aca0a5e94d1a836a59
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:scripting/monoscript/fileName/CameraTank.cs: 890cdfd73889cd6e77dd667f53b56da0 -> eb3db14bf84850dc5e7dbc28e3ca13dc
-  custom:scripting/monoscript/fileName/CameraPlayer.cs: e587e6ccdc91088544be7a830e3a8691 -> 2edb6e467efdefec34368a624fe0cdbe
-  custom:scripting/monoscript/fileName/LobbyPanel.cs: 9ab7b2c744930e0d7b82d86d7a61b852 -> 9b747fb3697dbd407932db27160a2e48
-  custom:scripting/monoscript/fileName/NetworkActionObject.cs: 544f78708e05bfd0bb6ce5bb7c101745 -> 2cbd407356092d0029ceb9c3bcc47c78
-  custom:scripting/monoscript/fileName/PhysicsTool.cs: 384685759032e9c2f2b26816aae79585 -> 307f939e0bad2fc102922950a596a50d
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/Lever.cs: 35a737e4bb4294292d5f9b699e07c191 -> 3c24e28f0eb548686ac636767388a16c
-  custom:scripting/monoscript/fileName/FXTool.cs: 4006902a73eaafdf9bd6fe709c65c7d9 -> b25c184df3e40ac2d4bf7e00958372b9
-  custom:scripting/monoscript/fileName/TankPlayerUI.cs: 3c962f712b446ddc2987b5d15fb16918 -> f165675ec0b059be7f7605c8bdbe5dde
-  custom:scripting/monoscript/fileName/Door.cs: 526ec49ed1a2adfd51e10b933ab65aa0 -> f41abdcb929b2f623225a9114447efa6
-  custom:scripting/monoscript/fileName/NetworkData.cs: 1aa2bab5b3685173c868f2faa8190a7c -> 0093a4511471922be45551b9d6addee4
-  custom:scripting/monoscript/fileName/TimeTool.cs: 81c7bf76c4cde0ec160c1492a68e2fa6 -> d2462c4162e857379e71aacd05ab1b6b
-  custom:scripting/monoscript/fileName/Tank.cs: 35a8d38673de7a0d563db2a42ab62910 -> 76382e52df219c6deac7ad2d3a6c223b
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/LobbyMatchmakingPanel.cs: 4c7e49b4c2cd364fb3c63233f83c0f2c -> b77533cd32b68cde98cc14336479f827
-  custom:scripting/monoscript/fileName/TheNetwork.cs: e63c393eb900ed50d159855f5cae7bad -> a981984f7f0476f30773c2c5435af779
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/LobbyConnectPanel.cs: f69b4fe35341a854a429fd746848e0f8 -> 74c3b733295384c618869aa6dd295077
-  custom:scripting/monoscript/fileName/ServerLobby.cs: f1b8b3bccd33f0e31d8a54303d2b706a -> 669e66f80f71e52ee053b079693b807e
-  custom:scripting/monoscript/fileName/DemoData.cs: 316ac96590f9af5e06d673267d674c62 -> e5c331e5623aca649fe21ef633ba6f05
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/WebServer.cs: 2231f096d44a13ff3582799ee1400b46 -> 3a10bd93006a0281d3bcf7434c11fb8b
-  custom:scripting/monoscript/fileName/AuthenticatorGoogle.cs: 289a263aa357b07ffa37013ef07b72d1 -> 96d1a5cbd35248247a905d48e1993f9e
-  custom:scripting/monoscript/fileName/ListTool.cs: 847822a67c137a76adaa25a978401a9b -> 21d2821e1c962ec808006622a0ee6590
-  custom:scripting/monoscript/fileName/SNetworkVariable.cs: 1df76bcd92dcbd6ba6f4df6ec3010df4 -> 45c186ae69265f4e9c8131fc3370a1fb
-  custom:scripting/monoscript/fileName/NetworkActionInt.cs: b01861228e2e487558239ed5317e1f56 -> 29b57103aad5a1a141892c493a13da15
-  custom:scripting/monoscript/fileName/ItemAttach.cs: 645533f0faaa50974100678b8dfa961b -> a6a12f374503ca25f4ab1bc3099f25c7
-  custom:scripting/monoscript/fileName/PlayerSpawn.cs: 6e411ef90f9d6e732a7d8634d523e77f -> bd897612e05dbddbe7372b0e0f2510bd
-  custom:scripting/monoscript/fileName/Treasure.cs: 1de5476992cd10578d3d443071f01541 -> b78085f5a2ad54278ca0f25118a33230
-  custom:scripting/monoscript/fileName/Box.cs: ab0b3533a49232604629c2c4b4151642 -> 97a809cac09d068e17fc35194e0577c8
-  custom:scripting/monoscript/fileName/NetworkTool.cs: 647fadb32befaff28b5a3a8d677398b8 -> e1b5ff7badff1eae053af5cb6d4f86ac
-  custom:scripting/monoscript/fileName/Authenticator.cs: cb5ae288e230662bc68bf4013652c6d8 -> 4dd6dcd45dff0f6e72bcb0047bd0492f
-  custom:scripting/monoscript/fileName/SNetworkPlayer.cs: 4261fee37f803d5db48e4272ba557dac -> 664f972ba15331b8de3f65ad4202a40c
-  custom:scripting/monoscript/fileName/ReadOnlyAttribute.cs: 308f757bf2702375ae5286b3141c9277 -> af71b440f02684e4e0bda6ed283e6cba
-  custom:scripting/monoscript/fileName/AuthenticatorSteam.cs: 2ac9c20c2c5bb6ac7040e6644e956a0e -> ec4f7b02b91cfb35ce6642f36d8bac4f
-  custom:scripting/monoscript/fileName/ClientLobbyDedicated.cs: 60b47e860939ffd8f6ee43d59709732b -> 7d49c3e07c8b1d13ca9ff2622794ccdf
-  custom:scripting/monoscript/fileName/WebClient.cs: 06543f6b34e44eafac27a7cbf3c49ccd -> dafbcf9ade90c09cb9ecaf83f39d486a
-  custom:scripting/monoscript/fileName/SMonoBehaviour.cs: dc750b6b0c46413d0a7c7bbb35d1a50e -> 73009864cbc1b99bb4d59e72876e3692
-  custom:scripting/monoscript/fileName/PuzzleGame.cs: ac89a296067d7ec518e6fe1aa15b6a45 -> 0c65994813dad3909ede40d9a056fb47
-  custom:scripting/monoscript/fileName/NetworkRelay.cs: b56777c546db83344846f46b638685ff -> d11647a703704cf7546e2a561b30fc9d
-  custom:scripting/monoscript/fileName/Hazard.cs: 47bc9974ee91c00ce86b71a06be028dd -> bbad82045fa75b7d78ba9ce109a83896
-  custom:scripting/monoscript/fileName/Explorer.cs: aed8275f1e0851243dcd88e0aa01cffa -> 172c33633926f55565e3ffcb0ec2db96
-  custom:scripting/monoscript/fileName/UIFaceCam.cs: 2e5fad6cb9608548bf7668a28244ec2e -> dc2afc2f28bd5df32646de056988b9ce
-  custom:scripting/monoscript/fileName/NetworkActionFloat.cs: c73dc5adc276dc5cdebd96941c17520d -> ee27ef6fa4366fa5550bb593965c1524
-  custom:scripting/monoscript/fileName/NetworkActionBehaviour.cs: cba7e38dab38a4d9dea71e822a864a0b -> 7cf555c251a5510a4afda8dcd42afb34
-  custom:scripting/monoscript/fileName/SNetworkBehaviour.cs: 54bfa672ae04dffbefbb935d3454e012 -> 9136434d6d2fac2b2c545cc32f8703dd
-  custom:scripting/monoscript/fileName/MenuLobby.cs: dcd49940b3f9d3239136a4eacb1fcc49 -> 23ae54375074a98245f891c364a99e77
-  custom:scripting/monoscript/fileName/ServerLauncher.cs: 6e84aa47017e4e6e33836a047064beb3 -> b96372c3f7ee8ca2956e522a017089f8
-  custom:scripting/monoscript/fileName/SceneNav.cs: e66fdceebf49439439d830472411bd42 -> 161a8d12a070c95e104d8ccf39c9bace
-  custom:scripting/monoscript/fileName/GameUI.cs: 19d528b6f31d4084ff347c0b1685eeda -> 10475e5cc1bd97e73e38425622e98ace
-  custom:scripting/monoscript/fileName/GameData.cs: d0e36055dccbc4fcbbf301b4f3d14f58 -> 310724a88c2bafe5b08481fb27c7625c
-  custom:scripting/monoscript/fileName/NetworkMessaging.cs: bdbb6e47d0d17cb96595c594883d360c -> 284e2661dbda293d0b0b64e6bfcafb59
-  custom:scripting/monoscript/fileName/NetworkSpawner.cs: a170ca80d5d02e17d24ec0bda7962a27 -> ceea2cd2bd7b972d9f6a6fc24df4419e
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/NetworkActionVector.cs: fa025b7457503b504efbac15e22cfe19 -> bff05d8e41c01848b83e2f72292a808e
-  custom:scripting/monoscript/fileName/ArrowSpawn.cs: 3515f63f34342f6cca349d9da3d974d2 -> 39c3bff2e6c82fcf41b4ebfae375b9d7
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/LobbyMatchSelectPanel.cs: 82d7382bae4cdb4d4d630c24e22c79e8 -> 7691085597563c23ddccc92f9b3e3c27
-  custom:scripting/monoscript/fileName/FloorSwitch.cs: 0da2b6ee2477c0f8b936feafad496d15 -> 49d8ff1e0e0b70576ecf255e33196b08
-  custom:scripting/monoscript/fileName/AuthenticatorTest.cs: fe0e564d8629219e494203c63562d1e2 -> b6402c7e4e0220e9e96902d815bf513e
-  custom:scripting/monoscript/fileName/TankGame.cs: e2774b20d231cd51df2480dcfbcce618 -> e88fadbc4460fb3252f39b7f177caca0
-  custom:scripting/monoscript/fileName/PlayerChoiceData.cs: 54be1689f93859699b958b827fcb71b2 -> f0a9e1ad281efc8497b3c90d9e741e1f
-  custom:scripting/monoscript/fileName/TimeToolMono.cs: c74fee5c19316ec3b77d9092c4925098 -> 2a767ef4b816618788f8ef7d30db2d33
-  custom:scripting/monoscript/fileName/Arrow.cs: 6886afd572a25dafe9ce8dde872bd317 -> 8b9c7af10d4beae6023990cb4c6cd327
-  custom:scripting/monoscript/fileName/NetworkActionSerializable.cs: 7638458893b455bfa94f75e0b21d0b28 -> f434542aadb1b2f234ae9769a9d90e39
-  custom:scripting/monoscript/fileName/SNetworkOptimizer.cs: baf3444d311a128623e686d8ed1f9bb9 -> 2f3092fac73e9d6b5470eff83afe82a4
-  custom:scripting/monoscript/fileName/Key.cs: 9e05fbee7c806f15b9fd0b14752386bb -> ec3fabf68d03ad239fc893ef7f565063
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/Wall.cs: 6d00edb3e122c4b38116e983dc96d906 -> 0a072906504c699913e6a9ee44323f2a
-  custom:scripting/monoscript/fileName/FloorTrap.cs: 1b8356ed356016c81d2c22609df9f57d -> 6a0198dab35def22e0ceb5daca0d54c8
-  custom:scripting/monoscript/fileName/ChatUI.cs: 332cfeff9e06ddd16c9499a38b5f1d30 -> 68a817afcad4311fd1f61cf01da744cf
-  custom:scripting/monoscript/fileName/TankBullet.cs: 3ba2da03675dcf42dd3ef8211dba7d15 -> 37e81d02f8d5bd98c9b03e77c399bf6e
-  custom:scripting/monoscript/fileName/GameModeData.cs: 5556a2ed53a1106725b7a2f4ef88406c -> 7ab1c11f5c9942f95bd8b216d8e33b30
-  custom:scripting/monoscript/fileName/AutoChangeOwner.cs: 545df94917b68fce2e110a19b37018cf -> e5f1b94a1c4ee6878a2f579e03d1df71
-  custom:scripting/monoscript/fileName/Pool.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
-  custom:scripting/monoscript/fileName/SNetworkObject.cs: 13c11f8ceed01fe5fa93cd11de5dbbf3 -> e024ab86d05fc43aaf810eabbed6b109
-  custom:scripting/monoscript/fileName/AuthenticatorUnity.cs: 33d5658b94efb777eebf48b09a5106ef -> 0a1fdcdef73dff436dc83fb79cd0327f
-  custom:scripting/monoscript/fileName/GameOverPanel.cs: aece3fb40ae4172d2b2bec6a6868ca5e -> 840c4a3a15790009570ec76bd75e4632
-  custom:scripting/monoscript/fileName/ServerMatchmaker.cs: 4bd7843c66821645ae4924573e521a86 -> c16e612a74f4a5edb4e91123e6bdea25
-  custom:scripting/monoscript/fileName/NetworkPrefabHandler.cs: d5c195cead23a1afeb2d3df3eaf46cfa -> 8b5a68a10ddf5fa2a95db87b74530d29
 ========================================================================
 Received Import Request.
-  Time since last request: 9319.177288 seconds.
-  path: Assets/Prefabs/Tank/TankGreen.prefab
-  artifactKey: Guid(5ec76f2fa5a4cb142a862b194b1dbb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tank/TankGreen.prefab using Guid(5ec76f2fa5a4cb142a862b194b1dbb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 35615.648607 seconds.
+  path: Assets/Low Poly Stylized Gun Demo/Low Poly Stylized Gun/Fbx/Assult Rifel 1 .fbx
+  artifactKey: Guid(2773c8b4eb454e94d890a4701d22b7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Stylized Gun Demo/Low Poly Stylized Gun/Fbx/Assult Rifel 1 .fbx using Guid(2773c8b4eb454e94d890a4701d22b7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '5f0d35c243ddaa8bdbf62a93b571e84a') in 0.217432 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '22e0b752ab54a9a3b0ef43aaca0a7996') in 0.207431 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 124
+Number of asset objects unloaded after import = 8
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Prefabs/Tank/TankOrange.prefab
-  artifactKey: Guid(cbf154bd4ef729b4287ddfe3fb418872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tank/TankOrange.prefab using Guid(cbf154bd4ef729b4287ddfe3fb418872) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/PowerupLightning.fbx
+  artifactKey: Guid(a0fc6ee5b56bc514d8e58a2608e9c0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/PowerupLightning.fbx using Guid(a0fc6ee5b56bc514d8e58a2608e9c0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'a71e0fd2e1b0c4d5733a71bdf33db150') in 0.031010 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f190a69a92003f3c79fdc2c291b4f48a') in 0.024746 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 124
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Anims/character@swimming.fbx
+  artifactKey: Guid(985a971563a04414dbe15113463af436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Anims/character@swimming.fbx using Guid(985a971563a04414dbe15113463af436) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '1c606001cf908145ded02ffda453f638') in 0.054551 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 81
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Foot_Switch.fbx
+  artifactKey: Guid(5cfa26382de9f35449561000cd847d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Foot_Switch.fbx using Guid(5cfa26382de9f35449561000cd847d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f9de892518c55268ce62ab5c56ca97ee') in 0.027254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Low Poly Stylized Gun Demo/Low Poly Stylized Gun/Fbx/Sniper Rifel .fbx
+  artifactKey: Guid(90d5e7e358a13b0469d9dec9907745eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Stylized Gun Demo/Low Poly Stylized Gun/Fbx/Sniper Rifel .fbx using Guid(90d5e7e358a13b0469d9dec9907745eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9dabc3b3cdce4e5bb511c6cfa840cfea') in 0.012764 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/Anims/character@take.fbx
+  artifactKey: Guid(1ee8afa2d8e6fc74babb14e48d026618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Anims/character@take.fbx using Guid(1ee8afa2d8e6fc74babb14e48d026618) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'db08f9be1ed74184586114b873663b3f') in 0.033797 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 81
+========================================================================
+Received Import Request.
+  Time since last request: 5.213274 seconds.
+  path: Assets/Models/Walls.fbx
+  artifactKey: Guid(b2377f018c9fc36498e83f7cdcda0c3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Walls.fbx using Guid(b2377f018c9fc36498e83f7cdcda0c3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '106b470f53d74cdd25c11f071a969e9f') in 0.257074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 6.871908 seconds.
+  path: Assets/Materials/BrickInner.mat
+  artifactKey: Guid(2b5d4c4dda3838c48a074dd0924ec980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/BrickInner.mat using Guid(2b5d4c4dda3838c48a074dd0924ec980) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '7db02ff80d0ae124aa27cb97e55011aa') in 0.015151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/FX/Explosion/Explosion.mat
+  artifactKey: Guid(bc4967ed2a00bc147bf8b2fd775f9a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FX/Explosion/Explosion.mat using Guid(bc4967ed2a00bc147bf8b2fd775f9a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '86ca91ff63e6db0d60e78b1f046cf124') in 0.141075 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.265187 seconds.
+  path: Assets/Materials/PlayerRed.mat
+  artifactKey: Guid(ed4292104e22cfb4989a2b186c5c4222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PlayerRed.mat using Guid(ed4292104e22cfb4989a2b186c5c4222) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'b2c8ffaaaddc9624780ceee9f7cdacd4') in 0.007528 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.649850 seconds.
+  path: Assets/Materials/SpawnSquare.mat
+  artifactKey: Guid(dfcbed12abc89cf49938793fc5668cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SpawnSquare.mat using Guid(dfcbed12abc89cf49938793fc5668cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '63a3ddb6a9b884754afb2893090e80f1') in 0.007425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.048082 seconds.
+  path: Assets/Materials/SwitchEdge.mat
+  artifactKey: Guid(d097d2df106459e419ac0969be4073a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SwitchEdge.mat using Guid(d097d2df106459e419ac0969be4073a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8d07854c076c4295da229167282e0672') in 0.007316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 32.906075 seconds.
+  path: Assets/Materials/wood.png
+  artifactKey: Guid(f32a34c91a4caf84981606ab1ed33fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/wood.png using Guid(f32a34c91a4caf84981606ab1ed33fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c2588a743d233deb716ed4535f918fdf') in 0.049156 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 16.933802 seconds.
+  path: Assets/Resources/Players/PuzzleRed.asset
+  artifactKey: Guid(02e0ca5eaad0d924792a350d033d8182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Players/PuzzleRed.asset using Guid(02e0ca5eaad0d924792a350d033d8182) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'caf9c327fa082153350e58be8d3b4756') in 0.011804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 101
 ========================================================================
 Received Prepare
+Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.758 seconds
-Refreshing native plugins compatible for Editor in 11.34 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.564 seconds
 Native extension for WindowsStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.606 seconds
-Domain Reload Profiling: 2361ms
-	BeginReloadAssembly (213ms)
+- Finished resetting the current domain, in  0.921 seconds
+Domain Reload Profiling: 1482ms
+	BeginReloadAssembly (168ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (59ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (413ms)
-		LoadAssemblies (483ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (287ms)
+		LoadAssemblies (333ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (43ms)
-			TypeCache.Refresh (20ms)
-				TypeCache.ScanAssembly (4ms)
-			ScanForSourceGeneratedMonoScriptInfo (14ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1607ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (803ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (144ms)
-			ProcessInitializeOnLoadAttributes (582ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 10.92 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5027 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (43.5 KB). Loaded Objects now: 5491.
-Memory consumption went from 163.4 MB to 163.3 MB.
-Total: 5.142600 ms (FindLiveObjects: 0.490600 ms CreateObjectMapping: 0.386700 ms MarkObjects: 4.171900 ms  DeleteObjects: 0.092100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/NetworkActionString.cs: 3fdfcfe5088a09eda361624776113157 -> daefed6c55aed7ce3f8bf0efda765dee
-  custom:scripting/monoscript/fileName/SNetworkTransform.cs: e3c5a4a0dd8219bc481622261b5ad5a3 -> 0b48b4a863b8622379061bddc7a8c19b
-  custom:scripting/monoscript/fileName/TheNetworkDemo.cs: 7817c447b4c45c77196e38ade40bbfbb -> c8e86a19ec6b039aa2975e5e1da0005c
-  custom:scripting/monoscript/fileName/ConnectingPanel.cs: ac938adb83d2337649dcc22ae61e9a49 -> ad11a5f09ad5d701465cf3605e9bdb20
-  custom:scripting/monoscript/fileName/OptionSelectorInt.cs: 973c1f0566d823bf5f823877de81d81b -> 03075c71455d90b1ba642e33d6643a5a
-  custom:scripting/monoscript/fileName/SNetworkGroup.cs: f54d4a365ec1c9f64adca28111984da0 -> 476829700a851940dd0d5d0ce7e298a6
-  custom:scripting/monoscript/fileName/BlackPanel.cs: 2b53116edaa373408d786a40fc846c3f -> 0c2bdee07d83ec2d23242e539d0d2641
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/PlayerLine.cs: 8fe84138caacf384491e70fe2a704e9f -> 3e7048325d2cb916c35cbdd21bc35b36
-  custom:scripting/monoscript/fileName/IconBar.cs: 7d650315c39fed7ae9a8b8d628c1da8f -> 5e8b405b6af7edffd87eb4d8fe2ae269
-  custom:scripting/monoscript/fileName/ClientLobby.cs: 299a012e3121112d8c26573d953c44c9 -> a652c6a0db4056878bee5a786674c08c
-  custom:scripting/monoscript/fileName/Menu.cs: 56f8b2798f74afff56b09ef642c2b0ce -> 39704cade04e7d48b6e61a4cf4b7ee3a
-  custom:scripting/monoscript/fileName/LobbyCreatePanel.cs: 3f6d39478eb6cae6ad55ad17d756261f -> 46812356cf3339129b0bf6204d7f074f
-  custom:scripting/monoscript/fileName/PlayerCube.cs: 3607d776a2bacc33930b82e976f721b4 -> b2379535833bd6cf5ba9abd17032476d
-  custom:scripting/monoscript/fileName/UIPanel.cs: 64673c24f49f10a22428d63040af3ece -> 16baa8c5175325c4d180a178be42f668
-  custom:scripting/monoscript/fileName/NetworkActionSimple.cs: b05ef362b435dbc137f5de7b47b39a05 -> 4935cc96cb2cd12ba86e752009df4eff
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:scripting/monoscript/fileName/NetworkChat.cs: 19564776a21b5e7b0c4d444745b7220f -> 20e43982f76a1f9529cdcdcd1414fb47
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/ServerLobbyConfig.cs: 028910a3e96875421a9219880c14a119 -> 51fb94b905ef04cc91047251265490f4
-  custom:scripting/monoscript/fileName/NetworkGame.cs: 64fcb2ffd5cb80722751a354f8d92ca2 -> d088f39f2b83a50d7e812248b33611c8
-  custom:scripting/monoscript/fileName/LobbyLine.cs: 17713ef515a35343285cbc96231dba91 -> 852b6dd897a3495c7416c60aed693824
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/Tower.cs: db57c81e9f931a6ae5a520813e0c447d -> a20db5024a4a72431aae4180e6dfa7db
-  custom:scripting/monoscript/fileName/SaveTool.cs: 61b8d9c6497290e0058778d308f7a988 -> 36316754670227fd0b1041e9b101dfdf
-  custom:scripting/monoscript/fileName/ServerGame.cs: 68279d2c22cf7fcbb2306dd2a6deea69 -> 866c600c6c947d0f95661fd2fce7c07d
-  custom:scripting/monoscript/fileName/WebTool.cs: 1bc399cb3f1a9844c05f8de7c51d1e95 -> 3f78a2afbe71663091c8902d6f05b86a
-  custom:scripting/monoscript/fileName/Gun.cs: baca4c64a5e3a9a998c8b9e678efde97 -> 7d05faef1ad0b187da47b70860e6ba9a
-  custom:scripting/monoscript/fileName/PlayerControls.cs: 8eaac34d2b2e9055ff20956cf36a987c -> c56f2041818f7da41e34f0b627b79d0f
-  custom:scripting/monoscript/fileName/SNetworkActions.cs: b77ccfe34413cd860235648070e1b3bb -> f7676dc8adcd5370544a88bf8e2d504b
-  custom:scripting/monoscript/fileName/NetworkAction.cs: 8f018f64aebf5ad87a46cbe22cdbca5b -> 170bb16002818746cf710ba5da630f1f
-  custom:scripting/monoscript/fileName/OptionSelector.cs: 7d99b824c041d48bb3f4149d152defee -> 7017aa490b91409d6ca9ad8fc473c823
-  custom:scripting/monoscript/fileName/SimpleGame.cs: 735601ee048d6d4708edc5c79829894d -> a37eab1d73f2e84209afe022e4616720
-  custom:scripting/monoscript/fileName/Powerup.cs: ca33a3a8a5a4bb90044027b3f1831e03 -> e2c651a8ea3b5dbed9d56de7ff48e22b
-  custom:scripting/monoscript/fileName/WebGLTool.cs: 16f93648227c4e7d5e4de5b08ccc6b79 -> 59604412a27c9c58d5a8295740ea8fed
-  custom:scripting/monoscript/fileName/NetworkActionBytes.cs: f3db94f6b5f7ecf993ae6ca37e913c06 -> 1b1ac9e182027a5b58f2195faee37ae1
-  custom:scripting/monoscript/fileName/LobbyRoomPanel.cs: f3d3beabe242dc21895ebd3df05f2cfd -> 6986654e2087b62db05e0ac1a94d3788
-  custom:scripting/monoscript/fileName/PlayerData.cs: cf19a605da2d2c6e8c88dedfb939e650 -> 83b6e4829f1ab06eaba603891d665bc9
-  custom:scripting/monoscript/fileName/Vector3Data.cs: 1bb9625a3d86d8a36a252537abe10251 -> afe57c7d3c0fe50eed080c6cc55cc6c6
-  custom:scripting/monoscript/fileName/ProgressBar.cs: 9cb1e949b0699b6781211b710c88f3ee -> 7dcb9dd7709b5017cde6b10e71050f3c
-  custom:scripting/monoscript/fileName/ClientLobbyService.cs: 362c6eb9ceef8cdf31ce0f6fe4a4fcf5 -> d99b546100c168aca0a5e94d1a836a59
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:scripting/monoscript/fileName/CameraTank.cs: 890cdfd73889cd6e77dd667f53b56da0 -> eb3db14bf84850dc5e7dbc28e3ca13dc
-  custom:scripting/monoscript/fileName/CameraPlayer.cs: e587e6ccdc91088544be7a830e3a8691 -> 2edb6e467efdefec34368a624fe0cdbe
-  custom:scripting/monoscript/fileName/LobbyPanel.cs: 9ab7b2c744930e0d7b82d86d7a61b852 -> 9b747fb3697dbd407932db27160a2e48
-  custom:scripting/monoscript/fileName/NetworkActionObject.cs: 544f78708e05bfd0bb6ce5bb7c101745 -> 2cbd407356092d0029ceb9c3bcc47c78
-  custom:scripting/monoscript/fileName/PhysicsTool.cs: 384685759032e9c2f2b26816aae79585 -> 307f939e0bad2fc102922950a596a50d
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/Lever.cs: 35a737e4bb4294292d5f9b699e07c191 -> 3c24e28f0eb548686ac636767388a16c
-  custom:scripting/monoscript/fileName/FXTool.cs: 4006902a73eaafdf9bd6fe709c65c7d9 -> b25c184df3e40ac2d4bf7e00958372b9
-  custom:scripting/monoscript/fileName/TankPlayerUI.cs: 3c962f712b446ddc2987b5d15fb16918 -> f165675ec0b059be7f7605c8bdbe5dde
-  custom:scripting/monoscript/fileName/Door.cs: 526ec49ed1a2adfd51e10b933ab65aa0 -> f41abdcb929b2f623225a9114447efa6
-  custom:scripting/monoscript/fileName/NetworkData.cs: 1aa2bab5b3685173c868f2faa8190a7c -> 0093a4511471922be45551b9d6addee4
-  custom:scripting/monoscript/fileName/TimeTool.cs: 81c7bf76c4cde0ec160c1492a68e2fa6 -> d2462c4162e857379e71aacd05ab1b6b
-  custom:scripting/monoscript/fileName/Tank.cs: 35a8d38673de7a0d563db2a42ab62910 -> 76382e52df219c6deac7ad2d3a6c223b
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/LobbyMatchmakingPanel.cs: 4c7e49b4c2cd364fb3c63233f83c0f2c -> b77533cd32b68cde98cc14336479f827
-  custom:scripting/monoscript/fileName/TheNetwork.cs: e63c393eb900ed50d159855f5cae7bad -> a981984f7f0476f30773c2c5435af779
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/LobbyConnectPanel.cs: f69b4fe35341a854a429fd746848e0f8 -> 74c3b733295384c618869aa6dd295077
-  custom:scripting/monoscript/fileName/ServerLobby.cs: f1b8b3bccd33f0e31d8a54303d2b706a -> 669e66f80f71e52ee053b079693b807e
-  custom:scripting/monoscript/fileName/DemoData.cs: 316ac96590f9af5e06d673267d674c62 -> e5c331e5623aca649fe21ef633ba6f05
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/WebServer.cs: 2231f096d44a13ff3582799ee1400b46 -> 3a10bd93006a0281d3bcf7434c11fb8b
-  custom:scripting/monoscript/fileName/AuthenticatorGoogle.cs: 289a263aa357b07ffa37013ef07b72d1 -> 96d1a5cbd35248247a905d48e1993f9e
-  custom:scripting/monoscript/fileName/ListTool.cs: 847822a67c137a76adaa25a978401a9b -> 21d2821e1c962ec808006622a0ee6590
-  custom:scripting/monoscript/fileName/SNetworkVariable.cs: 1df76bcd92dcbd6ba6f4df6ec3010df4 -> 45c186ae69265f4e9c8131fc3370a1fb
-  custom:scripting/monoscript/fileName/NetworkActionInt.cs: b01861228e2e487558239ed5317e1f56 -> 29b57103aad5a1a141892c493a13da15
-  custom:scripting/monoscript/fileName/ItemAttach.cs: 645533f0faaa50974100678b8dfa961b -> a6a12f374503ca25f4ab1bc3099f25c7
-  custom:scripting/monoscript/fileName/PlayerSpawn.cs: 6e411ef90f9d6e732a7d8634d523e77f -> bd897612e05dbddbe7372b0e0f2510bd
-  custom:scripting/monoscript/fileName/Treasure.cs: 1de5476992cd10578d3d443071f01541 -> b78085f5a2ad54278ca0f25118a33230
-  custom:scripting/monoscript/fileName/Box.cs: ab0b3533a49232604629c2c4b4151642 -> 97a809cac09d068e17fc35194e0577c8
-  custom:scripting/monoscript/fileName/NetworkTool.cs: 647fadb32befaff28b5a3a8d677398b8 -> e1b5ff7badff1eae053af5cb6d4f86ac
-  custom:scripting/monoscript/fileName/Authenticator.cs: cb5ae288e230662bc68bf4013652c6d8 -> 4dd6dcd45dff0f6e72bcb0047bd0492f
-  custom:scripting/monoscript/fileName/SNetworkPlayer.cs: 4261fee37f803d5db48e4272ba557dac -> 664f972ba15331b8de3f65ad4202a40c
-  custom:scripting/monoscript/fileName/ReadOnlyAttribute.cs: 308f757bf2702375ae5286b3141c9277 -> af71b440f02684e4e0bda6ed283e6cba
-  custom:scripting/monoscript/fileName/AuthenticatorSteam.cs: 2ac9c20c2c5bb6ac7040e6644e956a0e -> ec4f7b02b91cfb35ce6642f36d8bac4f
-  custom:scripting/monoscript/fileName/ClientLobbyDedicated.cs: 60b47e860939ffd8f6ee43d59709732b -> 7d49c3e07c8b1d13ca9ff2622794ccdf
-  custom:scripting/monoscript/fileName/WebClient.cs: 06543f6b34e44eafac27a7cbf3c49ccd -> dafbcf9ade90c09cb9ecaf83f39d486a
-  custom:scripting/monoscript/fileName/SMonoBehaviour.cs: dc750b6b0c46413d0a7c7bbb35d1a50e -> 73009864cbc1b99bb4d59e72876e3692
-  custom:scripting/monoscript/fileName/PuzzleGame.cs: ac89a296067d7ec518e6fe1aa15b6a45 -> 0c65994813dad3909ede40d9a056fb47
-  custom:scripting/monoscript/fileName/NetworkRelay.cs: b56777c546db83344846f46b638685ff -> d11647a703704cf7546e2a561b30fc9d
-  custom:scripting/monoscript/fileName/Hazard.cs: 47bc9974ee91c00ce86b71a06be028dd -> bbad82045fa75b7d78ba9ce109a83896
-  custom:scripting/monoscript/fileName/Explorer.cs: aed8275f1e0851243dcd88e0aa01cffa -> 172c33633926f55565e3ffcb0ec2db96
-  custom:scripting/monoscript/fileName/UIFaceCam.cs: 2e5fad6cb9608548bf7668a28244ec2e -> dc2afc2f28bd5df32646de056988b9ce
-  custom:scripting/monoscript/fileName/NetworkActionFloat.cs: c73dc5adc276dc5cdebd96941c17520d -> ee27ef6fa4366fa5550bb593965c1524
-  custom:scripting/monoscript/fileName/NetworkActionBehaviour.cs: cba7e38dab38a4d9dea71e822a864a0b -> 7cf555c251a5510a4afda8dcd42afb34
-  custom:scripting/monoscript/fileName/SNetworkBehaviour.cs: 54bfa672ae04dffbefbb935d3454e012 -> 9136434d6d2fac2b2c545cc32f8703dd
-  custom:scripting/monoscript/fileName/MenuLobby.cs: dcd49940b3f9d3239136a4eacb1fcc49 -> 23ae54375074a98245f891c364a99e77
-  custom:scripting/monoscript/fileName/ServerLauncher.cs: 6e84aa47017e4e6e33836a047064beb3 -> b96372c3f7ee8ca2956e522a017089f8
-  custom:scripting/monoscript/fileName/SceneNav.cs: e66fdceebf49439439d830472411bd42 -> 161a8d12a070c95e104d8ccf39c9bace
-  custom:scripting/monoscript/fileName/GameUI.cs: 19d528b6f31d4084ff347c0b1685eeda -> 10475e5cc1bd97e73e38425622e98ace
-  custom:scripting/monoscript/fileName/GameData.cs: d0e36055dccbc4fcbbf301b4f3d14f58 -> 310724a88c2bafe5b08481fb27c7625c
-  custom:scripting/monoscript/fileName/NetworkMessaging.cs: bdbb6e47d0d17cb96595c594883d360c -> 284e2661dbda293d0b0b64e6bfcafb59
-  custom:scripting/monoscript/fileName/NetworkSpawner.cs: a170ca80d5d02e17d24ec0bda7962a27 -> ceea2cd2bd7b972d9f6a6fc24df4419e
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/NetworkActionVector.cs: fa025b7457503b504efbac15e22cfe19 -> bff05d8e41c01848b83e2f72292a808e
-  custom:scripting/monoscript/fileName/ArrowSpawn.cs: 3515f63f34342f6cca349d9da3d974d2 -> 39c3bff2e6c82fcf41b4ebfae375b9d7
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/LobbyMatchSelectPanel.cs: 82d7382bae4cdb4d4d630c24e22c79e8 -> 7691085597563c23ddccc92f9b3e3c27
-  custom:scripting/monoscript/fileName/FloorSwitch.cs: 0da2b6ee2477c0f8b936feafad496d15 -> 49d8ff1e0e0b70576ecf255e33196b08
-  custom:scripting/monoscript/fileName/AuthenticatorTest.cs: fe0e564d8629219e494203c63562d1e2 -> b6402c7e4e0220e9e96902d815bf513e
-  custom:scripting/monoscript/fileName/TankGame.cs: e2774b20d231cd51df2480dcfbcce618 -> e88fadbc4460fb3252f39b7f177caca0
-  custom:scripting/monoscript/fileName/PlayerChoiceData.cs: 54be1689f93859699b958b827fcb71b2 -> f0a9e1ad281efc8497b3c90d9e741e1f
-  custom:scripting/monoscript/fileName/TimeToolMono.cs: c74fee5c19316ec3b77d9092c4925098 -> 2a767ef4b816618788f8ef7d30db2d33
-  custom:scripting/monoscript/fileName/Arrow.cs: 6886afd572a25dafe9ce8dde872bd317 -> 8b9c7af10d4beae6023990cb4c6cd327
-  custom:scripting/monoscript/fileName/NetworkActionSerializable.cs: 7638458893b455bfa94f75e0b21d0b28 -> f434542aadb1b2f234ae9769a9d90e39
-  custom:scripting/monoscript/fileName/SNetworkOptimizer.cs: baf3444d311a128623e686d8ed1f9bb9 -> 2f3092fac73e9d6b5470eff83afe82a4
-  custom:scripting/monoscript/fileName/Key.cs: 9e05fbee7c806f15b9fd0b14752386bb -> ec3fabf68d03ad239fc893ef7f565063
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/Wall.cs: 6d00edb3e122c4b38116e983dc96d906 -> 0a072906504c699913e6a9ee44323f2a
-  custom:scripting/monoscript/fileName/FloorTrap.cs: 1b8356ed356016c81d2c22609df9f57d -> 6a0198dab35def22e0ceb5daca0d54c8
-  custom:scripting/monoscript/fileName/ChatUI.cs: 332cfeff9e06ddd16c9499a38b5f1d30 -> 68a817afcad4311fd1f61cf01da744cf
-  custom:scripting/monoscript/fileName/TankBullet.cs: 3ba2da03675dcf42dd3ef8211dba7d15 -> 37e81d02f8d5bd98c9b03e77c399bf6e
-  custom:scripting/monoscript/fileName/GameModeData.cs: 5556a2ed53a1106725b7a2f4ef88406c -> 7ab1c11f5c9942f95bd8b216d8e33b30
-  custom:scripting/monoscript/fileName/AutoChangeOwner.cs: 545df94917b68fce2e110a19b37018cf -> e5f1b94a1c4ee6878a2f579e03d1df71
-  custom:scripting/monoscript/fileName/Pool.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
-  custom:scripting/monoscript/fileName/SNetworkObject.cs: 13c11f8ceed01fe5fa93cd11de5dbbf3 -> e024ab86d05fc43aaf810eabbed6b109
-  custom:scripting/monoscript/fileName/AuthenticatorUnity.cs: 33d5658b94efb777eebf48b09a5106ef -> 0a1fdcdef73dff436dc83fb79cd0327f
-  custom:scripting/monoscript/fileName/GameOverPanel.cs: aece3fb40ae4172d2b2bec6a6868ca5e -> 840c4a3a15790009570ec76bd75e4632
-  custom:scripting/monoscript/fileName/ServerMatchmaker.cs: 4bd7843c66821645ae4924573e521a86 -> c16e612a74f4a5edb4e91123e6bdea25
-  custom:scripting/monoscript/fileName/NetworkPrefabHandler.cs: d5c195cead23a1afeb2d3df3eaf46cfa -> 8b5a68a10ddf5fa2a95db87b74530d29
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.805 seconds
-Refreshing native plugins compatible for Editor in 14.23 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.762 seconds
-Domain Reload Profiling: 2566ms
-	BeginReloadAssembly (239ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (77ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (78ms)
-	LoadAllAssembliesAndSetupDomain (433ms)
-		LoadAssemblies (494ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (52ms)
-			TypeCache.Refresh (24ms)
-				TypeCache.ScanAssembly (6ms)
-			ScanForSourceGeneratedMonoScriptInfo (14ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1763ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (770ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (9ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (137ms)
-			ProcessInitializeOnLoadAttributes (548ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 17.11 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5028 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (43.5 KB). Loaded Objects now: 5494.
-Memory consumption went from 163.6 MB to 163.6 MB.
-Total: 7.103300 ms (FindLiveObjects: 1.196400 ms CreateObjectMapping: 0.244800 ms MarkObjects: 5.553100 ms  DeleteObjects: 0.107300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/NetworkActionString.cs: 3fdfcfe5088a09eda361624776113157 -> daefed6c55aed7ce3f8bf0efda765dee
-  custom:scripting/monoscript/fileName/SNetworkTransform.cs: e3c5a4a0dd8219bc481622261b5ad5a3 -> 0b48b4a863b8622379061bddc7a8c19b
-  custom:scripting/monoscript/fileName/TheNetworkDemo.cs: 7817c447b4c45c77196e38ade40bbfbb -> c8e86a19ec6b039aa2975e5e1da0005c
-  custom:scripting/monoscript/fileName/ConnectingPanel.cs: ac938adb83d2337649dcc22ae61e9a49 -> ad11a5f09ad5d701465cf3605e9bdb20
-  custom:scripting/monoscript/fileName/OptionSelectorInt.cs: 973c1f0566d823bf5f823877de81d81b -> 03075c71455d90b1ba642e33d6643a5a
-  custom:scripting/monoscript/fileName/SNetworkGroup.cs: f54d4a365ec1c9f64adca28111984da0 -> 476829700a851940dd0d5d0ce7e298a6
-  custom:scripting/monoscript/fileName/BlackPanel.cs: 2b53116edaa373408d786a40fc846c3f -> 0c2bdee07d83ec2d23242e539d0d2641
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/PlayerLine.cs: 8fe84138caacf384491e70fe2a704e9f -> 3e7048325d2cb916c35cbdd21bc35b36
-  custom:scripting/monoscript/fileName/IconBar.cs: 7d650315c39fed7ae9a8b8d628c1da8f -> 5e8b405b6af7edffd87eb4d8fe2ae269
-  custom:scripting/monoscript/fileName/ClientLobby.cs: 299a012e3121112d8c26573d953c44c9 -> a652c6a0db4056878bee5a786674c08c
-  custom:scripting/monoscript/fileName/Menu.cs: 56f8b2798f74afff56b09ef642c2b0ce -> 39704cade04e7d48b6e61a4cf4b7ee3a
-  custom:scripting/monoscript/fileName/LobbyCreatePanel.cs: 3f6d39478eb6cae6ad55ad17d756261f -> 46812356cf3339129b0bf6204d7f074f
-  custom:scripting/monoscript/fileName/PlayerCube.cs: 3607d776a2bacc33930b82e976f721b4 -> b2379535833bd6cf5ba9abd17032476d
-  custom:scripting/monoscript/fileName/UIPanel.cs: 64673c24f49f10a22428d63040af3ece -> 16baa8c5175325c4d180a178be42f668
-  custom:scripting/monoscript/fileName/NetworkActionSimple.cs: b05ef362b435dbc137f5de7b47b39a05 -> 4935cc96cb2cd12ba86e752009df4eff
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:scripting/monoscript/fileName/NetworkChat.cs: 19564776a21b5e7b0c4d444745b7220f -> 20e43982f76a1f9529cdcdcd1414fb47
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/ServerLobbyConfig.cs: 028910a3e96875421a9219880c14a119 -> 51fb94b905ef04cc91047251265490f4
-  custom:scripting/monoscript/fileName/NetworkGame.cs: 64fcb2ffd5cb80722751a354f8d92ca2 -> d088f39f2b83a50d7e812248b33611c8
-  custom:scripting/monoscript/fileName/LobbyLine.cs: 17713ef515a35343285cbc96231dba91 -> 852b6dd897a3495c7416c60aed693824
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/Tower.cs: db57c81e9f931a6ae5a520813e0c447d -> a20db5024a4a72431aae4180e6dfa7db
-  custom:scripting/monoscript/fileName/SaveTool.cs: 61b8d9c6497290e0058778d308f7a988 -> 36316754670227fd0b1041e9b101dfdf
-  custom:scripting/monoscript/fileName/ServerGame.cs: 68279d2c22cf7fcbb2306dd2a6deea69 -> 866c600c6c947d0f95661fd2fce7c07d
-  custom:scripting/monoscript/fileName/WebTool.cs: 1bc399cb3f1a9844c05f8de7c51d1e95 -> 3f78a2afbe71663091c8902d6f05b86a
-  custom:scripting/monoscript/fileName/Gun.cs: baca4c64a5e3a9a998c8b9e678efde97 -> 7d05faef1ad0b187da47b70860e6ba9a
-  custom:scripting/monoscript/fileName/PlayerControls.cs: 8eaac34d2b2e9055ff20956cf36a987c -> c56f2041818f7da41e34f0b627b79d0f
-  custom:scripting/monoscript/fileName/SNetworkActions.cs: b77ccfe34413cd860235648070e1b3bb -> f7676dc8adcd5370544a88bf8e2d504b
-  custom:scripting/monoscript/fileName/NetworkAction.cs: 8f018f64aebf5ad87a46cbe22cdbca5b -> 170bb16002818746cf710ba5da630f1f
-  custom:scripting/monoscript/fileName/OptionSelector.cs: 7d99b824c041d48bb3f4149d152defee -> 7017aa490b91409d6ca9ad8fc473c823
-  custom:scripting/monoscript/fileName/SimpleGame.cs: 735601ee048d6d4708edc5c79829894d -> a37eab1d73f2e84209afe022e4616720
-  custom:scripting/monoscript/fileName/Powerup.cs: ca33a3a8a5a4bb90044027b3f1831e03 -> e2c651a8ea3b5dbed9d56de7ff48e22b
-  custom:scripting/monoscript/fileName/WebGLTool.cs: 16f93648227c4e7d5e4de5b08ccc6b79 -> 59604412a27c9c58d5a8295740ea8fed
-  custom:scripting/monoscript/fileName/NetworkActionBytes.cs: f3db94f6b5f7ecf993ae6ca37e913c06 -> 1b1ac9e182027a5b58f2195faee37ae1
-  custom:scripting/monoscript/fileName/LobbyRoomPanel.cs: f3d3beabe242dc21895ebd3df05f2cfd -> 6986654e2087b62db05e0ac1a94d3788
-  custom:scripting/monoscript/fileName/PlayerData.cs: cf19a605da2d2c6e8c88dedfb939e650 -> 83b6e4829f1ab06eaba603891d665bc9
-  custom:scripting/monoscript/fileName/Vector3Data.cs: 1bb9625a3d86d8a36a252537abe10251 -> afe57c7d3c0fe50eed080c6cc55cc6c6
-  custom:scripting/monoscript/fileName/ProgressBar.cs: 9cb1e949b0699b6781211b710c88f3ee -> 7dcb9dd7709b5017cde6b10e71050f3c
-  custom:scripting/monoscript/fileName/ClientLobbyService.cs: 362c6eb9ceef8cdf31ce0f6fe4a4fcf5 -> d99b546100c168aca0a5e94d1a836a59
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:scripting/monoscript/fileName/CameraTank.cs: 890cdfd73889cd6e77dd667f53b56da0 -> eb3db14bf84850dc5e7dbc28e3ca13dc
-  custom:scripting/monoscript/fileName/CameraPlayer.cs: e587e6ccdc91088544be7a830e3a8691 -> 2edb6e467efdefec34368a624fe0cdbe
-  custom:scripting/monoscript/fileName/LobbyPanel.cs: 9ab7b2c744930e0d7b82d86d7a61b852 -> 9b747fb3697dbd407932db27160a2e48
-  custom:scripting/monoscript/fileName/NetworkActionObject.cs: 544f78708e05bfd0bb6ce5bb7c101745 -> 2cbd407356092d0029ceb9c3bcc47c78
-  custom:scripting/monoscript/fileName/PhysicsTool.cs: 384685759032e9c2f2b26816aae79585 -> 307f939e0bad2fc102922950a596a50d
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/Lever.cs: 35a737e4bb4294292d5f9b699e07c191 -> 3c24e28f0eb548686ac636767388a16c
-  custom:scripting/monoscript/fileName/FXTool.cs: 4006902a73eaafdf9bd6fe709c65c7d9 -> b25c184df3e40ac2d4bf7e00958372b9
-  custom:scripting/monoscript/fileName/TankPlayerUI.cs: 3c962f712b446ddc2987b5d15fb16918 -> f165675ec0b059be7f7605c8bdbe5dde
-  custom:scripting/monoscript/fileName/Door.cs: 526ec49ed1a2adfd51e10b933ab65aa0 -> f41abdcb929b2f623225a9114447efa6
-  custom:scripting/monoscript/fileName/NetworkData.cs: 1aa2bab5b3685173c868f2faa8190a7c -> 0093a4511471922be45551b9d6addee4
-  custom:scripting/monoscript/fileName/TimeTool.cs: 81c7bf76c4cde0ec160c1492a68e2fa6 -> d2462c4162e857379e71aacd05ab1b6b
-  custom:scripting/monoscript/fileName/Tank.cs: 35a8d38673de7a0d563db2a42ab62910 -> 76382e52df219c6deac7ad2d3a6c223b
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/LobbyMatchmakingPanel.cs: 4c7e49b4c2cd364fb3c63233f83c0f2c -> b77533cd32b68cde98cc14336479f827
-  custom:scripting/monoscript/fileName/TheNetwork.cs: e63c393eb900ed50d159855f5cae7bad -> a981984f7f0476f30773c2c5435af779
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/LobbyConnectPanel.cs: f69b4fe35341a854a429fd746848e0f8 -> 74c3b733295384c618869aa6dd295077
-  custom:scripting/monoscript/fileName/ServerLobby.cs: f1b8b3bccd33f0e31d8a54303d2b706a -> 669e66f80f71e52ee053b079693b807e
-  custom:scripting/monoscript/fileName/DemoData.cs: 316ac96590f9af5e06d673267d674c62 -> e5c331e5623aca649fe21ef633ba6f05
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/WebServer.cs: 2231f096d44a13ff3582799ee1400b46 -> 3a10bd93006a0281d3bcf7434c11fb8b
-  custom:scripting/monoscript/fileName/AuthenticatorGoogle.cs: 289a263aa357b07ffa37013ef07b72d1 -> 96d1a5cbd35248247a905d48e1993f9e
-  custom:scripting/monoscript/fileName/ListTool.cs: 847822a67c137a76adaa25a978401a9b -> 21d2821e1c962ec808006622a0ee6590
-  custom:scripting/monoscript/fileName/SNetworkVariable.cs: 1df76bcd92dcbd6ba6f4df6ec3010df4 -> 45c186ae69265f4e9c8131fc3370a1fb
-  custom:scripting/monoscript/fileName/NetworkActionInt.cs: b01861228e2e487558239ed5317e1f56 -> 29b57103aad5a1a141892c493a13da15
-  custom:scripting/monoscript/fileName/ItemAttach.cs: 645533f0faaa50974100678b8dfa961b -> a6a12f374503ca25f4ab1bc3099f25c7
-  custom:scripting/monoscript/fileName/PlayerSpawn.cs: 6e411ef90f9d6e732a7d8634d523e77f -> bd897612e05dbddbe7372b0e0f2510bd
-  custom:scripting/monoscript/fileName/Treasure.cs: 1de5476992cd10578d3d443071f01541 -> b78085f5a2ad54278ca0f25118a33230
-  custom:scripting/monoscript/fileName/Box.cs: ab0b3533a49232604629c2c4b4151642 -> 97a809cac09d068e17fc35194e0577c8
-  custom:scripting/monoscript/fileName/NetworkTool.cs: 647fadb32befaff28b5a3a8d677398b8 -> e1b5ff7badff1eae053af5cb6d4f86ac
-  custom:scripting/monoscript/fileName/Authenticator.cs: cb5ae288e230662bc68bf4013652c6d8 -> 4dd6dcd45dff0f6e72bcb0047bd0492f
-  custom:scripting/monoscript/fileName/SNetworkPlayer.cs: 4261fee37f803d5db48e4272ba557dac -> 664f972ba15331b8de3f65ad4202a40c
-  custom:scripting/monoscript/fileName/ReadOnlyAttribute.cs: 308f757bf2702375ae5286b3141c9277 -> af71b440f02684e4e0bda6ed283e6cba
-  custom:scripting/monoscript/fileName/AuthenticatorSteam.cs: 2ac9c20c2c5bb6ac7040e6644e956a0e -> ec4f7b02b91cfb35ce6642f36d8bac4f
-  custom:scripting/monoscript/fileName/ClientLobbyDedicated.cs: 60b47e860939ffd8f6ee43d59709732b -> 7d49c3e07c8b1d13ca9ff2622794ccdf
-  custom:scripting/monoscript/fileName/WebClient.cs: 06543f6b34e44eafac27a7cbf3c49ccd -> dafbcf9ade90c09cb9ecaf83f39d486a
-  custom:scripting/monoscript/fileName/SMonoBehaviour.cs: dc750b6b0c46413d0a7c7bbb35d1a50e -> 73009864cbc1b99bb4d59e72876e3692
-  custom:scripting/monoscript/fileName/PuzzleGame.cs: ac89a296067d7ec518e6fe1aa15b6a45 -> 0c65994813dad3909ede40d9a056fb47
-  custom:scripting/monoscript/fileName/NetworkRelay.cs: b56777c546db83344846f46b638685ff -> d11647a703704cf7546e2a561b30fc9d
-  custom:scripting/monoscript/fileName/Hazard.cs: 47bc9974ee91c00ce86b71a06be028dd -> bbad82045fa75b7d78ba9ce109a83896
-  custom:scripting/monoscript/fileName/Explorer.cs: aed8275f1e0851243dcd88e0aa01cffa -> 172c33633926f55565e3ffcb0ec2db96
-  custom:scripting/monoscript/fileName/UIFaceCam.cs: 2e5fad6cb9608548bf7668a28244ec2e -> dc2afc2f28bd5df32646de056988b9ce
-  custom:scripting/monoscript/fileName/NetworkActionFloat.cs: c73dc5adc276dc5cdebd96941c17520d -> ee27ef6fa4366fa5550bb593965c1524
-  custom:scripting/monoscript/fileName/NetworkActionBehaviour.cs: cba7e38dab38a4d9dea71e822a864a0b -> 7cf555c251a5510a4afda8dcd42afb34
-  custom:scripting/monoscript/fileName/SNetworkBehaviour.cs: 54bfa672ae04dffbefbb935d3454e012 -> 9136434d6d2fac2b2c545cc32f8703dd
-  custom:scripting/monoscript/fileName/MenuLobby.cs: dcd49940b3f9d3239136a4eacb1fcc49 -> 23ae54375074a98245f891c364a99e77
-  custom:scripting/monoscript/fileName/ServerLauncher.cs: 6e84aa47017e4e6e33836a047064beb3 -> b96372c3f7ee8ca2956e522a017089f8
-  custom:scripting/monoscript/fileName/SceneNav.cs: e66fdceebf49439439d830472411bd42 -> 161a8d12a070c95e104d8ccf39c9bace
-  custom:scripting/monoscript/fileName/GameUI.cs: 19d528b6f31d4084ff347c0b1685eeda -> 10475e5cc1bd97e73e38425622e98ace
-  custom:scripting/monoscript/fileName/GameData.cs: d0e36055dccbc4fcbbf301b4f3d14f58 -> 310724a88c2bafe5b08481fb27c7625c
-  custom:scripting/monoscript/fileName/NetworkMessaging.cs: bdbb6e47d0d17cb96595c594883d360c -> 284e2661dbda293d0b0b64e6bfcafb59
-  custom:scripting/monoscript/fileName/NetworkSpawner.cs: a170ca80d5d02e17d24ec0bda7962a27 -> ceea2cd2bd7b972d9f6a6fc24df4419e
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/NetworkActionVector.cs: fa025b7457503b504efbac15e22cfe19 -> bff05d8e41c01848b83e2f72292a808e
-  custom:scripting/monoscript/fileName/ArrowSpawn.cs: 3515f63f34342f6cca349d9da3d974d2 -> 39c3bff2e6c82fcf41b4ebfae375b9d7
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/LobbyMatchSelectPanel.cs: 82d7382bae4cdb4d4d630c24e22c79e8 -> 7691085597563c23ddccc92f9b3e3c27
-  custom:scripting/monoscript/fileName/FloorSwitch.cs: 0da2b6ee2477c0f8b936feafad496d15 -> 49d8ff1e0e0b70576ecf255e33196b08
-  custom:scripting/monoscript/fileName/AuthenticatorTest.cs: fe0e564d8629219e494203c63562d1e2 -> b6402c7e4e0220e9e96902d815bf513e
-  custom:scripting/monoscript/fileName/TankGame.cs: e2774b20d231cd51df2480dcfbcce618 -> e88fadbc4460fb3252f39b7f177caca0
-  custom:scripting/monoscript/fileName/PlayerChoiceData.cs: 54be1689f93859699b958b827fcb71b2 -> f0a9e1ad281efc8497b3c90d9e741e1f
-  custom:scripting/monoscript/fileName/TimeToolMono.cs: c74fee5c19316ec3b77d9092c4925098 -> 2a767ef4b816618788f8ef7d30db2d33
-  custom:scripting/monoscript/fileName/Arrow.cs: 6886afd572a25dafe9ce8dde872bd317 -> 8b9c7af10d4beae6023990cb4c6cd327
-  custom:scripting/monoscript/fileName/NetworkActionSerializable.cs: 7638458893b455bfa94f75e0b21d0b28 -> f434542aadb1b2f234ae9769a9d90e39
-  custom:scripting/monoscript/fileName/SNetworkOptimizer.cs: baf3444d311a128623e686d8ed1f9bb9 -> 2f3092fac73e9d6b5470eff83afe82a4
-  custom:scripting/monoscript/fileName/Key.cs: 9e05fbee7c806f15b9fd0b14752386bb -> ec3fabf68d03ad239fc893ef7f565063
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/Wall.cs: 6d00edb3e122c4b38116e983dc96d906 -> 0a072906504c699913e6a9ee44323f2a
-  custom:scripting/monoscript/fileName/FloorTrap.cs: 1b8356ed356016c81d2c22609df9f57d -> 6a0198dab35def22e0ceb5daca0d54c8
-  custom:scripting/monoscript/fileName/ChatUI.cs: 332cfeff9e06ddd16c9499a38b5f1d30 -> 68a817afcad4311fd1f61cf01da744cf
-  custom:scripting/monoscript/fileName/TankBullet.cs: 3ba2da03675dcf42dd3ef8211dba7d15 -> 37e81d02f8d5bd98c9b03e77c399bf6e
-  custom:scripting/monoscript/fileName/GameModeData.cs: 5556a2ed53a1106725b7a2f4ef88406c -> 7ab1c11f5c9942f95bd8b216d8e33b30
-  custom:scripting/monoscript/fileName/AutoChangeOwner.cs: 545df94917b68fce2e110a19b37018cf -> e5f1b94a1c4ee6878a2f579e03d1df71
-  custom:scripting/monoscript/fileName/Pool.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
-  custom:scripting/monoscript/fileName/SNetworkObject.cs: 13c11f8ceed01fe5fa93cd11de5dbbf3 -> e024ab86d05fc43aaf810eabbed6b109
-  custom:scripting/monoscript/fileName/AuthenticatorUnity.cs: 33d5658b94efb777eebf48b09a5106ef -> 0a1fdcdef73dff436dc83fb79cd0327f
-  custom:scripting/monoscript/fileName/GameOverPanel.cs: aece3fb40ae4172d2b2bec6a6868ca5e -> 840c4a3a15790009570ec76bd75e4632
-  custom:scripting/monoscript/fileName/ServerMatchmaker.cs: 4bd7843c66821645ae4924573e521a86 -> c16e612a74f4a5edb4e91123e6bdea25
-  custom:scripting/monoscript/fileName/NetworkPrefabHandler.cs: d5c195cead23a1afeb2d3df3eaf46cfa -> 8b5a68a10ddf5fa2a95db87b74530d29
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.729 seconds
-Refreshing native plugins compatible for Editor in 9.21 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.590 seconds
-Domain Reload Profiling: 2318ms
-	BeginReloadAssembly (233ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (72ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (73ms)
-	LoadAllAssembliesAndSetupDomain (362ms)
-		LoadAssemblies (457ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (21ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (34ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
 			ResolveRequiredComponents (9ms)
-	FinalizeReload (1591ms)
+	FinalizeReload (922ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (790ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (7ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (151ms)
-			ProcessInitializeOnLoadAttributes (562ms)
-			ProcessInitializeOnLoadMethodAttributes (61ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 11.57 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5028 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (43.5 KB). Loaded Objects now: 5497.
-Memory consumption went from 163.6 MB to 163.6 MB.
-Total: 5.342800 ms (FindLiveObjects: 1.086000 ms CreateObjectMapping: 0.469700 ms MarkObjects: 3.638800 ms  DeleteObjects: 0.145400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/NetworkActionString.cs: 3fdfcfe5088a09eda361624776113157 -> daefed6c55aed7ce3f8bf0efda765dee
-  custom:scripting/monoscript/fileName/SNetworkTransform.cs: e3c5a4a0dd8219bc481622261b5ad5a3 -> 0b48b4a863b8622379061bddc7a8c19b
-  custom:scripting/monoscript/fileName/TheNetworkDemo.cs: 7817c447b4c45c77196e38ade40bbfbb -> c8e86a19ec6b039aa2975e5e1da0005c
-  custom:scripting/monoscript/fileName/ConnectingPanel.cs: ac938adb83d2337649dcc22ae61e9a49 -> ad11a5f09ad5d701465cf3605e9bdb20
-  custom:scripting/monoscript/fileName/OptionSelectorInt.cs: 973c1f0566d823bf5f823877de81d81b -> 03075c71455d90b1ba642e33d6643a5a
-  custom:scripting/monoscript/fileName/SNetworkGroup.cs: f54d4a365ec1c9f64adca28111984da0 -> 476829700a851940dd0d5d0ce7e298a6
-  custom:scripting/monoscript/fileName/BlackPanel.cs: 2b53116edaa373408d786a40fc846c3f -> 0c2bdee07d83ec2d23242e539d0d2641
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/PlayerLine.cs: 8fe84138caacf384491e70fe2a704e9f -> 3e7048325d2cb916c35cbdd21bc35b36
-  custom:scripting/monoscript/fileName/IconBar.cs: 7d650315c39fed7ae9a8b8d628c1da8f -> 5e8b405b6af7edffd87eb4d8fe2ae269
-  custom:scripting/monoscript/fileName/ClientLobby.cs: 299a012e3121112d8c26573d953c44c9 -> a652c6a0db4056878bee5a786674c08c
-  custom:scripting/monoscript/fileName/Menu.cs: 56f8b2798f74afff56b09ef642c2b0ce -> 39704cade04e7d48b6e61a4cf4b7ee3a
-  custom:scripting/monoscript/fileName/LobbyCreatePanel.cs: 3f6d39478eb6cae6ad55ad17d756261f -> 46812356cf3339129b0bf6204d7f074f
-  custom:scripting/monoscript/fileName/PlayerCube.cs: 3607d776a2bacc33930b82e976f721b4 -> b2379535833bd6cf5ba9abd17032476d
-  custom:scripting/monoscript/fileName/UIPanel.cs: 64673c24f49f10a22428d63040af3ece -> 16baa8c5175325c4d180a178be42f668
-  custom:scripting/monoscript/fileName/NetworkActionSimple.cs: b05ef362b435dbc137f5de7b47b39a05 -> 4935cc96cb2cd12ba86e752009df4eff
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:scripting/monoscript/fileName/NetworkChat.cs: 19564776a21b5e7b0c4d444745b7220f -> 20e43982f76a1f9529cdcdcd1414fb47
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/ServerLobbyConfig.cs: 028910a3e96875421a9219880c14a119 -> 51fb94b905ef04cc91047251265490f4
-  custom:scripting/monoscript/fileName/NetworkGame.cs: 64fcb2ffd5cb80722751a354f8d92ca2 -> d088f39f2b83a50d7e812248b33611c8
-  custom:scripting/monoscript/fileName/LobbyLine.cs: 17713ef515a35343285cbc96231dba91 -> 852b6dd897a3495c7416c60aed693824
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/Tower.cs: db57c81e9f931a6ae5a520813e0c447d -> a20db5024a4a72431aae4180e6dfa7db
-  custom:scripting/monoscript/fileName/SaveTool.cs: 61b8d9c6497290e0058778d308f7a988 -> 36316754670227fd0b1041e9b101dfdf
-  custom:scripting/monoscript/fileName/ServerGame.cs: 68279d2c22cf7fcbb2306dd2a6deea69 -> 866c600c6c947d0f95661fd2fce7c07d
-  custom:scripting/monoscript/fileName/WebTool.cs: 1bc399cb3f1a9844c05f8de7c51d1e95 -> 3f78a2afbe71663091c8902d6f05b86a
-  custom:scripting/monoscript/fileName/Gun.cs: baca4c64a5e3a9a998c8b9e678efde97 -> 7d05faef1ad0b187da47b70860e6ba9a
-  custom:scripting/monoscript/fileName/PlayerControls.cs: 8eaac34d2b2e9055ff20956cf36a987c -> c56f2041818f7da41e34f0b627b79d0f
-  custom:scripting/monoscript/fileName/SNetworkActions.cs: b77ccfe34413cd860235648070e1b3bb -> f7676dc8adcd5370544a88bf8e2d504b
-  custom:scripting/monoscript/fileName/NetworkAction.cs: 8f018f64aebf5ad87a46cbe22cdbca5b -> 170bb16002818746cf710ba5da630f1f
-  custom:scripting/monoscript/fileName/OptionSelector.cs: 7d99b824c041d48bb3f4149d152defee -> 7017aa490b91409d6ca9ad8fc473c823
-  custom:scripting/monoscript/fileName/SimpleGame.cs: 735601ee048d6d4708edc5c79829894d -> a37eab1d73f2e84209afe022e4616720
-  custom:scripting/monoscript/fileName/Powerup.cs: ca33a3a8a5a4bb90044027b3f1831e03 -> e2c651a8ea3b5dbed9d56de7ff48e22b
-  custom:scripting/monoscript/fileName/WebGLTool.cs: 16f93648227c4e7d5e4de5b08ccc6b79 -> 59604412a27c9c58d5a8295740ea8fed
-  custom:scripting/monoscript/fileName/NetworkActionBytes.cs: f3db94f6b5f7ecf993ae6ca37e913c06 -> 1b1ac9e182027a5b58f2195faee37ae1
-  custom:scripting/monoscript/fileName/LobbyRoomPanel.cs: f3d3beabe242dc21895ebd3df05f2cfd -> 6986654e2087b62db05e0ac1a94d3788
-  custom:scripting/monoscript/fileName/PlayerData.cs: cf19a605da2d2c6e8c88dedfb939e650 -> 83b6e4829f1ab06eaba603891d665bc9
-  custom:scripting/monoscript/fileName/Vector3Data.cs: 1bb9625a3d86d8a36a252537abe10251 -> afe57c7d3c0fe50eed080c6cc55cc6c6
-  custom:scripting/monoscript/fileName/ProgressBar.cs: 9cb1e949b0699b6781211b710c88f3ee -> 7dcb9dd7709b5017cde6b10e71050f3c
-  custom:scripting/monoscript/fileName/ClientLobbyService.cs: 362c6eb9ceef8cdf31ce0f6fe4a4fcf5 -> d99b546100c168aca0a5e94d1a836a59
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:scripting/monoscript/fileName/CameraTank.cs: 890cdfd73889cd6e77dd667f53b56da0 -> eb3db14bf84850dc5e7dbc28e3ca13dc
-  custom:scripting/monoscript/fileName/CameraPlayer.cs: e587e6ccdc91088544be7a830e3a8691 -> 2edb6e467efdefec34368a624fe0cdbe
-  custom:scripting/monoscript/fileName/LobbyPanel.cs: 9ab7b2c744930e0d7b82d86d7a61b852 -> 9b747fb3697dbd407932db27160a2e48
-  custom:scripting/monoscript/fileName/NetworkActionObject.cs: 544f78708e05bfd0bb6ce5bb7c101745 -> 2cbd407356092d0029ceb9c3bcc47c78
-  custom:scripting/monoscript/fileName/PhysicsTool.cs: 384685759032e9c2f2b26816aae79585 -> 307f939e0bad2fc102922950a596a50d
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/Lever.cs: 35a737e4bb4294292d5f9b699e07c191 -> 3c24e28f0eb548686ac636767388a16c
-  custom:scripting/monoscript/fileName/FXTool.cs: 4006902a73eaafdf9bd6fe709c65c7d9 -> b25c184df3e40ac2d4bf7e00958372b9
-  custom:scripting/monoscript/fileName/TankPlayerUI.cs: 3c962f712b446ddc2987b5d15fb16918 -> f165675ec0b059be7f7605c8bdbe5dde
-  custom:scripting/monoscript/fileName/Door.cs: 526ec49ed1a2adfd51e10b933ab65aa0 -> f41abdcb929b2f623225a9114447efa6
-  custom:scripting/monoscript/fileName/NetworkData.cs: 1aa2bab5b3685173c868f2faa8190a7c -> 0093a4511471922be45551b9d6addee4
-  custom:scripting/monoscript/fileName/TimeTool.cs: 81c7bf76c4cde0ec160c1492a68e2fa6 -> d2462c4162e857379e71aacd05ab1b6b
-  custom:scripting/monoscript/fileName/Tank.cs: 35a8d38673de7a0d563db2a42ab62910 -> 76382e52df219c6deac7ad2d3a6c223b
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/LobbyMatchmakingPanel.cs: 4c7e49b4c2cd364fb3c63233f83c0f2c -> b77533cd32b68cde98cc14336479f827
-  custom:scripting/monoscript/fileName/TheNetwork.cs: e63c393eb900ed50d159855f5cae7bad -> a981984f7f0476f30773c2c5435af779
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/LobbyConnectPanel.cs: f69b4fe35341a854a429fd746848e0f8 -> 74c3b733295384c618869aa6dd295077
-  custom:scripting/monoscript/fileName/ServerLobby.cs: f1b8b3bccd33f0e31d8a54303d2b706a -> 669e66f80f71e52ee053b079693b807e
-  custom:scripting/monoscript/fileName/DemoData.cs: 316ac96590f9af5e06d673267d674c62 -> e5c331e5623aca649fe21ef633ba6f05
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/WebServer.cs: 2231f096d44a13ff3582799ee1400b46 -> 3a10bd93006a0281d3bcf7434c11fb8b
-  custom:scripting/monoscript/fileName/AuthenticatorGoogle.cs: 289a263aa357b07ffa37013ef07b72d1 -> 96d1a5cbd35248247a905d48e1993f9e
-  custom:scripting/monoscript/fileName/ListTool.cs: 847822a67c137a76adaa25a978401a9b -> 21d2821e1c962ec808006622a0ee6590
-  custom:scripting/monoscript/fileName/SNetworkVariable.cs: 1df76bcd92dcbd6ba6f4df6ec3010df4 -> 45c186ae69265f4e9c8131fc3370a1fb
-  custom:scripting/monoscript/fileName/NetworkActionInt.cs: b01861228e2e487558239ed5317e1f56 -> 29b57103aad5a1a141892c493a13da15
-  custom:scripting/monoscript/fileName/ItemAttach.cs: 645533f0faaa50974100678b8dfa961b -> a6a12f374503ca25f4ab1bc3099f25c7
-  custom:scripting/monoscript/fileName/PlayerSpawn.cs: 6e411ef90f9d6e732a7d8634d523e77f -> bd897612e05dbddbe7372b0e0f2510bd
-  custom:scripting/monoscript/fileName/Treasure.cs: 1de5476992cd10578d3d443071f01541 -> b78085f5a2ad54278ca0f25118a33230
-  custom:scripting/monoscript/fileName/Box.cs: ab0b3533a49232604629c2c4b4151642 -> 97a809cac09d068e17fc35194e0577c8
-  custom:scripting/monoscript/fileName/NetworkTool.cs: 647fadb32befaff28b5a3a8d677398b8 -> e1b5ff7badff1eae053af5cb6d4f86ac
-  custom:scripting/monoscript/fileName/Authenticator.cs: cb5ae288e230662bc68bf4013652c6d8 -> 4dd6dcd45dff0f6e72bcb0047bd0492f
-  custom:scripting/monoscript/fileName/SNetworkPlayer.cs: 4261fee37f803d5db48e4272ba557dac -> 664f972ba15331b8de3f65ad4202a40c
-  custom:scripting/monoscript/fileName/ReadOnlyAttribute.cs: 308f757bf2702375ae5286b3141c9277 -> af71b440f02684e4e0bda6ed283e6cba
-  custom:scripting/monoscript/fileName/AuthenticatorSteam.cs: 2ac9c20c2c5bb6ac7040e6644e956a0e -> ec4f7b02b91cfb35ce6642f36d8bac4f
-  custom:scripting/monoscript/fileName/ClientLobbyDedicated.cs: 60b47e860939ffd8f6ee43d59709732b -> 7d49c3e07c8b1d13ca9ff2622794ccdf
-  custom:scripting/monoscript/fileName/WebClient.cs: 06543f6b34e44eafac27a7cbf3c49ccd -> dafbcf9ade90c09cb9ecaf83f39d486a
-  custom:scripting/monoscript/fileName/SMonoBehaviour.cs: dc750b6b0c46413d0a7c7bbb35d1a50e -> 73009864cbc1b99bb4d59e72876e3692
-  custom:scripting/monoscript/fileName/PuzzleGame.cs: ac89a296067d7ec518e6fe1aa15b6a45 -> 0c65994813dad3909ede40d9a056fb47
-  custom:scripting/monoscript/fileName/NetworkRelay.cs: b56777c546db83344846f46b638685ff -> d11647a703704cf7546e2a561b30fc9d
-  custom:scripting/monoscript/fileName/Hazard.cs: 47bc9974ee91c00ce86b71a06be028dd -> bbad82045fa75b7d78ba9ce109a83896
-  custom:scripting/monoscript/fileName/Explorer.cs: aed8275f1e0851243dcd88e0aa01cffa -> 172c33633926f55565e3ffcb0ec2db96
-  custom:scripting/monoscript/fileName/UIFaceCam.cs: 2e5fad6cb9608548bf7668a28244ec2e -> dc2afc2f28bd5df32646de056988b9ce
-  custom:scripting/monoscript/fileName/NetworkActionFloat.cs: c73dc5adc276dc5cdebd96941c17520d -> ee27ef6fa4366fa5550bb593965c1524
-  custom:scripting/monoscript/fileName/NetworkActionBehaviour.cs: cba7e38dab38a4d9dea71e822a864a0b -> 7cf555c251a5510a4afda8dcd42afb34
-  custom:scripting/monoscript/fileName/SNetworkBehaviour.cs: 54bfa672ae04dffbefbb935d3454e012 -> 9136434d6d2fac2b2c545cc32f8703dd
-  custom:scripting/monoscript/fileName/MenuLobby.cs: dcd49940b3f9d3239136a4eacb1fcc49 -> 23ae54375074a98245f891c364a99e77
-  custom:scripting/monoscript/fileName/ServerLauncher.cs: 6e84aa47017e4e6e33836a047064beb3 -> b96372c3f7ee8ca2956e522a017089f8
-  custom:scripting/monoscript/fileName/SceneNav.cs: e66fdceebf49439439d830472411bd42 -> 161a8d12a070c95e104d8ccf39c9bace
-  custom:scripting/monoscript/fileName/GameUI.cs: 19d528b6f31d4084ff347c0b1685eeda -> 10475e5cc1bd97e73e38425622e98ace
-  custom:scripting/monoscript/fileName/GameData.cs: d0e36055dccbc4fcbbf301b4f3d14f58 -> 310724a88c2bafe5b08481fb27c7625c
-  custom:scripting/monoscript/fileName/NetworkMessaging.cs: bdbb6e47d0d17cb96595c594883d360c -> 284e2661dbda293d0b0b64e6bfcafb59
-  custom:scripting/monoscript/fileName/NetworkSpawner.cs: a170ca80d5d02e17d24ec0bda7962a27 -> ceea2cd2bd7b972d9f6a6fc24df4419e
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/NetworkActionVector.cs: fa025b7457503b504efbac15e22cfe19 -> bff05d8e41c01848b83e2f72292a808e
-  custom:scripting/monoscript/fileName/ArrowSpawn.cs: 3515f63f34342f6cca349d9da3d974d2 -> 39c3bff2e6c82fcf41b4ebfae375b9d7
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/LobbyMatchSelectPanel.cs: 82d7382bae4cdb4d4d630c24e22c79e8 -> 7691085597563c23ddccc92f9b3e3c27
-  custom:scripting/monoscript/fileName/FloorSwitch.cs: 0da2b6ee2477c0f8b936feafad496d15 -> 49d8ff1e0e0b70576ecf255e33196b08
-  custom:scripting/monoscript/fileName/AuthenticatorTest.cs: fe0e564d8629219e494203c63562d1e2 -> b6402c7e4e0220e9e96902d815bf513e
-  custom:scripting/monoscript/fileName/TankGame.cs: e2774b20d231cd51df2480dcfbcce618 -> e88fadbc4460fb3252f39b7f177caca0
-  custom:scripting/monoscript/fileName/PlayerChoiceData.cs: 54be1689f93859699b958b827fcb71b2 -> f0a9e1ad281efc8497b3c90d9e741e1f
-  custom:scripting/monoscript/fileName/TimeToolMono.cs: c74fee5c19316ec3b77d9092c4925098 -> 2a767ef4b816618788f8ef7d30db2d33
-  custom:scripting/monoscript/fileName/Arrow.cs: 6886afd572a25dafe9ce8dde872bd317 -> 8b9c7af10d4beae6023990cb4c6cd327
-  custom:scripting/monoscript/fileName/NetworkActionSerializable.cs: 7638458893b455bfa94f75e0b21d0b28 -> f434542aadb1b2f234ae9769a9d90e39
-  custom:scripting/monoscript/fileName/SNetworkOptimizer.cs: baf3444d311a128623e686d8ed1f9bb9 -> 2f3092fac73e9d6b5470eff83afe82a4
-  custom:scripting/monoscript/fileName/Key.cs: 9e05fbee7c806f15b9fd0b14752386bb -> ec3fabf68d03ad239fc893ef7f565063
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/Wall.cs: 6d00edb3e122c4b38116e983dc96d906 -> 0a072906504c699913e6a9ee44323f2a
-  custom:scripting/monoscript/fileName/FloorTrap.cs: 1b8356ed356016c81d2c22609df9f57d -> 6a0198dab35def22e0ceb5daca0d54c8
-  custom:scripting/monoscript/fileName/ChatUI.cs: 332cfeff9e06ddd16c9499a38b5f1d30 -> 68a817afcad4311fd1f61cf01da744cf
-  custom:scripting/monoscript/fileName/TankBullet.cs: 3ba2da03675dcf42dd3ef8211dba7d15 -> 37e81d02f8d5bd98c9b03e77c399bf6e
-  custom:scripting/monoscript/fileName/GameModeData.cs: 5556a2ed53a1106725b7a2f4ef88406c -> 7ab1c11f5c9942f95bd8b216d8e33b30
-  custom:scripting/monoscript/fileName/AutoChangeOwner.cs: 545df94917b68fce2e110a19b37018cf -> e5f1b94a1c4ee6878a2f579e03d1df71
-  custom:scripting/monoscript/fileName/Pool.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
-  custom:scripting/monoscript/fileName/SNetworkObject.cs: 13c11f8ceed01fe5fa93cd11de5dbbf3 -> e024ab86d05fc43aaf810eabbed6b109
-  custom:scripting/monoscript/fileName/AuthenticatorUnity.cs: 33d5658b94efb777eebf48b09a5106ef -> 0a1fdcdef73dff436dc83fb79cd0327f
-  custom:scripting/monoscript/fileName/GameOverPanel.cs: aece3fb40ae4172d2b2bec6a6868ca5e -> 840c4a3a15790009570ec76bd75e4632
-  custom:scripting/monoscript/fileName/ServerMatchmaker.cs: 4bd7843c66821645ae4924573e521a86 -> c16e612a74f4a5edb4e91123e6bdea25
-  custom:scripting/monoscript/fileName/NetworkPrefabHandler.cs: d5c195cead23a1afeb2d3df3eaf46cfa -> 8b5a68a10ddf5fa2a95db87b74530d29
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.789 seconds
-Refreshing native plugins compatible for Editor in 10.59 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.397 seconds
-Domain Reload Profiling: 2183ms
-	BeginReloadAssembly (226ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (69ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (86ms)
-	LoadAllAssembliesAndSetupDomain (411ms)
-		LoadAssemblies (486ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (41ms)
-			TypeCache.Refresh (23ms)
-				TypeCache.ScanAssembly (6ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1398ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (638ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (115ms)
-			ProcessInitializeOnLoadAttributes (458ms)
-			ProcessInitializeOnLoadMethodAttributes (50ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Refreshing native plugins compatible for Editor in 8.80 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5028 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (43.6 KB). Loaded Objects now: 5500.
-Memory consumption went from 163.6 MB to 163.6 MB.
-Total: 4.367300 ms (FindLiveObjects: 0.879400 ms CreateObjectMapping: 0.294200 ms MarkObjects: 3.110200 ms  DeleteObjects: 0.082700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/NetworkActionString.cs: 3fdfcfe5088a09eda361624776113157 -> daefed6c55aed7ce3f8bf0efda765dee
-  custom:scripting/monoscript/fileName/SNetworkTransform.cs: e3c5a4a0dd8219bc481622261b5ad5a3 -> 0b48b4a863b8622379061bddc7a8c19b
-  custom:scripting/monoscript/fileName/TheNetworkDemo.cs: 7817c447b4c45c77196e38ade40bbfbb -> c8e86a19ec6b039aa2975e5e1da0005c
-  custom:scripting/monoscript/fileName/ConnectingPanel.cs: ac938adb83d2337649dcc22ae61e9a49 -> ad11a5f09ad5d701465cf3605e9bdb20
-  custom:scripting/monoscript/fileName/OptionSelectorInt.cs: 973c1f0566d823bf5f823877de81d81b -> 03075c71455d90b1ba642e33d6643a5a
-  custom:scripting/monoscript/fileName/SNetworkGroup.cs: f54d4a365ec1c9f64adca28111984da0 -> 476829700a851940dd0d5d0ce7e298a6
-  custom:scripting/monoscript/fileName/BlackPanel.cs: 2b53116edaa373408d786a40fc846c3f -> 0c2bdee07d83ec2d23242e539d0d2641
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/PlayerLine.cs: 8fe84138caacf384491e70fe2a704e9f -> 3e7048325d2cb916c35cbdd21bc35b36
-  custom:scripting/monoscript/fileName/IconBar.cs: 7d650315c39fed7ae9a8b8d628c1da8f -> 5e8b405b6af7edffd87eb4d8fe2ae269
-  custom:scripting/monoscript/fileName/ClientLobby.cs: 299a012e3121112d8c26573d953c44c9 -> a652c6a0db4056878bee5a786674c08c
-  custom:scripting/monoscript/fileName/Menu.cs: 56f8b2798f74afff56b09ef642c2b0ce -> 39704cade04e7d48b6e61a4cf4b7ee3a
-  custom:scripting/monoscript/fileName/LobbyCreatePanel.cs: 3f6d39478eb6cae6ad55ad17d756261f -> 46812356cf3339129b0bf6204d7f074f
-  custom:scripting/monoscript/fileName/PlayerCube.cs: 3607d776a2bacc33930b82e976f721b4 -> b2379535833bd6cf5ba9abd17032476d
-  custom:scripting/monoscript/fileName/UIPanel.cs: 64673c24f49f10a22428d63040af3ece -> 16baa8c5175325c4d180a178be42f668
-  custom:scripting/monoscript/fileName/NetworkActionSimple.cs: b05ef362b435dbc137f5de7b47b39a05 -> 4935cc96cb2cd12ba86e752009df4eff
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:scripting/monoscript/fileName/NetworkChat.cs: 19564776a21b5e7b0c4d444745b7220f -> 20e43982f76a1f9529cdcdcd1414fb47
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/ServerLobbyConfig.cs: 028910a3e96875421a9219880c14a119 -> 51fb94b905ef04cc91047251265490f4
-  custom:scripting/monoscript/fileName/NetworkGame.cs: 64fcb2ffd5cb80722751a354f8d92ca2 -> d088f39f2b83a50d7e812248b33611c8
-  custom:scripting/monoscript/fileName/LobbyLine.cs: 17713ef515a35343285cbc96231dba91 -> 852b6dd897a3495c7416c60aed693824
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/Tower.cs: db57c81e9f931a6ae5a520813e0c447d -> a20db5024a4a72431aae4180e6dfa7db
-  custom:scripting/monoscript/fileName/SaveTool.cs: 61b8d9c6497290e0058778d308f7a988 -> 36316754670227fd0b1041e9b101dfdf
-  custom:scripting/monoscript/fileName/ServerGame.cs: 68279d2c22cf7fcbb2306dd2a6deea69 -> 866c600c6c947d0f95661fd2fce7c07d
-  custom:scripting/monoscript/fileName/WebTool.cs: 1bc399cb3f1a9844c05f8de7c51d1e95 -> 3f78a2afbe71663091c8902d6f05b86a
-  custom:scripting/monoscript/fileName/Gun.cs: baca4c64a5e3a9a998c8b9e678efde97 -> 7d05faef1ad0b187da47b70860e6ba9a
-  custom:scripting/monoscript/fileName/PlayerControls.cs: 8eaac34d2b2e9055ff20956cf36a987c -> c56f2041818f7da41e34f0b627b79d0f
-  custom:scripting/monoscript/fileName/SNetworkActions.cs: b77ccfe34413cd860235648070e1b3bb -> f7676dc8adcd5370544a88bf8e2d504b
-  custom:scripting/monoscript/fileName/NetworkAction.cs: 8f018f64aebf5ad87a46cbe22cdbca5b -> 170bb16002818746cf710ba5da630f1f
-  custom:scripting/monoscript/fileName/OptionSelector.cs: 7d99b824c041d48bb3f4149d152defee -> 7017aa490b91409d6ca9ad8fc473c823
-  custom:scripting/monoscript/fileName/SimpleGame.cs: 735601ee048d6d4708edc5c79829894d -> a37eab1d73f2e84209afe022e4616720
-  custom:scripting/monoscript/fileName/Powerup.cs: ca33a3a8a5a4bb90044027b3f1831e03 -> e2c651a8ea3b5dbed9d56de7ff48e22b
-  custom:scripting/monoscript/fileName/WebGLTool.cs: 16f93648227c4e7d5e4de5b08ccc6b79 -> 59604412a27c9c58d5a8295740ea8fed
-  custom:scripting/monoscript/fileName/NetworkActionBytes.cs: f3db94f6b5f7ecf993ae6ca37e913c06 -> 1b1ac9e182027a5b58f2195faee37ae1
-  custom:scripting/monoscript/fileName/LobbyRoomPanel.cs: f3d3beabe242dc21895ebd3df05f2cfd -> 6986654e2087b62db05e0ac1a94d3788
-  custom:scripting/monoscript/fileName/PlayerData.cs: cf19a605da2d2c6e8c88dedfb939e650 -> 83b6e4829f1ab06eaba603891d665bc9
-  custom:scripting/monoscript/fileName/Vector3Data.cs: 1bb9625a3d86d8a36a252537abe10251 -> afe57c7d3c0fe50eed080c6cc55cc6c6
-  custom:scripting/monoscript/fileName/ProgressBar.cs: 9cb1e949b0699b6781211b710c88f3ee -> 7dcb9dd7709b5017cde6b10e71050f3c
-  custom:scripting/monoscript/fileName/ClientLobbyService.cs: 362c6eb9ceef8cdf31ce0f6fe4a4fcf5 -> d99b546100c168aca0a5e94d1a836a59
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:scripting/monoscript/fileName/CameraTank.cs: 890cdfd73889cd6e77dd667f53b56da0 -> eb3db14bf84850dc5e7dbc28e3ca13dc
-  custom:scripting/monoscript/fileName/CameraPlayer.cs: e587e6ccdc91088544be7a830e3a8691 -> 2edb6e467efdefec34368a624fe0cdbe
-  custom:scripting/monoscript/fileName/LobbyPanel.cs: 9ab7b2c744930e0d7b82d86d7a61b852 -> 9b747fb3697dbd407932db27160a2e48
-  custom:scripting/monoscript/fileName/NetworkActionObject.cs: 544f78708e05bfd0bb6ce5bb7c101745 -> 2cbd407356092d0029ceb9c3bcc47c78
-  custom:scripting/monoscript/fileName/PhysicsTool.cs: 384685759032e9c2f2b26816aae79585 -> 307f939e0bad2fc102922950a596a50d
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/Lever.cs: 35a737e4bb4294292d5f9b699e07c191 -> 3c24e28f0eb548686ac636767388a16c
-  custom:scripting/monoscript/fileName/FXTool.cs: 4006902a73eaafdf9bd6fe709c65c7d9 -> b25c184df3e40ac2d4bf7e00958372b9
-  custom:scripting/monoscript/fileName/TankPlayerUI.cs: 3c962f712b446ddc2987b5d15fb16918 -> f165675ec0b059be7f7605c8bdbe5dde
-  custom:scripting/monoscript/fileName/Door.cs: 526ec49ed1a2adfd51e10b933ab65aa0 -> f41abdcb929b2f623225a9114447efa6
-  custom:scripting/monoscript/fileName/NetworkData.cs: 1aa2bab5b3685173c868f2faa8190a7c -> 0093a4511471922be45551b9d6addee4
-  custom:scripting/monoscript/fileName/TimeTool.cs: 81c7bf76c4cde0ec160c1492a68e2fa6 -> d2462c4162e857379e71aacd05ab1b6b
-  custom:scripting/monoscript/fileName/Tank.cs: 35a8d38673de7a0d563db2a42ab62910 -> 76382e52df219c6deac7ad2d3a6c223b
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/LobbyMatchmakingPanel.cs: 4c7e49b4c2cd364fb3c63233f83c0f2c -> b77533cd32b68cde98cc14336479f827
-  custom:scripting/monoscript/fileName/TheNetwork.cs: e63c393eb900ed50d159855f5cae7bad -> a981984f7f0476f30773c2c5435af779
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/LobbyConnectPanel.cs: f69b4fe35341a854a429fd746848e0f8 -> 74c3b733295384c618869aa6dd295077
-  custom:scripting/monoscript/fileName/ServerLobby.cs: f1b8b3bccd33f0e31d8a54303d2b706a -> 669e66f80f71e52ee053b079693b807e
-  custom:scripting/monoscript/fileName/DemoData.cs: 316ac96590f9af5e06d673267d674c62 -> e5c331e5623aca649fe21ef633ba6f05
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/WebServer.cs: 2231f096d44a13ff3582799ee1400b46 -> 3a10bd93006a0281d3bcf7434c11fb8b
-  custom:scripting/monoscript/fileName/AuthenticatorGoogle.cs: 289a263aa357b07ffa37013ef07b72d1 -> 96d1a5cbd35248247a905d48e1993f9e
-  custom:scripting/monoscript/fileName/ListTool.cs: 847822a67c137a76adaa25a978401a9b -> 21d2821e1c962ec808006622a0ee6590
-  custom:scripting/monoscript/fileName/SNetworkVariable.cs: 1df76bcd92dcbd6ba6f4df6ec3010df4 -> 45c186ae69265f4e9c8131fc3370a1fb
-  custom:scripting/monoscript/fileName/NetworkActionInt.cs: b01861228e2e487558239ed5317e1f56 -> 29b57103aad5a1a141892c493a13da15
-  custom:scripting/monoscript/fileName/ItemAttach.cs: 645533f0faaa50974100678b8dfa961b -> a6a12f374503ca25f4ab1bc3099f25c7
-  custom:scripting/monoscript/fileName/PlayerSpawn.cs: 6e411ef90f9d6e732a7d8634d523e77f -> bd897612e05dbddbe7372b0e0f2510bd
-  custom:scripting/monoscript/fileName/Treasure.cs: 1de5476992cd10578d3d443071f01541 -> b78085f5a2ad54278ca0f25118a33230
-  custom:scripting/monoscript/fileName/Box.cs: ab0b3533a49232604629c2c4b4151642 -> 97a809cac09d068e17fc35194e0577c8
-  custom:scripting/monoscript/fileName/NetworkTool.cs: 647fadb32befaff28b5a3a8d677398b8 -> e1b5ff7badff1eae053af5cb6d4f86ac
-  custom:scripting/monoscript/fileName/Authenticator.cs: cb5ae288e230662bc68bf4013652c6d8 -> 4dd6dcd45dff0f6e72bcb0047bd0492f
-  custom:scripting/monoscript/fileName/SNetworkPlayer.cs: 4261fee37f803d5db48e4272ba557dac -> 664f972ba15331b8de3f65ad4202a40c
-  custom:scripting/monoscript/fileName/ReadOnlyAttribute.cs: 308f757bf2702375ae5286b3141c9277 -> af71b440f02684e4e0bda6ed283e6cba
-  custom:scripting/monoscript/fileName/AuthenticatorSteam.cs: 2ac9c20c2c5bb6ac7040e6644e956a0e -> ec4f7b02b91cfb35ce6642f36d8bac4f
-  custom:scripting/monoscript/fileName/ClientLobbyDedicated.cs: 60b47e860939ffd8f6ee43d59709732b -> 7d49c3e07c8b1d13ca9ff2622794ccdf
-  custom:scripting/monoscript/fileName/WebClient.cs: 06543f6b34e44eafac27a7cbf3c49ccd -> dafbcf9ade90c09cb9ecaf83f39d486a
-  custom:scripting/monoscript/fileName/SMonoBehaviour.cs: dc750b6b0c46413d0a7c7bbb35d1a50e -> 73009864cbc1b99bb4d59e72876e3692
-  custom:scripting/monoscript/fileName/PuzzleGame.cs: ac89a296067d7ec518e6fe1aa15b6a45 -> 0c65994813dad3909ede40d9a056fb47
-  custom:scripting/monoscript/fileName/NetworkRelay.cs: b56777c546db83344846f46b638685ff -> d11647a703704cf7546e2a561b30fc9d
-  custom:scripting/monoscript/fileName/Hazard.cs: 47bc9974ee91c00ce86b71a06be028dd -> bbad82045fa75b7d78ba9ce109a83896
-  custom:scripting/monoscript/fileName/Explorer.cs: aed8275f1e0851243dcd88e0aa01cffa -> 172c33633926f55565e3ffcb0ec2db96
-  custom:scripting/monoscript/fileName/UIFaceCam.cs: 2e5fad6cb9608548bf7668a28244ec2e -> dc2afc2f28bd5df32646de056988b9ce
-  custom:scripting/monoscript/fileName/NetworkActionFloat.cs: c73dc5adc276dc5cdebd96941c17520d -> ee27ef6fa4366fa5550bb593965c1524
-  custom:scripting/monoscript/fileName/NetworkActionBehaviour.cs: cba7e38dab38a4d9dea71e822a864a0b -> 7cf555c251a5510a4afda8dcd42afb34
-  custom:scripting/monoscript/fileName/SNetworkBehaviour.cs: 54bfa672ae04dffbefbb935d3454e012 -> 9136434d6d2fac2b2c545cc32f8703dd
-  custom:scripting/monoscript/fileName/MenuLobby.cs: dcd49940b3f9d3239136a4eacb1fcc49 -> 23ae54375074a98245f891c364a99e77
-  custom:scripting/monoscript/fileName/ServerLauncher.cs: 6e84aa47017e4e6e33836a047064beb3 -> b96372c3f7ee8ca2956e522a017089f8
-  custom:scripting/monoscript/fileName/SceneNav.cs: e66fdceebf49439439d830472411bd42 -> 161a8d12a070c95e104d8ccf39c9bace
-  custom:scripting/monoscript/fileName/GameUI.cs: 19d528b6f31d4084ff347c0b1685eeda -> 10475e5cc1bd97e73e38425622e98ace
-  custom:scripting/monoscript/fileName/GameData.cs: d0e36055dccbc4fcbbf301b4f3d14f58 -> 310724a88c2bafe5b08481fb27c7625c
-  custom:scripting/monoscript/fileName/NetworkMessaging.cs: bdbb6e47d0d17cb96595c594883d360c -> 284e2661dbda293d0b0b64e6bfcafb59
-  custom:scripting/monoscript/fileName/NetworkSpawner.cs: a170ca80d5d02e17d24ec0bda7962a27 -> ceea2cd2bd7b972d9f6a6fc24df4419e
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/NetworkActionVector.cs: fa025b7457503b504efbac15e22cfe19 -> bff05d8e41c01848b83e2f72292a808e
-  custom:scripting/monoscript/fileName/ArrowSpawn.cs: 3515f63f34342f6cca349d9da3d974d2 -> 39c3bff2e6c82fcf41b4ebfae375b9d7
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/LobbyMatchSelectPanel.cs: 82d7382bae4cdb4d4d630c24e22c79e8 -> 7691085597563c23ddccc92f9b3e3c27
-  custom:scripting/monoscript/fileName/FloorSwitch.cs: 0da2b6ee2477c0f8b936feafad496d15 -> 49d8ff1e0e0b70576ecf255e33196b08
-  custom:scripting/monoscript/fileName/AuthenticatorTest.cs: fe0e564d8629219e494203c63562d1e2 -> b6402c7e4e0220e9e96902d815bf513e
-  custom:scripting/monoscript/fileName/TankGame.cs: e2774b20d231cd51df2480dcfbcce618 -> e88fadbc4460fb3252f39b7f177caca0
-  custom:scripting/monoscript/fileName/PlayerChoiceData.cs: 54be1689f93859699b958b827fcb71b2 -> f0a9e1ad281efc8497b3c90d9e741e1f
-  custom:scripting/monoscript/fileName/TimeToolMono.cs: c74fee5c19316ec3b77d9092c4925098 -> 2a767ef4b816618788f8ef7d30db2d33
-  custom:scripting/monoscript/fileName/Arrow.cs: 6886afd572a25dafe9ce8dde872bd317 -> 8b9c7af10d4beae6023990cb4c6cd327
-  custom:scripting/monoscript/fileName/NetworkActionSerializable.cs: 7638458893b455bfa94f75e0b21d0b28 -> f434542aadb1b2f234ae9769a9d90e39
-  custom:scripting/monoscript/fileName/SNetworkOptimizer.cs: baf3444d311a128623e686d8ed1f9bb9 -> 2f3092fac73e9d6b5470eff83afe82a4
-  custom:scripting/monoscript/fileName/Key.cs: 9e05fbee7c806f15b9fd0b14752386bb -> ec3fabf68d03ad239fc893ef7f565063
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/Wall.cs: 6d00edb3e122c4b38116e983dc96d906 -> 0a072906504c699913e6a9ee44323f2a
-  custom:scripting/monoscript/fileName/FloorTrap.cs: 1b8356ed356016c81d2c22609df9f57d -> 6a0198dab35def22e0ceb5daca0d54c8
-  custom:scripting/monoscript/fileName/ChatUI.cs: 332cfeff9e06ddd16c9499a38b5f1d30 -> 68a817afcad4311fd1f61cf01da744cf
-  custom:scripting/monoscript/fileName/TankBullet.cs: 3ba2da03675dcf42dd3ef8211dba7d15 -> 37e81d02f8d5bd98c9b03e77c399bf6e
-  custom:scripting/monoscript/fileName/GameModeData.cs: 5556a2ed53a1106725b7a2f4ef88406c -> 7ab1c11f5c9942f95bd8b216d8e33b30
-  custom:scripting/monoscript/fileName/AutoChangeOwner.cs: 545df94917b68fce2e110a19b37018cf -> e5f1b94a1c4ee6878a2f579e03d1df71
-  custom:scripting/monoscript/fileName/Pool.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
-  custom:scripting/monoscript/fileName/SNetworkObject.cs: 13c11f8ceed01fe5fa93cd11de5dbbf3 -> e024ab86d05fc43aaf810eabbed6b109
-  custom:scripting/monoscript/fileName/AuthenticatorUnity.cs: 33d5658b94efb777eebf48b09a5106ef -> 0a1fdcdef73dff436dc83fb79cd0327f
-  custom:scripting/monoscript/fileName/GameOverPanel.cs: aece3fb40ae4172d2b2bec6a6868ca5e -> 840c4a3a15790009570ec76bd75e4632
-  custom:scripting/monoscript/fileName/ServerMatchmaker.cs: 4bd7843c66821645ae4924573e521a86 -> c16e612a74f4a5edb4e91123e6bdea25
-  custom:scripting/monoscript/fileName/NetworkPrefabHandler.cs: d5c195cead23a1afeb2d3df3eaf46cfa -> 8b5a68a10ddf5fa2a95db87b74530d29
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.700 seconds
-Refreshing native plugins compatible for Editor in 12.66 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.520 seconds
-Domain Reload Profiling: 2219ms
-	BeginReloadAssembly (210ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (70ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (77ms)
-	LoadAllAssembliesAndSetupDomain (355ms)
-		LoadAssemblies (431ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (19ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1521ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (752ms)
+		SetupLoadedEditorAssemblies (478ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (6ms)
 			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (128ms)
-			ProcessInitializeOnLoadAttributes (537ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (83ms)
+			ProcessInitializeOnLoadAttributes (330ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 13.02 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 8.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5028 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (43.5 KB). Loaded Objects now: 5503.
-Memory consumption went from 163.6 MB to 163.6 MB.
-Total: 6.052100 ms (FindLiveObjects: 0.445200 ms CreateObjectMapping: 0.262900 ms MarkObjects: 5.182000 ms  DeleteObjects: 0.160700 ms)
+Unloading 4930 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (34.7 KB). Loaded Objects now: 5445.
+Memory consumption went from 162.3 MB to 162.3 MB.
+Total: 3.410500 ms (FindLiveObjects: 0.391300 ms CreateObjectMapping: 0.243600 ms MarkObjects: 2.675100 ms  DeleteObjects: 0.099100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/NetworkActionString.cs: 3fdfcfe5088a09eda361624776113157 -> daefed6c55aed7ce3f8bf0efda765dee
-  custom:scripting/monoscript/fileName/SNetworkTransform.cs: e3c5a4a0dd8219bc481622261b5ad5a3 -> 0b48b4a863b8622379061bddc7a8c19b
-  custom:scripting/monoscript/fileName/TheNetworkDemo.cs: 7817c447b4c45c77196e38ade40bbfbb -> c8e86a19ec6b039aa2975e5e1da0005c
-  custom:scripting/monoscript/fileName/ConnectingPanel.cs: ac938adb83d2337649dcc22ae61e9a49 -> ad11a5f09ad5d701465cf3605e9bdb20
-  custom:scripting/monoscript/fileName/OptionSelectorInt.cs: 973c1f0566d823bf5f823877de81d81b -> 03075c71455d90b1ba642e33d6643a5a
-  custom:scripting/monoscript/fileName/SNetworkGroup.cs: f54d4a365ec1c9f64adca28111984da0 -> 476829700a851940dd0d5d0ce7e298a6
-  custom:scripting/monoscript/fileName/BlackPanel.cs: 2b53116edaa373408d786a40fc846c3f -> 0c2bdee07d83ec2d23242e539d0d2641
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/PlayerLine.cs: 8fe84138caacf384491e70fe2a704e9f -> 3e7048325d2cb916c35cbdd21bc35b36
-  custom:scripting/monoscript/fileName/IconBar.cs: 7d650315c39fed7ae9a8b8d628c1da8f -> 5e8b405b6af7edffd87eb4d8fe2ae269
-  custom:scripting/monoscript/fileName/ClientLobby.cs: 299a012e3121112d8c26573d953c44c9 -> a652c6a0db4056878bee5a786674c08c
-  custom:scripting/monoscript/fileName/Menu.cs: 56f8b2798f74afff56b09ef642c2b0ce -> 39704cade04e7d48b6e61a4cf4b7ee3a
-  custom:scripting/monoscript/fileName/LobbyCreatePanel.cs: 3f6d39478eb6cae6ad55ad17d756261f -> 46812356cf3339129b0bf6204d7f074f
-  custom:scripting/monoscript/fileName/PlayerCube.cs: 3607d776a2bacc33930b82e976f721b4 -> b2379535833bd6cf5ba9abd17032476d
-  custom:scripting/monoscript/fileName/UIPanel.cs: 64673c24f49f10a22428d63040af3ece -> 16baa8c5175325c4d180a178be42f668
-  custom:scripting/monoscript/fileName/NetworkActionSimple.cs: b05ef362b435dbc137f5de7b47b39a05 -> 4935cc96cb2cd12ba86e752009df4eff
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:scripting/monoscript/fileName/NetworkChat.cs: 19564776a21b5e7b0c4d444745b7220f -> 20e43982f76a1f9529cdcdcd1414fb47
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/ServerLobbyConfig.cs: 028910a3e96875421a9219880c14a119 -> 51fb94b905ef04cc91047251265490f4
-  custom:scripting/monoscript/fileName/NetworkGame.cs: 64fcb2ffd5cb80722751a354f8d92ca2 -> d088f39f2b83a50d7e812248b33611c8
-  custom:scripting/monoscript/fileName/LobbyLine.cs: 17713ef515a35343285cbc96231dba91 -> 852b6dd897a3495c7416c60aed693824
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/Tower.cs: db57c81e9f931a6ae5a520813e0c447d -> a20db5024a4a72431aae4180e6dfa7db
-  custom:scripting/monoscript/fileName/SaveTool.cs: 61b8d9c6497290e0058778d308f7a988 -> 36316754670227fd0b1041e9b101dfdf
-  custom:scripting/monoscript/fileName/ServerGame.cs: 68279d2c22cf7fcbb2306dd2a6deea69 -> 866c600c6c947d0f95661fd2fce7c07d
-  custom:scripting/monoscript/fileName/WebTool.cs: 1bc399cb3f1a9844c05f8de7c51d1e95 -> 3f78a2afbe71663091c8902d6f05b86a
-  custom:scripting/monoscript/fileName/Gun.cs: baca4c64a5e3a9a998c8b9e678efde97 -> 7d05faef1ad0b187da47b70860e6ba9a
-  custom:scripting/monoscript/fileName/PlayerControls.cs: 8eaac34d2b2e9055ff20956cf36a987c -> c56f2041818f7da41e34f0b627b79d0f
-  custom:scripting/monoscript/fileName/SNetworkActions.cs: b77ccfe34413cd860235648070e1b3bb -> f7676dc8adcd5370544a88bf8e2d504b
-  custom:scripting/monoscript/fileName/NetworkAction.cs: 8f018f64aebf5ad87a46cbe22cdbca5b -> 170bb16002818746cf710ba5da630f1f
-  custom:scripting/monoscript/fileName/OptionSelector.cs: 7d99b824c041d48bb3f4149d152defee -> 7017aa490b91409d6ca9ad8fc473c823
-  custom:scripting/monoscript/fileName/SimpleGame.cs: 735601ee048d6d4708edc5c79829894d -> a37eab1d73f2e84209afe022e4616720
-  custom:scripting/monoscript/fileName/Powerup.cs: ca33a3a8a5a4bb90044027b3f1831e03 -> e2c651a8ea3b5dbed9d56de7ff48e22b
-  custom:scripting/monoscript/fileName/WebGLTool.cs: 16f93648227c4e7d5e4de5b08ccc6b79 -> 59604412a27c9c58d5a8295740ea8fed
-  custom:scripting/monoscript/fileName/NetworkActionBytes.cs: f3db94f6b5f7ecf993ae6ca37e913c06 -> 1b1ac9e182027a5b58f2195faee37ae1
-  custom:scripting/monoscript/fileName/LobbyRoomPanel.cs: f3d3beabe242dc21895ebd3df05f2cfd -> 6986654e2087b62db05e0ac1a94d3788
-  custom:scripting/monoscript/fileName/PlayerData.cs: cf19a605da2d2c6e8c88dedfb939e650 -> 83b6e4829f1ab06eaba603891d665bc9
-  custom:scripting/monoscript/fileName/Vector3Data.cs: 1bb9625a3d86d8a36a252537abe10251 -> afe57c7d3c0fe50eed080c6cc55cc6c6
-  custom:scripting/monoscript/fileName/ProgressBar.cs: 9cb1e949b0699b6781211b710c88f3ee -> 7dcb9dd7709b5017cde6b10e71050f3c
-  custom:scripting/monoscript/fileName/ClientLobbyService.cs: 362c6eb9ceef8cdf31ce0f6fe4a4fcf5 -> d99b546100c168aca0a5e94d1a836a59
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
   custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:scripting/monoscript/fileName/CameraTank.cs: 890cdfd73889cd6e77dd667f53b56da0 -> eb3db14bf84850dc5e7dbc28e3ca13dc
-  custom:scripting/monoscript/fileName/CameraPlayer.cs: e587e6ccdc91088544be7a830e3a8691 -> 2edb6e467efdefec34368a624fe0cdbe
-  custom:scripting/monoscript/fileName/LobbyPanel.cs: 9ab7b2c744930e0d7b82d86d7a61b852 -> 9b747fb3697dbd407932db27160a2e48
-  custom:scripting/monoscript/fileName/NetworkActionObject.cs: 544f78708e05bfd0bb6ce5bb7c101745 -> 2cbd407356092d0029ceb9c3bcc47c78
-  custom:scripting/monoscript/fileName/PhysicsTool.cs: 384685759032e9c2f2b26816aae79585 -> 307f939e0bad2fc102922950a596a50d
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/Lever.cs: 35a737e4bb4294292d5f9b699e07c191 -> 3c24e28f0eb548686ac636767388a16c
-  custom:scripting/monoscript/fileName/FXTool.cs: 4006902a73eaafdf9bd6fe709c65c7d9 -> b25c184df3e40ac2d4bf7e00958372b9
-  custom:scripting/monoscript/fileName/TankPlayerUI.cs: 3c962f712b446ddc2987b5d15fb16918 -> f165675ec0b059be7f7605c8bdbe5dde
-  custom:scripting/monoscript/fileName/Door.cs: 526ec49ed1a2adfd51e10b933ab65aa0 -> f41abdcb929b2f623225a9114447efa6
-  custom:scripting/monoscript/fileName/NetworkData.cs: 1aa2bab5b3685173c868f2faa8190a7c -> 0093a4511471922be45551b9d6addee4
-  custom:scripting/monoscript/fileName/TimeTool.cs: 81c7bf76c4cde0ec160c1492a68e2fa6 -> d2462c4162e857379e71aacd05ab1b6b
-  custom:scripting/monoscript/fileName/Tank.cs: 35a8d38673de7a0d563db2a42ab62910 -> 76382e52df219c6deac7ad2d3a6c223b
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/LobbyMatchmakingPanel.cs: 4c7e49b4c2cd364fb3c63233f83c0f2c -> b77533cd32b68cde98cc14336479f827
-  custom:scripting/monoscript/fileName/TheNetwork.cs: e63c393eb900ed50d159855f5cae7bad -> a981984f7f0476f30773c2c5435af779
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/LobbyConnectPanel.cs: f69b4fe35341a854a429fd746848e0f8 -> 74c3b733295384c618869aa6dd295077
-  custom:scripting/monoscript/fileName/ServerLobby.cs: f1b8b3bccd33f0e31d8a54303d2b706a -> 669e66f80f71e52ee053b079693b807e
-  custom:scripting/monoscript/fileName/DemoData.cs: 316ac96590f9af5e06d673267d674c62 -> e5c331e5623aca649fe21ef633ba6f05
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/WebServer.cs: 2231f096d44a13ff3582799ee1400b46 -> 3a10bd93006a0281d3bcf7434c11fb8b
-  custom:scripting/monoscript/fileName/AuthenticatorGoogle.cs: 289a263aa357b07ffa37013ef07b72d1 -> 96d1a5cbd35248247a905d48e1993f9e
-  custom:scripting/monoscript/fileName/ListTool.cs: 847822a67c137a76adaa25a978401a9b -> 21d2821e1c962ec808006622a0ee6590
-  custom:scripting/monoscript/fileName/SNetworkVariable.cs: 1df76bcd92dcbd6ba6f4df6ec3010df4 -> 45c186ae69265f4e9c8131fc3370a1fb
-  custom:scripting/monoscript/fileName/NetworkActionInt.cs: b01861228e2e487558239ed5317e1f56 -> 29b57103aad5a1a141892c493a13da15
-  custom:scripting/monoscript/fileName/ItemAttach.cs: 645533f0faaa50974100678b8dfa961b -> a6a12f374503ca25f4ab1bc3099f25c7
-  custom:scripting/monoscript/fileName/PlayerSpawn.cs: 6e411ef90f9d6e732a7d8634d523e77f -> bd897612e05dbddbe7372b0e0f2510bd
-  custom:scripting/monoscript/fileName/Treasure.cs: 1de5476992cd10578d3d443071f01541 -> b78085f5a2ad54278ca0f25118a33230
-  custom:scripting/monoscript/fileName/Box.cs: ab0b3533a49232604629c2c4b4151642 -> 97a809cac09d068e17fc35194e0577c8
-  custom:scripting/monoscript/fileName/NetworkTool.cs: 647fadb32befaff28b5a3a8d677398b8 -> e1b5ff7badff1eae053af5cb6d4f86ac
-  custom:scripting/monoscript/fileName/Authenticator.cs: cb5ae288e230662bc68bf4013652c6d8 -> 4dd6dcd45dff0f6e72bcb0047bd0492f
-  custom:scripting/monoscript/fileName/SNetworkPlayer.cs: 4261fee37f803d5db48e4272ba557dac -> 664f972ba15331b8de3f65ad4202a40c
-  custom:scripting/monoscript/fileName/ReadOnlyAttribute.cs: 308f757bf2702375ae5286b3141c9277 -> af71b440f02684e4e0bda6ed283e6cba
-  custom:scripting/monoscript/fileName/AuthenticatorSteam.cs: 2ac9c20c2c5bb6ac7040e6644e956a0e -> ec4f7b02b91cfb35ce6642f36d8bac4f
-  custom:scripting/monoscript/fileName/ClientLobbyDedicated.cs: 60b47e860939ffd8f6ee43d59709732b -> 7d49c3e07c8b1d13ca9ff2622794ccdf
-  custom:scripting/monoscript/fileName/WebClient.cs: 06543f6b34e44eafac27a7cbf3c49ccd -> dafbcf9ade90c09cb9ecaf83f39d486a
-  custom:scripting/monoscript/fileName/SMonoBehaviour.cs: dc750b6b0c46413d0a7c7bbb35d1a50e -> 73009864cbc1b99bb4d59e72876e3692
-  custom:scripting/monoscript/fileName/PuzzleGame.cs: ac89a296067d7ec518e6fe1aa15b6a45 -> 0c65994813dad3909ede40d9a056fb47
-  custom:scripting/monoscript/fileName/NetworkRelay.cs: b56777c546db83344846f46b638685ff -> d11647a703704cf7546e2a561b30fc9d
-  custom:scripting/monoscript/fileName/Hazard.cs: 47bc9974ee91c00ce86b71a06be028dd -> bbad82045fa75b7d78ba9ce109a83896
-  custom:scripting/monoscript/fileName/Explorer.cs: aed8275f1e0851243dcd88e0aa01cffa -> 172c33633926f55565e3ffcb0ec2db96
-  custom:scripting/monoscript/fileName/UIFaceCam.cs: 2e5fad6cb9608548bf7668a28244ec2e -> dc2afc2f28bd5df32646de056988b9ce
-  custom:scripting/monoscript/fileName/NetworkActionFloat.cs: c73dc5adc276dc5cdebd96941c17520d -> ee27ef6fa4366fa5550bb593965c1524
-  custom:scripting/monoscript/fileName/NetworkActionBehaviour.cs: cba7e38dab38a4d9dea71e822a864a0b -> 7cf555c251a5510a4afda8dcd42afb34
-  custom:scripting/monoscript/fileName/SNetworkBehaviour.cs: 54bfa672ae04dffbefbb935d3454e012 -> 9136434d6d2fac2b2c545cc32f8703dd
-  custom:scripting/monoscript/fileName/MenuLobby.cs: dcd49940b3f9d3239136a4eacb1fcc49 -> 23ae54375074a98245f891c364a99e77
-  custom:scripting/monoscript/fileName/ServerLauncher.cs: 6e84aa47017e4e6e33836a047064beb3 -> b96372c3f7ee8ca2956e522a017089f8
-  custom:scripting/monoscript/fileName/SceneNav.cs: e66fdceebf49439439d830472411bd42 -> 161a8d12a070c95e104d8ccf39c9bace
-  custom:scripting/monoscript/fileName/GameUI.cs: 19d528b6f31d4084ff347c0b1685eeda -> 10475e5cc1bd97e73e38425622e98ace
-  custom:scripting/monoscript/fileName/GameData.cs: d0e36055dccbc4fcbbf301b4f3d14f58 -> 310724a88c2bafe5b08481fb27c7625c
-  custom:scripting/monoscript/fileName/NetworkMessaging.cs: bdbb6e47d0d17cb96595c594883d360c -> 284e2661dbda293d0b0b64e6bfcafb59
-  custom:scripting/monoscript/fileName/NetworkSpawner.cs: a170ca80d5d02e17d24ec0bda7962a27 -> ceea2cd2bd7b972d9f6a6fc24df4419e
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/NetworkActionVector.cs: fa025b7457503b504efbac15e22cfe19 -> bff05d8e41c01848b83e2f72292a808e
-  custom:scripting/monoscript/fileName/ArrowSpawn.cs: 3515f63f34342f6cca349d9da3d974d2 -> 39c3bff2e6c82fcf41b4ebfae375b9d7
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/LobbyMatchSelectPanel.cs: 82d7382bae4cdb4d4d630c24e22c79e8 -> 7691085597563c23ddccc92f9b3e3c27
-  custom:scripting/monoscript/fileName/FloorSwitch.cs: 0da2b6ee2477c0f8b936feafad496d15 -> 49d8ff1e0e0b70576ecf255e33196b08
-  custom:scripting/monoscript/fileName/AuthenticatorTest.cs: fe0e564d8629219e494203c63562d1e2 -> b6402c7e4e0220e9e96902d815bf513e
-  custom:scripting/monoscript/fileName/TankGame.cs: e2774b20d231cd51df2480dcfbcce618 -> e88fadbc4460fb3252f39b7f177caca0
-  custom:scripting/monoscript/fileName/PlayerChoiceData.cs: 54be1689f93859699b958b827fcb71b2 -> f0a9e1ad281efc8497b3c90d9e741e1f
-  custom:scripting/monoscript/fileName/TimeToolMono.cs: c74fee5c19316ec3b77d9092c4925098 -> 2a767ef4b816618788f8ef7d30db2d33
-  custom:scripting/monoscript/fileName/Arrow.cs: 6886afd572a25dafe9ce8dde872bd317 -> 8b9c7af10d4beae6023990cb4c6cd327
-  custom:scripting/monoscript/fileName/NetworkActionSerializable.cs: 7638458893b455bfa94f75e0b21d0b28 -> f434542aadb1b2f234ae9769a9d90e39
-  custom:scripting/monoscript/fileName/SNetworkOptimizer.cs: baf3444d311a128623e686d8ed1f9bb9 -> 2f3092fac73e9d6b5470eff83afe82a4
-  custom:scripting/monoscript/fileName/Key.cs: 9e05fbee7c806f15b9fd0b14752386bb -> ec3fabf68d03ad239fc893ef7f565063
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/Wall.cs: 6d00edb3e122c4b38116e983dc96d906 -> 0a072906504c699913e6a9ee44323f2a
-  custom:scripting/monoscript/fileName/FloorTrap.cs: 1b8356ed356016c81d2c22609df9f57d -> 6a0198dab35def22e0ceb5daca0d54c8
-  custom:scripting/monoscript/fileName/ChatUI.cs: 332cfeff9e06ddd16c9499a38b5f1d30 -> 68a817afcad4311fd1f61cf01da744cf
-  custom:scripting/monoscript/fileName/TankBullet.cs: 3ba2da03675dcf42dd3ef8211dba7d15 -> 37e81d02f8d5bd98c9b03e77c399bf6e
-  custom:scripting/monoscript/fileName/GameModeData.cs: 5556a2ed53a1106725b7a2f4ef88406c -> 7ab1c11f5c9942f95bd8b216d8e33b30
-  custom:scripting/monoscript/fileName/AutoChangeOwner.cs: 545df94917b68fce2e110a19b37018cf -> e5f1b94a1c4ee6878a2f579e03d1df71
-  custom:scripting/monoscript/fileName/Pool.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
-  custom:scripting/monoscript/fileName/SNetworkObject.cs: 13c11f8ceed01fe5fa93cd11de5dbbf3 -> e024ab86d05fc43aaf810eabbed6b109
-  custom:scripting/monoscript/fileName/AuthenticatorUnity.cs: 33d5658b94efb777eebf48b09a5106ef -> 0a1fdcdef73dff436dc83fb79cd0327f
-  custom:scripting/monoscript/fileName/GameOverPanel.cs: aece3fb40ae4172d2b2bec6a6868ca5e -> 840c4a3a15790009570ec76bd75e4632
-  custom:scripting/monoscript/fileName/ServerMatchmaker.cs: 4bd7843c66821645ae4924573e521a86 -> c16e612a74f4a5edb4e91123e6bdea25
-  custom:scripting/monoscript/fileName/NetworkPrefabHandler.cs: d5c195cead23a1afeb2d3df3eaf46cfa -> 8b5a68a10ddf5fa2a95db87b74530d29
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: dab9ca9a0a1a912c5853ae490d9c58e1 -> 2c7162580195182be5354d8b7bd19876
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

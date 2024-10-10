@@ -92,6 +92,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6865998088644444901}
+  - component: {fileID: 6569778779626282909}
+  - component: {fileID: 3231198866463431629}
   m_Layer: 0
   m_Name: white_knight
   m_TagString: Untagged
@@ -115,6 +117,41 @@ Transform:
   - {fileID: 762548890635655344}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6569778779626282909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8301733245848943513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3931c863a811daf4a9f8c9fc1b9c70ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &3231198866463431629
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8301733245848943513}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3129978
+  m_Height: 1.4793727
+  m_Direction: 1
+  m_Center: {x: -0.0054467916, y: 0.7244412, z: -0.00196895}
 --- !u!28 &3121006466454802997
 Texture2D:
   m_ObjectHideFlags: 0
