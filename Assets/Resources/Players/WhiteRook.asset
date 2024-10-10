@@ -15,4 +15,4 @@ MonoBehaviour:
   mode: 20
   id: WhiteRook
   prefab: {fileID: 2797129902795045934, guid: e8dd5cd08336dd2488d227d54f1a7da2, type: 3}
-  color: {r: 0.13333334, g: 0.23137257, b: 0.32941177, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}

@@ -48,6 +48,7 @@ namespace NetcodePlus.Demo
 
         private void Update()
         {
+            
             int count = 0;
             int dead_count = 0;
 

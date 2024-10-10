@@ -15,4 +15,4 @@ MonoBehaviour:
   mode: 20
   id: WhiteQueen
   prefab: {fileID: 2797129902795045934, guid: 322de072603b6924d9811aa2d5aa0a4d, type: 3}
-  color: {r: 0.21568629, g: 0.21568629, b: 0.21568629, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NetworkData
   m_EditorClassIdentifier: 
   game_port: 7500
-  players_max: 8
+  players_max: 2
   player_default: {fileID: 1493282799323710604, guid: 8399023e8719c6544a0db179d306e083, type: 3}
   lobby_type: 0
   lobby_host: 127.0.0.1

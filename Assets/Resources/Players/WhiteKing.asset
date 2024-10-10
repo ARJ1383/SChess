@@ -15,4 +15,4 @@ MonoBehaviour:
   mode: 20
   id: WhiteKing
   prefab: {fileID: 2797129902795045934, guid: c345d9324b9306a429f86b7a4ddcd202, type: 3}
-  color: {r: 0.9150943, g: 0.7146925, b: 0.074818976, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}

@@ -15,4 +15,4 @@ MonoBehaviour:
   mode: 20
   id: BlackPawn
   prefab: {fileID: 2797129902795045934, guid: a612bfa90e655f347987568242237e45, type: 3}
-  color: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 1}
+  color: {r: 0, g: 0, b: 0, a: 1}

@@ -3572,6 +3572,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: HPBar
       objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5079357105005140431, guid: 1c33cc46d79df364694793663259d688, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3972,6 +3988,10 @@ PrefabInstance:
     - target: {fileID: 5079357105005140428, guid: 1c33cc46d79df364694793663259d688, type: 3}
       propertyPath: m_Name
       value: HPBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5079357105005140431, guid: 1c33cc46d79df364694793663259d688, type: 3}
       propertyPath: m_Pivot.x
@@ -7900,6 +7920,22 @@ PrefabInstance:
     - target: {fileID: 5079357105005140428, guid: 1c33cc46d79df364694793663259d688, type: 3}
       propertyPath: m_Name
       value: HPBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5079357105005140431, guid: 1c33cc46d79df364694793663259d688, type: 3}
       propertyPath: m_Pivot.x
@@ -16876,6 +16912,22 @@ PrefabInstance:
     - target: {fileID: 5079357105005140428, guid: 1c33cc46d79df364694793663259d688, type: 3}
       propertyPath: m_Name
       value: HPBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079357105005140430, guid: 1c33cc46d79df364694793663259d688, type: 3}
+      propertyPath: color_empty.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5079357105005140431, guid: 1c33cc46d79df364694793663259d688, type: 3}
       propertyPath: m_Pivot.x

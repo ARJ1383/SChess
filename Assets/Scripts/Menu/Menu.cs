@@ -29,7 +29,7 @@ namespace NetcodePlus.Demo
         public InputField join_host;
         public OptionSelector join_color;
 
-        private ushort port;
+        public ushort port;
 
         public static string username = null;
         public static string last_menu = "Menu";
@@ -111,7 +111,7 @@ namespace NetcodePlus.Demo
             if (SceneNav.DoSceneExist(mdata.scene))
             {
                 DemoConnectData cdata = new DemoConnectData(mode);
-                cdata.character = character;
+                cdata.character = "WhiteQueen";
                 TheNetwork.Get().SetConnectionExtraData(cdata);
                 SaveUser(user);
                 CreateTask(user, mdata.scene);
@@ -121,7 +121,7 @@ namespace NetcodePlus.Demo
         public void JoinGame(string user, string host, string character)
         {
             DemoConnectData cdata = new DemoConnectData();
-            cdata.character = character;
+            cdata.character = "BlackKnight";
             TheNetwork.Get().SetConnectionExtraData(cdata);
             SaveUser(user);
             JoinTask(user, host);

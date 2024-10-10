@@ -133,7 +133,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4815300177637301115}
@@ -151,11 +151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f98e7766c0cf1b49998758bf1b9ae67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_speed: 20
-  camera: {fileID: 0}
+  move_speed: 60
   explode_prefab: {fileID: 5062682275915073398, guid: f47f957087bfe3e499492707de093fb9, type: 3}
   direction: {x: 0, y: 0, z: 0}
   player_id: 0
+  damage: 1
 --- !u!54 &2240390776968914773
 Rigidbody:
   m_ObjectHideFlags: 0

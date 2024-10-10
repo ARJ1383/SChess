@@ -83,12 +83,12 @@ MonoBehaviour:
   rotate_speed: 80
   gravity: 10
   ground_dist: 0.25
-  attack_cooldown: 0.5
-  attack_bullet: {fileID: 4815300177652869576, guid: 4bea4e61271602d41bf8e93d7ec6ee8a, type: 3}
+  attack_cooldown: 1
+  attack_bullet: {fileID: 4815300177652869576, guid: fc3fd06a3ca61a94fba62a07a4eddb10, type: 3}
   shoot_root: {fileID: 843010289358659844}
   hp: 5
   revive_duration: 0
-  invulnerable_duration: 3
+  invulnerable_duration: 0.3
   mesh: {fileID: 3030939051835745956}
   speed_bonus: {fileID: 8587668637545132957}
   shield_bonus: {fileID: 7992988207810504831}
@@ -109,8 +109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   auto_spawn: 0
-  network_id: 8505915133047488466
-  prefab_id: 8505915133047488466
+  network_id: 940202169143006733
+  prefab_id: 940202169143006733
   is_scene: 0
   is_spawned: 0
 --- !u!114 &2797129902795045923
@@ -150,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 6427266641786101792}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2, z: 1}
+  m_LocalPosition: {x: 0, y: 1.2, z: 0.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -719,9 +719,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 98090cae54cb92f4aa92b226f1796939, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5332539605474854458}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 98090cae54cb92f4aa92b226f1796939, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2361578049345479780}
   m_SourcePrefab: {fileID: 100100000, guid: 98090cae54cb92f4aa92b226f1796939, type: 3}
 --- !u!1 &7166884662682069965 stripped
@@ -729,19 +726,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 98090cae54cb92f4aa92b226f1796939, type: 3}
   m_PrefabInstance: {fileID: 8049210651506185884}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5332539605474854458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7166884662682069965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24806e9b54fb97d49acb778169a0793f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
 --- !u!65 &2361578049345479780
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -132,6 +132,7 @@ namespace NetcodePlus.Demo
 
         private string AssignColor(string preferred)
         {
+            print(preferred);
             GameMode mode = GameData.Get().mode;
             PlayerData pcolor = GameData.Get().GetPlayerByCharacter(preferred);
             PlayerChoiceData choice = PlayerChoiceData.Get(mode, preferred);

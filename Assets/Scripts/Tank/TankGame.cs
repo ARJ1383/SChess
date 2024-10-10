@@ -10,6 +10,7 @@ namespace NetcodePlus.Demo
         private SNetworkActions actions;
 
         private bool ended = false;
+        public static string name;
 
         protected override void Awake()
         {
@@ -22,8 +23,11 @@ namespace NetcodePlus.Demo
             if (!TheNetwork.Get().IsActive())
             {
                 //Start in test mode, when running directly from Unity Scene
-                Authenticator.Get().LoginTest("Player"); //May not work with more advanced auth system, works in Test mode
+
+                if(name != null) Authenticator.Get().LoginTest(name);
+                else Authenticator.Get().LoginTest(name); //May not work with more advanced auth system, works in Test mode
                 DemoConnectData cdata = new DemoConnectData(GameMode.Tank);
+                if (name != null) cdata.character = name;
                 TheNetwork.Get().SetConnectionExtraData(cdata);
                 TheNetwork.Get().StartHost(NetworkData.Get().game_port);
             }

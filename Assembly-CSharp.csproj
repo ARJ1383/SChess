@@ -116,6 +116,7 @@
     <Compile Include="Assets\Scripts\ServerGame.cs" />
     <Compile Include="Assets\Scripts\SNetworkObject.cs" />
     <Compile Include="Assets\Scripts\ClientLobby.cs" />
+    <Compile Include="Assets\Scripts\GoToFight.cs" />
     <Compile Include="Assets\Scripts\WebServer.cs" />
     <Compile Include="Assets\Scripts\Puzzle\Arrow.cs" />
     <Compile Include="Assets\Scripts\Tools\SaveTool.cs" />

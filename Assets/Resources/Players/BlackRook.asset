@@ -15,4 +15,4 @@ MonoBehaviour:
   mode: 20
   id: BlackRook
   prefab: {fileID: 2797129902795045934, guid: 44bab67230f608841827248c82d9021c, type: 3}
-  color: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 1}
+  color: {r: 0, g: 0, b: 0, a: 1}

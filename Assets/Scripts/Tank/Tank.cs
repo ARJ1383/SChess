@@ -304,7 +304,7 @@ namespace NetcodePlus.Demo
             hp -= damage;
             revive_timer = 0f;
             //SetGhost(true);
-            //sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
+            sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
 
             if (hp <= 0)
                 Kill();
@@ -335,7 +335,7 @@ namespace NetcodePlus.Demo
             SetGhost(true);
             destroyed = true;
             revive_timer = 0f;
-            //sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
+            sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
 
             Tower tower = Tower.Get(player_id);
             tower?.Kill(); //Also kill tower
@@ -360,7 +360,7 @@ namespace NetcodePlus.Demo
                 // transf.rotation = Quaternion.LookRotation(face.normalized, Vector3.up);
                 // sync_state.position = pos;
                 // sync_state.facing = face.normalized;
-                //sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
+                sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
                 SetGhost(false);
                 revive_timer = 0f;
                 invul_timer = invulnerable_duration;

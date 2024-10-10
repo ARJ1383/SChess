@@ -7,7 +7,6 @@ namespace NetcodePlus.Demo
     public class TankBullet : MonoBehaviour
     {
         public float move_speed = 20f;
-        public Camera camera;
         public GameObject explode_prefab;
 
         [HideInInspector]
@@ -15,15 +14,21 @@ namespace NetcodePlus.Demo
 
         [HideInInspector]
         public int player_id;
+        public int damage;
+        float time = 0;
 
         void Start()
         {
-            
+            time = 0;
         }
 
         void Update()
         {
+            time += Time.deltaTime;
             transform.position += direction * move_speed * Time.deltaTime;
+            if (time > 2) {
+                Destroy(gameObject);
+            }
         }
 
         private void OnTriggerEnter(Collider other)
@@ -40,9 +45,9 @@ namespace NetcodePlus.Demo
                 tower.Damage();
 
             Tank tank = other.GetComponentInParent<Tank>();
-            if(tank.PlayerID == player_id) return;
+            //if(tank.PlayerID == player_id) return;
             if (tank != null)
-                tank.Damage(1);
+                tank.Damage(damage);
 
             FXTool.FX(explode_prefab, transform.position);
             Destroy(gameObject);

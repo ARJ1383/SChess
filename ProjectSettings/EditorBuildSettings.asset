@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DemoTank.unity
     guid: 6699ba5c51d9a184c843a427edfc3a41
+  - enabled: 1
+    path: Assets/Scenes/DemoPuzzle.unity
+    guid: 11374a145c7740c478fec77ec17d7679
+  - enabled: 1
+    path: Assets/Scenes/DemoSimple.unity
+    guid: 9581cb0e9630bc64492956e268b6abbe
   m_configObjects: {}
