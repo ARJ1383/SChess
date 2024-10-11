@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Cube
   m_EditorClassIdentifier: 
   mode: 10
-  id: 
+  id: blue
   prefab: {fileID: 1493282799323710604, guid: 8399023e8719c6544a0db179d306e083, type: 3}
+  color: {r: 0, g: 0, b: 0, a: 0}

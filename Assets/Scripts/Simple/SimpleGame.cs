@@ -17,6 +17,10 @@ namespace NetcodePlus.Demo
                 TheNetwork.Get().SetConnectionExtraData(cdata);
                 TheNetwork.Get().StartHost(NetworkData.Get().game_port);
             }
+            if (!TheNetwork.Get().IsHost) {
+                Camera.main.transform.position = new Vector3(0,6,-6);
+                Camera.main.transform.rotation = Quaternion.Euler(45,0,0);
+            }
         }
 
     }

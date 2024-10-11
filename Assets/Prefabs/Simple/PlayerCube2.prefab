@@ -49,7 +49,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43423806541743265}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 464dff348b7969648ac2254053507594, type: 2}
+  - {fileID: 2100000, guid: ed4292104e22cfb4989a2b186c5c4222, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -117,10 +117,10 @@ GameObject:
   - component: {fileID: 5439231530710415941}
   - component: {fileID: 1493282799323710593}
   - component: {fileID: 1493282799323710596}
-  - component: {fileID: 8571870405522610906}
   - component: {fileID: 3492693749734270839}
+  - component: {fileID: -2711940797623609838}
   m_Layer: 0
-  m_Name: PlayerCube
+  m_Name: PlayerCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,8 +182,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   auto_spawn: 0
-  network_id: 6661562345280297485
-  prefab_id: 6661562345280297485
+  network_id: 3764765164291902401
+  prefab_id: 3764765164291902401
   is_scene: 0
   is_spawned: 0
 --- !u!114 &1493282799323710596
@@ -198,7 +198,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324c5cab76f6f6b43b18e0dafe4a6c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8571870405522610906
+--- !u!114 &3492693749734270839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493282799323710604}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753bada722b63af4da808f35a5013394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move_speed: 2
+  sync_refresh_rate: 0.05
+  sync_threshold: 0.1
+  sync_interpolate: 5
+  player_mats: []
+--- !u!114 &-2711940797623609838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,7 +224,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1493282799323710604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8142f1aa163bb0647bc1d1f6ed7c75c1, type: 3}
+  m_Script: {fileID: 11500000, guid: b6a7fdaf6eb2a95478983edf9291dc67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   chessPieces:
@@ -243,34 +260,17 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  blackTilePrefab: {fileID: 894129547258166477, guid: fd4e526bd29bf8648a381ce67088d56a, type: 3}
-  whiteTilePrefab: {fileID: 8954669406458760089, guid: 12115d35be4cc0e4183a3c8e46e87c69, type: 3}
-  whitePawnPrefab: {fileID: 6468567674786511396, guid: c53291cd0702f60489a9328e59aa5d55, type: 3}
-  blackPawnPrefab: {fileID: 6468567674786511396, guid: b37733d36ca9bef41916cd9cec3a3928, type: 3}
-  whiteKingPrefab: {fileID: 3319173084322187111, guid: a296a30de97789241ae4883a630d8a18, type: 3}
-  blackKingPrefab: {fileID: 5556106810774329644, guid: dd3ce076770a2024ab25e5e3d07871ff, type: 3}
-  whiteQueenPrefab: {fileID: 135932119572297781, guid: 746edbe1e44a53d4ab4b633ea99bec41, type: 3}
-  blackQueenPrefab: {fileID: 3780438328246563921, guid: e33b1949558e47544a03594e855ca9f0, type: 3}
-  whiteKnightPrefab: {fileID: 8301733245848943513, guid: 5a2c7566f2125d841a5828cd22dbd463, type: 3}
-  blackKnightPrefab: {fileID: 5773535338657831067, guid: 207417434d4e486469e63164bcf82c72, type: 3}
-  whiteBishopPrefab: {fileID: 6157935857934929550, guid: a990b66081ebc1f49a12417f02209b50, type: 3}
-  blackBishopPrefab: {fileID: 5072021485914250399, guid: 94160cd8302c2094ca567d98c1692551, type: 3}
-  whiteRookPrefab: {fileID: 343682099782220849, guid: 8c6cfb36b0d16f24fbac0a3cc3374303, type: 3}
-  blackRookPrefab: {fileID: 1418577212984322221, guid: fe45f5fe2b9dbdf42b6044a23332ce9e, type: 3}
---- !u!114 &3492693749734270839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493282799323710604}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 753bada722b63af4da808f35a5013394, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move_speed: 2
-  sync_refresh_rate: 0.05
-  sync_threshold: 0.1
-  sync_interpolate: 5
-  player_mats: []
+  blackTilePrefab: {fileID: 0}
+  whiteTilePrefab: {fileID: 0}
+  whitePawnPrefab: {fileID: 0}
+  blackPawnPrefab: {fileID: 0}
+  whiteKingPrefab: {fileID: 0}
+  blackKingPrefab: {fileID: 0}
+  whiteQueenPrefab: {fileID: 0}
+  blackQueenPrefab: {fileID: 0}
+  whiteKnightPrefab: {fileID: 0}
+  blackKnightPrefab: {fileID: 0}
+  whiteBishopPrefab: {fileID: 0}
+  blackBishopPrefab: {fileID: 0}
+  whiteRookPrefab: {fileID: 0}
+  blackRookPrefab: {fileID: 0}

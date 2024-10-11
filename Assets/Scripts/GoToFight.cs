@@ -23,12 +23,13 @@ public class GoToFight : MonoBehaviour
             cdata.character = "BlackKing";
             TheNetwork.Get().SetConnectionExtraData(cdata);
             TankGame.name = "BlackKing";
-            changeGame(gmdata.scene);
+            TheNetwork.Get().LoadScene(gmdata.scene);
+
+            //hangeGame(gmdata.scene);
         }
     }
 
     async void changeGame(string scene) {
-            TheNetwork.Get().Disconnect();
             BlackPanel.Get().Show();
             await Task.Yield(); //Wait a frame after the disconnect
             TheNetwork.Get().LoadScene(scene);

@@ -4,7 +4,7 @@ public class ChessPiece : MonoBehaviour
 {
     private Renderer pieceRenderer;
 
-    private GameManager gameManager;
+    public static GameManager gameManager2;
 
     private int i, j;
 
@@ -15,13 +15,12 @@ public class ChessPiece : MonoBehaviour
 
         // ایجاد Material Property Block برای کنترل رنگ و حاشیه
         // پیدا کردن Game Manager
-        gameManager = FindObjectOfType<GameManager>();
     }
 
     void OnMouseDown()
     {
         UpdateIJ(); 
-        gameManager.SelectPiece(this, i, j);
+        gameManager2.SelectPiece(this, i, j);
     }
 
     public void HighlightPiece()

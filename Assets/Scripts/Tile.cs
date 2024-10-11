@@ -22,14 +22,13 @@ public class Tile : MonoBehaviour
     public Material imageMaterial3; // Assign the material with your image texture
 
     private Renderer tileRenderer; // Reference to the tile's renderer
-    private GameManager gameManager;
+    public static GameManager gameManager;
 
     void Start()
     {
         // Get the Renderer component of the tile
         tileRenderer = GetComponent<Renderer>();
         originalMaterial = tileRenderer.material;
-        gameManager = FindObjectOfType<GameManager>();
         i = (int)Math.Round((GameManager.tileA1x - this.transform.position.x) / tileWidth);
         j = (int)Math.Round((GameManager.tileA1z - this.transform.position.z) / tileWidth);
     }
@@ -41,6 +40,7 @@ public class Tile : MonoBehaviour
         {
             tileRenderer.material = imageMaterial; // Apply the new material with the image
         }
+        
     }
 
     public void ShowImageOnTile2()

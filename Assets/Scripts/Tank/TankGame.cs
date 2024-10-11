@@ -31,10 +31,17 @@ namespace NetcodePlus.Demo
                 TheNetwork.Get().SetConnectionExtraData(cdata);
                 TheNetwork.Get().StartHost(NetworkData.Get().game_port);
             }
-
+            if(TheNetwork.Get().IsHost) {
+                DemoConnectData cdata = new DemoConnectData(GameMode.Tank);
+                if (name != null) cdata.character = name;
+                TheNetwork.Get().SetConnectionExtraData(cdata);
+                print(name);
+                
+            }
             //Shuffle PlayerSpawn ids
             if (TheNetwork.Get().IsServer)
             {
+                print("inja");
                 List<PlayerSpawn> spawns = PlayerSpawn.GetAll();
                 ListTool.Shuffle(spawns);
                 for (int i = 0; i < spawns.Count; i++)
