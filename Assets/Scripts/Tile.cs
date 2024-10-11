@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class Tile : MonoBehaviour
 {
@@ -76,6 +77,10 @@ public class Tile : MonoBehaviour
     {
         if (canGo)
         {
+            if (tileRenderer.material == imageMaterial3) {
+                gameManager.attack(i,j);
+                return;
+            } 
             ChessLogic.GetInstance()
                 .MovePiece(
                     new ChessPosition(((PieceSelected)(gameManager.pieceSelected)).j,

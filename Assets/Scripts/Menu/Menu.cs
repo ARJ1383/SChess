@@ -113,6 +113,7 @@ namespace NetcodePlus.Demo
                 DemoConnectData cdata = new DemoConnectData(mode);
                 cdata.character = "WhiteQueen";
                 TheNetwork.Get().SetConnectionExtraData(cdata);
+                GameManager.gameModeData = mdata;
                 SaveUser(user);
                 CreateTask(user, mdata.scene);
             }

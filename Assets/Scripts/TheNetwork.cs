@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using NetcodePlus.Demo;
 using Unity.Collections;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -85,6 +87,8 @@ namespace NetcodePlus
 
         private const string listen_all = "0.0.0.0";
         private const int msg_size = 1024 * 1024 * 100;
+
+        public static bool tank = false;
 
         void Awake()
         {
@@ -280,7 +284,7 @@ namespace NetcodePlus
             if (!IsClient && !IsServer)
                 return;
 
-            Debug.Log("Disconnect");
+           // Debug.Log("Disconnect");
             network.Shutdown();
             AfterDisconnected();
         }
@@ -521,6 +525,34 @@ namespace NetcodePlus
 
             Vector3 pos = GetPlayerSpawnPos(client.player_id);
             Vector3 rot = GetPlayerSpawnRot(client.player_id);
+            GameObject prefab = PlayerChoiceData.Get(GameMode.Tank,TankGame.name).prefab;
+            if (prefab == null)
+                return;
+
+            Debug.Log("Spawn Player: " + client.user_id + " " + client.username + " " + client.player_id);
+
+            GameObject player_obj = Instantiate(prefab, pos, Quaternion.Euler(rot));
+            SNetworkObject player = player_obj.GetComponent<SNetworkObject>();
+            players_list[client_id] = player;
+            onBeforePlayerSpawn?.Invoke(client.player_id, player);
+            player.Spawn(client_id);
+            onSpawnPlayer?.Invoke(client.player_id, player);
+        }
+
+        public void SpawnPlayer2(ulong client_id)
+        {
+            if (!IsServer)
+                return;
+            if (GetPlayerObject(client_id) != null)
+                return; //Already Spawned
+            ClientData client = GetClient(client_id);
+            if (client == null)
+                return; //Client not found
+            if (client.player_id < 0)
+                return; //Just an observer
+
+            Vector3 pos = GetPlayerSpawnPos(client.player_id);
+            Vector3 rot = GetPlayerSpawnRot(client.player_id);
             GameObject prefab = GetPlayerPrefab(client.player_id);
             if (prefab == null)
                 return;
@@ -586,6 +618,7 @@ namespace NetcodePlus
 
         private GameObject GetPlayerPrefab(int player_id)
         {
+    
             if (findPlayerPrefab != null)
                 return findPlayerPrefab.Invoke(player_id);
             return NetworkData.Get().player_default;
@@ -660,7 +693,8 @@ namespace NetcodePlus
                 Debug.Log("Client is Ready:" + client_id);
                 client_ready_list.Add(client_id);
                 SpawnClientObjects(client_id);
-                SpawnPlayer(client_id);
+                if(tank)SpawnPlayer(client_id);
+                else SpawnPlayer2(client_id);
                 onClientReady?.Invoke(client_id);
             }
         }

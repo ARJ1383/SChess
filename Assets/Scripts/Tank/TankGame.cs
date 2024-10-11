@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
+using UnityEngine.Rendering;
 
 namespace NetcodePlus.Demo
 {
@@ -11,6 +12,7 @@ namespace NetcodePlus.Demo
 
         private bool ended = false;
         public static string name;
+        public static string name2;
 
         protected override void Awake()
         {
@@ -31,11 +33,12 @@ namespace NetcodePlus.Demo
                 TheNetwork.Get().SetConnectionExtraData(cdata);
                 TheNetwork.Get().StartHost(NetworkData.Get().game_port);
             }
-            if(TheNetwork.Get().IsHost) {
+            if(!TheNetwork.Get().IsHost) {
+                string host = TheNetwork.Get().Address;
                 DemoConnectData cdata = new DemoConnectData(GameMode.Tank);
                 if (name != null) cdata.character = name;
                 TheNetwork.Get().SetConnectionExtraData(cdata);
-                print(name);
+                TheNetwork.Get().StartClient(host, 7777);
                 
             }
             //Shuffle PlayerSpawn ids

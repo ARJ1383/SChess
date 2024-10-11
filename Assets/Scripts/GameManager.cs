@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using NetcodePlus;
+using NetcodePlus.Demo;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
@@ -59,6 +61,7 @@ public class GameManager : SNetworkPlayer
     public GameObject whiteRookPrefab, blackRookPrefab;
     private ChessLogic logic;
     public PlayerMoveState sync_state = new PlayerMoveState();
+    public static GameModeData gameModeData;
     
     public PieceSelected? pieceSelected;
     protected override void Awake()
@@ -70,6 +73,7 @@ public class GameManager : SNetworkPlayer
         base.OnSpawn();
         actions = new SNetworkActions(this);
         actions.RegisterSerializable("sync", ReceiveSync,NetworkDelivery.Reliable);
+        actions.RegisterSerializable("attack", getAttack,NetworkDelivery.Reliable);
         Tile.gameManager = this;
         ChessPiece.gameManager2 = this;
     }
@@ -130,9 +134,58 @@ public class GameManager : SNetworkPlayer
     }
     public void MovePiece(int i, int j)
     {
-        print(TheNetwork.Get().PlayerID);
+        print(TheNetwork.Get());
         actions?.Trigger("sync", new PlayerMoveState(((PieceSelected)pieceSelected).i,((PieceSelected)pieceSelected).j,i, j,logic.IsWhite()));
         ((PieceSelected)pieceSelected).selectedPiece.transform.position = new Vector3(returnPos(i, j).x, Tile.tileHeight, returnPos(i, j).z);
+    }
+
+    public async void attack(int i, int j) {
+        setTankName(((PieceSelected)pieceSelected).selectedPiece);
+        actions?.Trigger("attack", new PlayerAttackState(i, j));
+        await Task.Delay(1000);
+        TheNetwork.tank = true;
+        GameMode mode = GameMode.Tank;
+        GameModeData gmdata = GameModeData.Get(mode);
+        DemoConnectData cdata = new DemoConnectData(mode);
+        TheNetwork.Get().SetConnectionExtraData(cdata);
+        TheNetwork.Get().LoadScene(gmdata.scene);
+    }
+
+    private void setTankName(ChessPiece chessPiece) {
+        for (int k = 0; k < 32; k++)
+        {
+            if (chessPiece == chessPieces[k]) {
+                if (k < 8)
+                TankGame.name = "WhitePawn";
+                else if (k < 16)
+                TankGame.name = "BlackPawn";
+                else if (k < 18)
+                TankGame.name = "WhiteRook";
+                else if (k < 20)
+                TankGame.name = "BlackRook";
+                else if (k < 22)
+                TankGame.name = "WhiteKnight";
+                else if (k < 24)
+                TankGame.name = "BlackKnight";
+                else if (k < 26)
+                TankGame.name = "WhiteBishop";
+                else if (k < 28)
+                TankGame.name = "BlackBishop";
+                else if (k < 29)
+                TankGame.name = "WhiteQueen";
+                else if (k < 30)
+                TankGame.name = "BlackQueen";
+                else if (k < 31)
+                TankGame.name = "WhiteKing";
+                else if (k < 32)
+                TankGame.name = "BlackKing";
+            }
+        }
+    }
+
+    public void getAttack(SerializedData sdata) {
+        PlayerAttackState sync_state = sdata.Get<PlayerAttackState>();
+        setTankName(GetChessPieceByIAndJ(sync_state.i, sync_state.j));
     }
     public void ReceiveSync(SerializedData sdata) {
         print(GameManager2.chessPieces[0]);
@@ -140,9 +193,6 @@ public class GameManager : SNetworkPlayer
         if(chessPieces[0] == null) chessPieces = GameManager2.chessPieces;
         logic = GameManager2.logic;
         PlayerMoveState sync_state = sdata.Get<PlayerMoveState>();
-        print(IsOwner);
-        print(TheNetwork.Get().IsHost);
-        print(chessPieces[0]);
         if ((sync_state.white && TheNetwork.Get().IsHost) || (!sync_state.white && !TheNetwork.Get().IsHost)) {
             ChessPiece chessPiece = GetChessPieceByIAndJ(sync_state.primary_i,sync_state.primary_j);
             logic.MovePiece(new ChessPosition(sync_state.primary_j,sync_state.primary_i), new ChessPosition(sync_state.secondary_j,sync_state.secondary_i));
@@ -182,6 +232,22 @@ public class GameManager : SNetworkPlayer
             this.primary_j = primary_j;
             this.secondary_j = secondary_j;
             this.white = white;
+        }
+    }
+
+    public struct PlayerAttackState : INetworkSerializable
+    {
+        public int i, j;
+
+        public void NetworkSerialize<T>(BufferSerializer<T> serializer) where T : IReaderWriter
+        {
+            serializer.SerializeValue(ref i);
+            serializer.SerializeValue(ref j); 
+        }
+
+        public PlayerAttackState(int i,int j) {
+            this.i = i;
+            this.j = j;
         }
     }
 
