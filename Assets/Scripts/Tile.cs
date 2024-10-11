@@ -10,7 +10,7 @@ public class Tile : MonoBehaviour
 {
     public static float tileWidth = 1.08f, tileHeight = 0.3f;
 
-    private bool canGo = false;
+    private bool canGo = false, isThreatened = false;
 
     private Material originalMaterial;
 
@@ -58,6 +58,7 @@ public class Tile : MonoBehaviour
         canGo = true;
         if (tileRenderer != null && imageMaterial3 != null)
         {
+            isThreatened = true;
             tileRenderer.material = imageMaterial3; // Apply the new material with the image
         }
     }
@@ -71,13 +72,14 @@ public class Tile : MonoBehaviour
         }
 
         canGo = false;
+        isThreatened = false;
     }
 
     void OnMouseDown()
     {
         if (canGo)
         {
-            if (tileRenderer.material == imageMaterial3) {
+            if (isThreatened) {
                 gameManager.attack(i,j);
                 return;
             } 

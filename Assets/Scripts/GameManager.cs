@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using NetcodePlus;
 using NetcodePlus.Demo;
 using Unity.Netcode;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -71,6 +72,7 @@ public class GameManager : SNetworkPlayer
     protected override void OnSpawn()
     {
         base.OnSpawn();
+        Cursor.lockState = CursorLockMode.None;
         actions = new SNetworkActions(this);
         actions.RegisterSerializable("sync", ReceiveSync,NetworkDelivery.Reliable);
         actions.RegisterSerializable("attack", getAttack,NetworkDelivery.Reliable);
@@ -139,53 +141,115 @@ public class GameManager : SNetworkPlayer
         ((PieceSelected)pieceSelected).selectedPiece.transform.position = new Vector3(returnPos(i, j).x, Tile.tileHeight, returnPos(i, j).z);
     }
 
-    public async void attack(int i, int j) {
-        setTankName(((PieceSelected)pieceSelected).selectedPiece);
-        actions?.Trigger("attack", new PlayerAttackState(i, j));
+    public async void attack(int i, int j)
+    {
+        if (TheNetwork.Get().IsHost)
+        {
+            setTankName(((PieceSelected)pieceSelected).selectedPiece, true);
+            setTankName(GetChessPieceByIAndJ(i, j), false);
+
+            await Task.Delay(1000);
+
+            TheNetwork.tank = true;
+            GameMode mode = GameMode.Tank;
+            GameModeData gmdata = GameModeData.Get(mode);
+            DemoConnectData cdata = new DemoConnectData(mode);
+            TheNetwork.Get().SetConnectionExtraData(cdata);
+            TheNetwork.Get().LoadScene(gmdata.scene);
+        }
+        else
+        {
+            actions?.Trigger("attack",
+                new PlayerMoveState(((PieceSelected)pieceSelected).i, ((PieceSelected)pieceSelected).j, i, j,
+                    logic.IsWhite()));
+        }
+    }
+
+    private void setTankName(ChessPiece chessPiece, bool isHost) {
+        if (isHost)
+        {
+            for (int k = 0; k < 32; k++)
+            {
+                if (chessPiece == chessPieces[k].GetComponent<ChessPiece>())
+                {
+                    if (k < 8)
+                        TankGame.name = "WhitePawn";
+                    else if (k < 16)
+                        TankGame.name = "BlackPawn";
+                    else if (k < 18)
+                        TankGame.name = "WhiteRook";
+                    else if (k < 20)
+                        TankGame.name = "BlackRook";
+                    else if (k < 22)
+                        TankGame.name = "WhiteKnight";
+                    else if (k < 24)
+                        TankGame.name = "BlackKnight";
+                    else if (k < 26)
+                        TankGame.name = "WhiteBishop";
+                    else if (k < 28)
+                        TankGame.name = "BlackBishop";
+                    else if (k < 29)
+                        TankGame.name = "WhiteQueen";
+                    else if (k < 30)
+                        TankGame.name = "BlackQueen";
+                    else if (k < 31)
+                        TankGame.name = "WhiteKing";
+                    else if (k < 32)
+                        TankGame.name = "BlackKing";
+                }
+            }
+        }
+        else
+        {
+            for (int k = 0; k < 32; k++)
+            {
+                if (chessPiece == chessPieces[k].GetComponent<ChessPiece>())
+                {
+                    if (k < 8)
+                        TankGame.name2 = "WhitePawn";
+                    else if (k < 16)
+                        TankGame.name2 = "BlackPawn";
+                    else if (k < 18)
+                        TankGame.name2 = "WhiteRook";
+                    else if (k < 20)
+                        TankGame.name2 = "BlackRook";
+                    else if (k < 22)
+                        TankGame.name2 = "WhiteKnight";
+                    else if (k < 24)
+                        TankGame.name2 = "BlackKnight";
+                    else if (k < 26)
+                        TankGame.name2 = "WhiteBishop";
+                    else if (k < 28)
+                        TankGame.name2 = "BlackBishop";
+                    else if (k < 29)
+                        TankGame.name2 = "WhiteQueen";
+                    else if (k < 30)
+                        TankGame.name2 = "BlackQueen";
+                    else if (k < 31)
+                        TankGame.name2 = "WhiteKing";
+                    else if (k < 32)
+                        TankGame.name2 = "BlackKing";
+                }
+            }
+        }
+       
+    }
+    
+
+    public async void getAttack(SerializedData sdata)
+    {
+        PlayerMoveState sync_state = sdata.Get<PlayerMoveState>();
+        setTankName(GetChessPieceByIAndJ(sync_state.secondary_i, sync_state.secondary_j), true);
+        setTankName(GetChessPieceByIAndJ(sync_state.primary_i, sync_state.primary_j), false);
+
         await Task.Delay(1000);
+
         TheNetwork.tank = true;
         GameMode mode = GameMode.Tank;
         GameModeData gmdata = GameModeData.Get(mode);
         DemoConnectData cdata = new DemoConnectData(mode);
         TheNetwork.Get().SetConnectionExtraData(cdata);
         TheNetwork.Get().LoadScene(gmdata.scene);
-    }
-
-    private void setTankName(ChessPiece chessPiece) {
-        for (int k = 0; k < 32; k++)
-        {
-            if (chessPiece == chessPieces[k]) {
-                if (k < 8)
-                TankGame.name = "WhitePawn";
-                else if (k < 16)
-                TankGame.name = "BlackPawn";
-                else if (k < 18)
-                TankGame.name = "WhiteRook";
-                else if (k < 20)
-                TankGame.name = "BlackRook";
-                else if (k < 22)
-                TankGame.name = "WhiteKnight";
-                else if (k < 24)
-                TankGame.name = "BlackKnight";
-                else if (k < 26)
-                TankGame.name = "WhiteBishop";
-                else if (k < 28)
-                TankGame.name = "BlackBishop";
-                else if (k < 29)
-                TankGame.name = "WhiteQueen";
-                else if (k < 30)
-                TankGame.name = "BlackQueen";
-                else if (k < 31)
-                TankGame.name = "WhiteKing";
-                else if (k < 32)
-                TankGame.name = "BlackKing";
-            }
-        }
-    }
-
-    public void getAttack(SerializedData sdata) {
-        PlayerAttackState sync_state = sdata.Get<PlayerAttackState>();
-        setTankName(GetChessPieceByIAndJ(sync_state.i, sync_state.j));
     }
     public void ReceiveSync(SerializedData sdata) {
         print(GameManager2.chessPieces[0]);

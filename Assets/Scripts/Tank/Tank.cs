@@ -272,10 +272,17 @@ namespace NetcodePlus.Demo
 
         public void Shoot()
         {
-            if (IsOwner && attack_timer > attack_cooldown)
-            {
-                actions?.Trigger("shoot", Camera.main.transform.forward); //DoShoot()
-            }
+            TheNetwork.tank = false;
+            GameModeData gmdata = GameManager.gameModeData;
+            DemoConnectData cdata = new DemoConnectData(GameMode.Simple);
+            TheNetwork.Get().SetConnectionExtraData(cdata);
+            TheNetwork.Get().LoadScene(gmdata.scene);
+            Cursor.lockState = CursorLockMode.None;
+
+            // if (IsOwner && attack_timer > attack_cooldown)
+            // {
+            //     actions?.Trigger("shoot", Camera.main.transform.forward); //DoShoot()
+            // }
         }
 
         private void DoShoot(Vector3 dir)

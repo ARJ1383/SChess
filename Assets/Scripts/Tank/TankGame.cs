@@ -33,18 +33,16 @@ namespace NetcodePlus.Demo
                 TheNetwork.Get().SetConnectionExtraData(cdata);
                 TheNetwork.Get().StartHost(NetworkData.Get().game_port);
             }
-            if(!TheNetwork.Get().IsHost) {
-                string host = TheNetwork.Get().Address;
-                DemoConnectData cdata = new DemoConnectData(GameMode.Tank);
-                if (name != null) cdata.character = name;
-                TheNetwork.Get().SetConnectionExtraData(cdata);
-                TheNetwork.Get().StartClient(host, 7777);
-                
-            }
+            // if(!TheNetwork.Get().IsHost) {
+            //     string host = TheNetwork.Get().Address;
+            //     DemoConnectData cdata = new DemoConnectData(GameMode.Tank);
+            //     if (name2 != null) cdata.character = name2;
+            //     TheNetwork.Get().SetConnectionExtraData(cdata);
+            //     TheNetwork.Get().StartClient(host, 7777);
+            // }
             //Shuffle PlayerSpawn ids
             if (TheNetwork.Get().IsServer)
             {
-                print("inja");
                 List<PlayerSpawn> spawns = PlayerSpawn.GetAll();
                 ListTool.Shuffle(spawns);
                 for (int i = 0; i < spawns.Count; i++)

@@ -89,6 +89,7 @@ namespace NetcodePlus
         private const int msg_size = 1024 * 1024 * 100;
 
         public static bool tank = false;
+        public static bool isHost = true;
 
         void Awake()
         {
@@ -525,7 +526,9 @@ namespace NetcodePlus
 
             Vector3 pos = GetPlayerSpawnPos(client.player_id);
             Vector3 rot = GetPlayerSpawnRot(client.player_id);
-            GameObject prefab = PlayerChoiceData.Get(GameMode.Tank,TankGame.name).prefab;
+            GameObject prefab = (isHost) ? PlayerChoiceData.Get(GameMode.Tank,TankGame.name).prefab : 
+                PlayerChoiceData.Get(GameMode.Tank,TankGame.name2).prefab;
+            isHost = !isHost;
             if (prefab == null)
                 return;
 

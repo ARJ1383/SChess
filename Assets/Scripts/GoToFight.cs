@@ -4,6 +4,7 @@ using UnityEngine;
 using NetcodePlus;
 using NetcodePlus.Demo;
 using System.Threading.Tasks;
+using UnityEngine.EventSystems;
 
 public class GoToFight : MonoBehaviour
 {
@@ -14,6 +15,19 @@ public class GoToFight : MonoBehaviour
     }
 
     // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            TheNetwork.tank = true;
+            TankGame.name = "WhitePawn";
+            GameMode mode = GameMode.Tank;
+            GameModeData gmdata = GameModeData.Get(mode);
+            DemoConnectData cdata = new DemoConnectData(mode);
+            TheNetwork.Get().SetConnectionExtraData(cdata);
+            TheNetwork.Get().LoadScene(gmdata.scene);
+        }
+    }
 
     async void changeGame(string scene) {
             TheNetwork.Get().Disconnect();
