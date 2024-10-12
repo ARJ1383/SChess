@@ -104,8 +104,8 @@ public class GameManager : SNetworkPlayer
 
     public void SelectPiece(ChessPiece chessPiece, int i, int j)
     {
-        if(tiles == null) tiles = GameManager2.tiles;
-        if(chessPieces == null) chessPieces = GameManager2.chessPieces;
+        if(tiles == null)tiles = GameManager2.tiles;
+        if(chessPieces[0] == null)chessPieces = GameManager2.chessPieces;
         logic = GameManager2.logic;
         if((TheNetwork.Get().IsHost && ChessLogic.GetInstance().IsWhite() ) || 
             (!TheNetwork.Get().IsHost && !ChessLogic.GetInstance().IsWhite() ))  {
@@ -196,6 +196,7 @@ public class GameManager : SNetworkPlayer
         {
             for (int k = 0; k < 32; k++)
             {
+                if(chessPieces[k] == null) continue;
                 if (chessPiece == chessPieces[k].GetComponent<ChessPiece>())
                 {
                     if (k < 8)
@@ -229,6 +230,7 @@ public class GameManager : SNetworkPlayer
         {
             for (int k = 0; k < 32; k++)
             {
+                if(chessPieces[k] == null) continue;
                 if (chessPiece == chessPieces[k].GetComponent<ChessPiece>())
                 {
                     if (k < 8)
@@ -279,8 +281,8 @@ public class GameManager : SNetworkPlayer
     }
     public void ReceiveSync(SerializedData sdata) {
         print(GameManager2.chessPieces[0]);
-        if(tiles == null) tiles = GameManager2.tiles;
-        if(chessPieces[0] == null) chessPieces = GameManager2.chessPieces;
+        if(tiles == null)tiles = GameManager2.tiles;
+        if(chessPieces[0] == null)chessPieces = GameManager2.chessPieces;
         logic = GameManager2.logic;
         PlayerMoveState sync_state = sdata.Get<PlayerMoveState>();
         if ((sync_state.white && TheNetwork.Get().IsHost) || (!sync_state.white && !TheNetwork.Get().IsHost)) {
@@ -295,6 +297,7 @@ public class GameManager : SNetworkPlayer
 
     public ChessPiece GetChessPieceByIAndJ(int i, int j) {
         foreach(GameObject ch in chessPieces) {
+            if(ch == null) continue;
             if(ReturnCoordinate(ch.transform.position.x,ch.transform.position.z).i == i &&
                 ReturnCoordinate(ch.transform.position.x,ch.transform.position.z).j == j  ) {
                 return ch.GetComponent<ChessPiece>();

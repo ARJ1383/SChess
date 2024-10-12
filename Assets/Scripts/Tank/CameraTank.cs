@@ -17,7 +17,7 @@ namespace NetcodePlus.Demo
         [Header("Smoothing")]
         public bool smooth_camera = false; //Camera will be more smooth but less accurate
         public float smooth_speed = 10f;
-        public float smooth_rotate_speed = 90f;
+        public float smooth_rotate_speed = 120f;
 
         protected Camera cam;
         protected Transform target_transform;

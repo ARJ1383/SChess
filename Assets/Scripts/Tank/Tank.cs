@@ -13,7 +13,7 @@ namespace NetcodePlus.Demo
         [Header("Movement")]
         public float acceleration = 10f;
         public float move_speed = 2f;
-        public float rotate_speed = 50f;
+        public float rotate_speed = 100f;
         public float gravity = 10f;
         public float ground_dist = 0.25f;
 
@@ -24,8 +24,8 @@ namespace NetcodePlus.Demo
 
         [Header("Life")]
         public int hp = 5;
-        public float revive_duration = 0f;
-        public float invulnerable_duration = 0f;
+        public float revive_duration = 0.2f;
+        public float invulnerable_duration = 0.3f;
 
         [Header("Ref")]
         public GameObject mesh;
@@ -283,6 +283,7 @@ namespace NetcodePlus.Demo
             if (attack_timer > attack_cooldown)
             {
                 attack_timer = 0f;
+                animator.SetTrigger("shoot");
                 GameObject bobj = Instantiate(attack_bullet, shoot_root.position, Quaternion.identity);
                 TankBullet bullet = bobj.GetComponent<TankBullet>();
                 bullet.direction = dir;
@@ -298,12 +299,11 @@ namespace NetcodePlus.Demo
 
         private void DoDamage(int damage)
         {
-            if (IsInvulnerable())
+            if (IsInvulnerable() || ghost)
                 return;
-
+            SetGhost(true);
             hp -= damage;
             revive_timer = 0f;
-            //SetGhost(true);
             sync_state.timing += 10; //Avoid glitch, ignore next 10 refresh
 
             if (hp <= 0)

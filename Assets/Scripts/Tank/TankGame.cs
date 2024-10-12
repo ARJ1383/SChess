@@ -121,6 +121,7 @@ namespace NetcodePlus.Demo
 
             if (firstTime && ended)
             {
+                Cursor.lockState = CursorLockMode.None;
                 if ((GameManager.hostAttack && GameManager.hostWins) ||
                     (!GameManager.hostAttack && !GameManager.hostWins))
                 {
@@ -141,7 +142,14 @@ namespace NetcodePlus.Demo
                 ChessLogic.GetInstance().ChangeTurn();
                 firstTime = false;
             }            
-            
+            if((TheNetwork.Get().IsHost && ChessLogic.GetInstance().IsGameOver() == 1) || (!TheNetwork.Get().IsHost && ChessLogic.GetInstance().IsGameOver() == -1)) {
+                GameOverPanel.Get().Show("You won!", "You Killed Your Opponent's King");
+                return;
+            }
+             if((!TheNetwork.Get().IsHost && ChessLogic.GetInstance().IsGameOver() == 1) || (TheNetwork.Get().IsHost && ChessLogic.GetInstance().IsGameOver() == -1)) {
+                GameOverPanel.Get().Show("You Lost!", "Your King died");
+                return;
+            }
             
             if (TheNetwork.Get().IsHost && timer > 0.5f && ended)
                 {
@@ -150,7 +158,6 @@ namespace NetcodePlus.Demo
                     DemoConnectData cdata = new DemoConnectData(GameMode.Simple);
                     TheNetwork.Get().SetConnectionExtraData(cdata);
                     TheNetwork.Get().LoadScene(gmdata.scene);
-                    Cursor.lockState = CursorLockMode.None;
                 }
             
         }

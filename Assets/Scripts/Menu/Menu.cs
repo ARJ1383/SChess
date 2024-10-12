@@ -96,22 +96,21 @@ namespace NetcodePlus.Demo
 
         public void OnClickCreate()
         {
-            GameMode mode = (GameMode) create_mode.GetSelectedValue();
-            CreateGame(create_user.text, mode, create_color.GetSelectedValue());
+            CreateGame(create_user.text);
         }
 
         public void OnClickJoin()
         {
-            JoinGame(join_user.text, join_host.text, join_color.GetSelectedValue());
+            JoinGame(join_user.text, join_host.text);
         }
 
-        public void CreateGame(string user, GameMode mode, string character)
+        public void CreateGame(string user)
         {
-            GameModeData mdata = GameModeData.Get(mode);
+            ChessLogic.GetInstance().ClearBoard();
+            GameModeData mdata = GameModeData.Get(GameMode.Simple);
             if (SceneNav.DoSceneExist(mdata.scene))
             {
-                DemoConnectData cdata = new DemoConnectData(mode);
-                cdata.character = "WhiteQueen";
+                DemoConnectData cdata = new DemoConnectData(GameMode.Simple);
                 TheNetwork.Get().SetConnectionExtraData(cdata);
                 GameManager.gameModeData = mdata;
                 SaveUser(user);
@@ -119,8 +118,9 @@ namespace NetcodePlus.Demo
             }
         }
 
-        public void JoinGame(string user, string host, string character)
+        public void JoinGame(string user, string host)
         {
+            ChessLogic.GetInstance().ClearBoard();
             DemoConnectData cdata = new DemoConnectData();
             cdata.character = "BlackKnight";
             TheNetwork.Get().SetConnectionExtraData(cdata);

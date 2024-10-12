@@ -87,8 +87,8 @@ MonoBehaviour:
   attack_bullet: {fileID: 4815300177652869576, guid: 4bea4e61271602d41bf8e93d7ec6ee8a, type: 3}
   shoot_root: {fileID: 843010289358659844}
   hp: 3
-  revive_duration: 0
-  invulnerable_duration: 0.3
+  revive_duration: 0.2
+  invulnerable_duration: 1
   mesh: {fileID: 3030939051835745956}
   speed_bonus: {fileID: 8587668637545132957}
   shield_bonus: {fileID: 7992988207810504831}
