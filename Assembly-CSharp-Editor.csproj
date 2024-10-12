@@ -66,7 +66,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Editor\GenerateNetworkID.cs" />
     <Compile Include="Assets\Scripts\Editor\SNetworkTransformEditor.cs" />
-    <Compile Include="Assets\SlimUI\Editor\SlimUIWindow.cs" />
     <Compile Include="Assets\Scripts\Editor\SNetworkObjectEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\ReadOnlyAttributeEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\GeneratePrefabNetworkID.cs" />
