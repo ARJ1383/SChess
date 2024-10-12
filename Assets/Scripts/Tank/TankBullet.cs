@@ -47,7 +47,7 @@ namespace NetcodePlus.Demo
             Tank tank = other.GetComponentInParent<Tank>();
             //if(tank.PlayerID == player_id) return;
             if (tank != null)
-                tank.Damage(damage);
+                tank.Damage(1);
 
             FXTool.FX(explode_prefab, transform.position);
             Destroy(gameObject);

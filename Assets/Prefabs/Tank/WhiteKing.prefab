@@ -84,7 +84,7 @@ MonoBehaviour:
   gravity: 10
   ground_dist: 0.25
   attack_cooldown: 1
-  attack_bullet: {fileID: 4815300177652869576, guid: 74995d84dc2a7d54b8d4900cbba3556e, type: 3}
+  attack_bullet: {fileID: 4815300177652869576, guid: 4bea4e61271602d41bf8e93d7ec6ee8a, type: 3}
   shoot_root: {fileID: 843010289358659844}
   hp: 5
   revive_duration: 0
@@ -595,14 +595,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2403760767942212638}
     m_Modifications:
-    - target: {fileID: 1825987474188783423, guid: 04c751dd2f1c2124f86e1a5a52189a5c, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a8a552f7271ec71458331b8aec7983dd, type: 2}
-    - target: {fileID: 4518168873719380981, guid: 04c751dd2f1c2124f86e1a5a52189a5c, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -7013828233552551812, guid: 52f5e88b59293d940a033b4360183877, type: 3}
     - target: {fileID: -8679921383154817045, guid: ae29703e649b75544acf17858a6c06aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.304
@@ -643,6 +635,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a8a552f7271ec71458331b8aec7983dd, type: 2}
+    - target: {fileID: 1825987474188783423, guid: 04c751dd2f1c2124f86e1a5a52189a5c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8a552f7271ec71458331b8aec7983dd, type: 2}
+    - target: {fileID: 4518168873719380981, guid: 04c751dd2f1c2124f86e1a5a52189a5c, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -7013828233552551812, guid: 52f5e88b59293d940a033b4360183877, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

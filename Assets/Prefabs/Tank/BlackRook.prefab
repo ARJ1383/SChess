@@ -84,7 +84,7 @@ MonoBehaviour:
   gravity: 10
   ground_dist: 0.25
   attack_cooldown: 1
-  attack_bullet: {fileID: 4815300177652869576, guid: fc3fd06a3ca61a94fba62a07a4eddb10, type: 3}
+  attack_bullet: {fileID: 4815300177652869576, guid: 4bea4e61271602d41bf8e93d7ec6ee8a, type: 3}
   shoot_root: {fileID: 843010289358659844}
   hp: 5
   revive_duration: 0
