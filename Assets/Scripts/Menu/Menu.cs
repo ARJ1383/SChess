@@ -21,13 +21,10 @@ namespace NetcodePlus.Demo
         [Header("Create")]
         public Text create_ip;
         public InputField create_user;
-        public OptionSelectorInt create_mode;
-        public OptionSelector create_color;
 
         [Header("Join")]
         public InputField join_user;
         public InputField join_host;
-        public OptionSelector join_color;
 
         public ushort port;
 
