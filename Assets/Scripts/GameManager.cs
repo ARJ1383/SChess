@@ -64,6 +64,10 @@ public class GameManager : SNetworkPlayer
     public PlayerMoveState sync_state = new PlayerMoveState();
     public static GameModeData gameModeData;
     
+    public static int i_attacker, j_attacker, i_defender, j_defender;
+    public static bool hostWins;
+    public static bool hostAttack;
+    
     public PieceSelected? pieceSelected;
     protected override void Awake()
     {
@@ -76,6 +80,7 @@ public class GameManager : SNetworkPlayer
         actions = new SNetworkActions(this);
         actions.RegisterSerializable("sync", ReceiveSync,NetworkDelivery.Reliable);
         actions.RegisterSerializable("attack", getAttack,NetworkDelivery.Reliable);
+        actions.RegisterSerializable("afterAttack", afterAttack,NetworkDelivery.Reliable);
         Tile.gameManager = this;
         ChessPiece.gameManager2 = this;
     }
@@ -143,6 +148,15 @@ public class GameManager : SNetworkPlayer
 
     public async void attack(int i, int j)
     {
+        i_attacker = ((PieceSelected)pieceSelected).selectedPiece.getI();
+        j_attacker = ((PieceSelected) pieceSelected).selectedPiece.getJ();
+        i_defender = i;
+        j_defender = j;
+        
+        actions?.Trigger("afterAttack",
+            new PlayerMoveState(i_attacker, j_attacker, i, j,
+                TheNetwork.Get().IsHost));
+        hostAttack = TheNetwork.Get().IsHost;
         if (TheNetwork.Get().IsHost)
         {
             setTankName(((PieceSelected)pieceSelected).selectedPiece, true);
@@ -163,6 +177,18 @@ public class GameManager : SNetworkPlayer
                 new PlayerMoveState(((PieceSelected)pieceSelected).i, ((PieceSelected)pieceSelected).j, i, j,
                     logic.IsWhite()));
         }
+    }
+
+    public void afterAttack(SerializedData data)
+    {
+        PlayerMoveState sync_state = data.Get<PlayerMoveState>();
+        if ((sync_state.white && TheNetwork.Get().IsHost) || (!sync_state.white && !TheNetwork.Get().IsHost))
+            return;
+        i_attacker = sync_state.primary_i;
+        j_attacker = sync_state.primary_j;
+        i_defender = sync_state.secondary_i;
+        j_defender = sync_state.secondary_j;
+        hostAttack = !TheNetwork.Get().IsHost;
     }
 
     private void setTankName(ChessPiece chessPiece, bool isHost) {

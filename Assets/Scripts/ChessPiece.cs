@@ -44,4 +44,8 @@ public class ChessPiece : MonoBehaviour
         i = GameManager.ReturnCoordinate(x, z).i;
         j = GameManager.ReturnCoordinate(x, z).j;
     }
+    
+    public int getI() { return i; }
+    
+    public int getJ() { return j; }
 }

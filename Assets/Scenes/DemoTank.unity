@@ -5214,7 +5214,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2334541629785623448, guid: a0d78f6c49ad8f344b3c543cc68e03f7, type: 3}
       propertyPath: player_id
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2334541629785623449, guid: a0d78f6c49ad8f344b3c543cc68e03f7, type: 3}
       propertyPath: m_RootOrder

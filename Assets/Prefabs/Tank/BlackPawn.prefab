@@ -562,7 +562,7 @@ PrefabInstance:
     - target: {fileID: 3845220579098015693, guid: 94160cd8302c2094ca567d98c1692551, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1485347353320205352, guid: 0f934222f3e4ab846b2db7fab165bc7b, type: 3}
+      objectReference: {fileID: 2812670013476851651, guid: b37733d36ca9bef41916cd9cec3a3928, type: 3}
     - target: {fileID: 5072021485914250399, guid: 94160cd8302c2094ca567d98c1692551, type: 3}
       propertyPath: m_Name
       value: black_bishop

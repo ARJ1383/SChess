@@ -13,6 +13,8 @@ namespace NetcodePlus.Demo
         private bool ended = false;
         public static string name;
         public static string name2;
+        private float timer = 0f;
+        public bool firstTime = true;
 
         protected override void Awake()
         {
@@ -43,8 +45,10 @@ namespace NetcodePlus.Demo
             //Shuffle PlayerSpawn ids
             if (TheNetwork.Get().IsServer)
             {
-                List<PlayerSpawn> spawns = PlayerSpawn.GetAll();
-                ListTool.Shuffle(spawns);
+                List<PlayerSpawn> spawns2 = PlayerSpawn.GetAll();
+                List<PlayerSpawn> spawns = new List<PlayerSpawn>();
+                spawns.Add(spawns2[0]);
+                spawns.Add(spawns2[1]);
                 for (int i = 0; i < spawns.Count; i++)
                     spawns[i].player_id = i;
             }
@@ -87,7 +91,7 @@ namespace NetcodePlus.Demo
                     if (tank != null && tank.HP <= 0)
                     {
                         ended = true;
-                        GameOverPanel.Get().Show("You lost!", "Your tank was destroyed");
+                        GameManager.hostWins = !TheNetwork.Get().IsHost;
                     }
 
                     int count_all = 0;
@@ -107,10 +111,48 @@ namespace NetcodePlus.Demo
                     if (tank != null && tank.HP > 0 && count_all >= 2 && count_alive == 1)
                     {
                         ended = true;
-                        GameOverPanel.Get().Show("You won!", "You destroyed everyone else");
+                        GameManager.hostWins = TheNetwork.Get().IsHost;
                     }
                 }
             }
+
+            if (TheNetwork.Get().IsHost && ended)
+                timer += 0.05f;
+
+            if (firstTime && ended)
+            {
+                if ((GameManager.hostAttack && GameManager.hostWins) ||
+                    (!GameManager.hostAttack && !GameManager.hostWins))
+                {
+                    ChessLogic.GetInstance()
+                        .MovePiece(
+                            new ChessPosition(GameManager.j_attacker,
+                                GameManager.i_attacker),
+                            new ChessPosition(GameManager.j_defender, GameManager.i_defender));
+                }
+                else
+                {
+                    ChessLogic.GetInstance()
+                        .RemovePiece(
+                            new ChessPosition(GameManager.j_attacker,
+                                GameManager.i_attacker));
+                }
+
+                ChessLogic.GetInstance().ChangeTurn();
+                firstTime = false;
+            }            
+            
+            
+            if (TheNetwork.Get().IsHost && timer > 0.5f && ended)
+                {
+                    TheNetwork.tank = false;
+                    GameModeData gmdata = GameManager.gameModeData;
+                    DemoConnectData cdata = new DemoConnectData(GameMode.Simple);
+                    TheNetwork.Get().SetConnectionExtraData(cdata);
+                    TheNetwork.Get().LoadScene(gmdata.scene);
+                    Cursor.lockState = CursorLockMode.None;
+                }
+            
         }
 
         public void RefreshData()
