@@ -76,7 +76,6 @@ public class GameManager : SNetworkPlayer
     protected override void OnSpawn()
     {
         base.OnSpawn();
-        Cursor.lockState = CursorLockMode.None;
         actions = new SNetworkActions(this);
         actions.RegisterSerializable("sync", ReceiveSync,NetworkDelivery.Reliable);
         actions.RegisterSerializable("attack", getAttack,NetworkDelivery.Reliable);
@@ -104,6 +103,7 @@ public class GameManager : SNetworkPlayer
 
     public void SelectPiece(ChessPiece chessPiece, int i, int j)
     {
+        if(TheNetwork.Get().GetClientByPlayerID(1) == null && TheNetwork.Get().IsHost) return;
         if(tiles == null)tiles = GameManager2.tiles;
         if(chessPieces[0] == null)chessPieces = GameManager2.chessPieces;
         logic = GameManager2.logic;
