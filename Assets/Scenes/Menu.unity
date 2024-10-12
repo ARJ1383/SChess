@@ -391,7 +391,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 0cd7bcefa4890504bb123a85afaa5e93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1264,7 +1264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -744, y: 401}
+  m_AnchoredPosition: {x: -744, y: 358}
   m_SizeDelta: {x: 1, y: 0.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &246996208
@@ -1287,7 +1287,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 06c902fe58f1fc548b3320fc7dd61227, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0cbfeec034309a4a95933036016624e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2019,7 +2019,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -860, y: 401}
+  m_AnchoredPosition: {x: -860, y: 358}
   m_SizeDelta: {x: 1, y: 0.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &374823011
@@ -2042,7 +2042,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f39feca731d646348b043d1d1dae2045, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 85a622413bc460645ad988dad31cd00b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2497,7 +2497,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554590907}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -3846,11 +3846,8 @@ MonoBehaviour:
   join_panel: {fileID: 1675356403}
   create_ip: {fileID: 1652260025}
   create_user: {fileID: 563600793}
-  create_mode: {fileID: 0}
-  create_color: {fileID: 0}
   join_user: {fileID: 2124482107}
   join_host: {fileID: 1803926685}
-  join_color: {fileID: 0}
   port: 0
 --- !u!1 &1261294927
 GameObject:
@@ -4662,7 +4659,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675356401}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -5010,7 +5007,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1800930203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd0c228df72d45b5bffeca5d7d19f576, type: 3}
+  m_Script: {fileID: 11500000, guid: e51809f7d3965e646b0193efce2bb754, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CreatorsOfGameText: {fileID: 108512954}
