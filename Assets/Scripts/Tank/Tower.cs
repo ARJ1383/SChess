@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
+using Unity.VisualScripting;
 
 namespace NetcodePlus.Demo
 {
@@ -50,6 +51,7 @@ namespace NetcodePlus.Demo
             sdata.hp = hp;
 
             PlayerData player = GameData.Get().GetPlayer(player_id);
+            
             sdata.color = player != null ? player.character : "";
             active = player != null && player.connected;
 

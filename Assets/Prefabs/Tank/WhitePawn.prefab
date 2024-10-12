@@ -86,9 +86,9 @@ MonoBehaviour:
   attack_cooldown: 0.5
   attack_bullet: {fileID: 4815300177652869576, guid: 4bea4e61271602d41bf8e93d7ec6ee8a, type: 3}
   shoot_root: {fileID: 843010289358659844}
-  hp: 5
+  hp: 3
   revive_duration: 0
-  invulnerable_duration: 1
+  invulnerable_duration: 0.3
   mesh: {fileID: 3030939051835745956}
   speed_bonus: {fileID: 8587668637545132957}
   shield_bonus: {fileID: 7992988207810504831}
@@ -697,6 +697,10 @@ PrefabInstance:
     - target: {fileID: 6468567674786511396, guid: c53291cd0702f60489a9328e59aa5d55, type: 3}
       propertyPath: m_Name
       value: white_pawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498367583506600089, guid: c53291cd0702f60489a9328e59aa5d55, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 8804667105326406967, guid: c53291cd0702f60489a9328e59aa5d55, type: 3}
       propertyPath: m_LocalPosition.x

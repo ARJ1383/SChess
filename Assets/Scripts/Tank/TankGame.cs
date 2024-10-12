@@ -43,8 +43,10 @@ namespace NetcodePlus.Demo
             //Shuffle PlayerSpawn ids
             if (TheNetwork.Get().IsServer)
             {
-                List<PlayerSpawn> spawns = PlayerSpawn.GetAll();
-                ListTool.Shuffle(spawns);
+                List<PlayerSpawn> spawns2 = PlayerSpawn.GetAll();
+                List<PlayerSpawn> spawns = new List<PlayerSpawn>();
+                spawns.Add(spawns2[0]);
+                spawns.Add(spawns2[1]);
                 for (int i = 0; i < spawns.Count; i++)
                     spawns[i].player_id = i;
             }
